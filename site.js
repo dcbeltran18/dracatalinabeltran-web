@@ -19,7 +19,7 @@ const src=()=>{if(click.gclid||click.gbraid||click.wbraid)return'Google Ads';con
 const s0=src();ss('src',s0);
 const origen=s0+' (web: '+slug+')';
 /* Código de referencia en cada mensaje de WhatsApp, igual que en la página de valoración */
-document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a=>{try{const u=new URL(a.href);u.searchParams.set('text',(u.searchParams.get('text')||'')+' (ref. '+ref.replace(/^DS-/,'')+')');a.href=u.toString();}catch(e){}
+document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a=>{try{const u=new URL(a.href);const t=(u.searchParams.get('text')||'')+' (ref. '+ref.replace(/^DS-/,'')+')';a.href=u.origin+u.pathname+'?text='+encodeURIComponent(t);}catch(e){}
   a.addEventListener('click',()=>{if(!on)return;try{navigator.sendBeacon(SHEET,JSON.stringify({ref,lang,boton:'web-'+slug,tz:(Intl.DateTimeFormat().resolvedOptions().timeZone||''),...click}))}catch(e){}});});
 if(!on)return;
 let nv=1;try{if(!sessionStorage.getItem('dcb_s')){sessionStorage.setItem('dcb_s','1');localStorage.setItem('dcb_vis',String(+(localStorage.getItem('dcb_vis')||0)+1));}nv=+(localStorage.getItem('dcb_vis')||1);}catch(e){}

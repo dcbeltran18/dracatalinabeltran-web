@@ -23,7 +23,7 @@ PAGES = []
 # ---------------- INICIO ----------------
 PAGES.append(dict(path="/", lang="es", byline=False,
     title="Dra. Catalina Beltrán | Odontóloga estética en Medellín",
-    desc="Odontóloga estética en El Poblado, Medellín, con 15 años de experiencia y 5,0 en Google. Diseño de sonrisa con carillas sin desgaste dental, en porcelana E-max y resina, precio cerrado y valoración gratis por WhatsApp.",
+    desc="Odontóloga estética en El Poblado, Medellín. Carillas sin desgaste dental en porcelana E-max y resina, con precio cerrado. 15 años de experiencia, 5,0 en Google.",
     h1="Dra. Catalina Beltrán, odontóloga estética en Medellín",
     lead=("La Dra. Catalina Beltrán es odontóloga estética en El Poblado, Medellín, con 15 años de experiencia y calificación de 5,0 en Google. "
           "Hace diseños de sonrisa con carillas de porcelana E-max y de resina sin desgaste dental, con precio cerrado antes de empezar: desde USD 145 por diente en resina y USD 5.900 por una sonrisa completa de 20 carillas de porcelana."),
@@ -53,8 +53,8 @@ MED_FAQS = [
     ("¿Atienden en inglés?", "Sí. La doctora atiende en español e inglés, por WhatsApp y en el consultorio."),
 ]
 PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Diseño de sonrisa en Medellín", schema_type="MedicalWebPage",
-    title="Diseño de sonrisa en Medellín | Carillas sin desgaste en El Poblado",
-    desc="Diseño de sonrisa en Medellín con la Dra. Catalina Beltrán: carillas sin desgaste dental, en porcelana E-max desde USD 380 y resina desde USD 145 por diente, en El Poblado. Precio cerrado y valoración gratis.",
+    title="Diseño de sonrisa en Medellín | Carillas sin desgaste",
+    desc="Diseño de sonrisa en Medellín sin desgaste dental: porcelana E-max USD 380 y resina USD 145 por diente, en El Poblado. Precio cerrado y valoración gratis.",
     h1="Diseño de sonrisa en Medellín",
     lead=("En Medellín, la Dra. Catalina Beltrán hace diseños de sonrisa con carillas de porcelana E-max (USD 380 por diente) y de resina (USD 145 por diente), sin desgaste dental, en su consultorio de El Poblado. "
           "Recibes el plan y el precio cerrado antes de empezar, y la valoración es gratis por WhatsApp."),
@@ -82,7 +82,7 @@ PILAR_FAQS = [
 ]
 PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="MedicalWebPage",
     title="¿Qué es el diseño de sonrisa? Tipos, duración y cómo elegir",
-    desc="Qué es el diseño de sonrisa, qué tipos hay (porcelana E-max, resina, microdiseño, blanqueamiento), cuánto dura y quién puede hacérselo. Guía de la Dra. Catalina Beltrán, odontóloga estética.",
+    desc="Qué es el diseño de sonrisa, qué tipos hay (porcelana, resina, microdiseño, blanqueamiento), cuánto dura y quién puede hacérselo. Guía de una odontóloga estética.",
     h1="Diseño de sonrisa: qué es, tipos y cómo elegir",
     lead=("El diseño de sonrisa es un plan odontológico que define la forma, el tamaño, el color y la proporción de tus dientes según tu cara, y luego lo lleva a cabo con carillas de porcelana, carillas de resina, microdiseño o blanqueamiento. "
           "La opción correcta depende de cuánto quieres cambiar, de tu presupuesto y de la salud de tus dientes."),
@@ -115,7 +115,7 @@ EMAX_FAQS = [
 ]
 PAGES.append(dict(path=P_EMAX, lang="es", crumb="Carillas de porcelana E-max", parents=[TRAT], schema_type="MedicalWebPage",
     title="Carillas de porcelana E-max en Medellín: precio y duración",
-    desc="Carillas de porcelana E-max sin desgaste dental en Medellín: USD 380 por diente, 20 carillas por USD 5.900. Qué son, para quién, cuánto duran, ventajas y desventajas, y cómo se cuidan.",
+    desc="Carillas E-max sin desgaste dental en Medellín: USD 380 por diente y 20 carillas por USD 5.900. Qué son, cuánto duran, ventajas, desventajas y cuidados.",
     h1="Carillas de porcelana E-max",
     lead=("Las carillas E-max son láminas delgadas de porcelana de disilicato de litio que se adhieren al frente de los dientes para cambiar su forma, tamaño y color. "
           "Con la Dra. Catalina Beltrán en Medellín se colocan sin desgaste dental y cuestan USD 380 por diente; la sonrisa completa de 20 carillas cuesta USD 5.900."),
@@ -170,7 +170,7 @@ PRICE_FAQS = [
 ]
 PAGES.append(dict(path=P_PRICE, lang="es", alt="/en/cost-of-veneers-colombia/", crumb="Precios", schema_type="WebPage",
     title="¿Cuánto cuesta un diseño de sonrisa en Colombia? Precios 2026",
-    desc="Precios reales de diseño de sonrisa en Colombia: carilla de porcelana E-max USD 380, resina USD 145, 20 carillas USD 5.900. Qué incluye y comparación con Estados Unidos.",
+    desc="Precios reales de diseño de sonrisa en Colombia: porcelana E-max USD 380, resina USD 145, 20 carillas USD 5.900. Qué incluye y comparación con EE. UU.",
     h1="¿Cuánto cuesta un diseño de sonrisa en Colombia?",
     lead=("Con la Dra. Catalina Beltrán, en Medellín, una sonrisa completa de 20 carillas de porcelana E-max cuesta USD 5.900, es decir, USD 295 por diente. "
           "La carilla de porcelana suelta cuesta USD 380 y la de resina USD 145. El precio es cerrado y lo sabes antes de empezar."),
@@ -189,7 +189,7 @@ PAGES.append(dict(path=P_PRICE, lang="es", alt="/en/cost-of-veneers-colombia/", 
 # ---------------- DRA ----------------
 PAGES.append(dict(path=P_DRA, lang="es", alt="/en/dr-catalina-beltran/", crumb="Dra. Catalina Beltrán", schema_type="ProfilePage", byline=False,
     title="Dra. Catalina Beltrán | Odontóloga estética, RETHUS 2011",
-    desc="Conoce a la Dra. Catalina Beltrán: odontóloga con 15 años de experiencia, especialista en Estética Dental, registrada en el RETHUS desde 2011. Consultorio en El Poblado, Medellín.",
+    desc="Dra. Catalina Beltrán: odontóloga con 15 años de experiencia, especialista en Estética Dental, RETHUS desde 2011. Consultorio en El Poblado, Medellín.",
     h1="Dra. Catalina Beltrán",
     lead=("La Dra. Catalina Beltrán es odontóloga con 15 años de experiencia, registrada en el RETHUS desde 2011 y especialista en Estética Dental. "
           "Atiende personalmente a cada paciente en su consultorio de El Poblado, Medellín."),
@@ -209,7 +209,7 @@ PAGES.append(dict(path=P_DRA, lang="es", alt="/en/dr-catalina-beltran/", crumb="
 # ---------------- ANTES Y DESPUÉS ----------------
 PAGES.append(dict(path=P_BA, lang="es", crumb="Antes y después", schema_type="WebPage",
     title="Diseño de sonrisa antes y después | Casos reales en Medellín",
-    desc="Fotos reales de antes y después de diseño de sonrisa con la Dra. Catalina Beltrán en Medellín, y el video de un paciente de Estados Unidos al ver su nueva sonrisa.",
+    desc="Fotos reales de antes y después de diseño de sonrisa en Medellín con la Dra. Catalina Beltrán, y el video de un paciente al ver su nueva sonrisa.",
     h1="Diseño de sonrisa: antes y después",
     lead="Estos son casos reales de pacientes de la Dra. Catalina Beltrán en Medellín, publicados con su autorización. Cada sonrisa se diseñó según la cara, el tono de piel y la mordida de cada persona.",
     wa=wa("antes y después"),
@@ -227,8 +227,8 @@ INT_FAQS = [
     ("¿El precio puede cambiar al llegar?", "No. El precio es cerrado y lo conoces antes de comprar el vuelo."),
 ]
 PAGES.append(dict(path=P_INT, lang="es", crumb="Pacientes internacionales", schema_type="WebPage",
-    title="Diseño de sonrisa en Colombia para extranjeros | Un viaje de 4 días",
-    desc="Diseño de sonrisa en Medellín para pacientes del exterior: precio cerrado en dólares antes de viajar, un solo viaje de mínimo 4 días, valoración gratis por WhatsApp y control por videollamada.",
+    title="Diseño de sonrisa en Colombia para extranjeros | 4 días",
+    desc="Diseño de sonrisa en Medellín para pacientes del exterior: precio cerrado en dólares antes de viajar, un solo viaje de 4 días y control por videollamada.",
     h1="Diseño de sonrisa para pacientes internacionales",
     lead=("Si vives fuera de Colombia, recibes la valoración y el precio cerrado en dólares por WhatsApp antes de comprar el vuelo, y haces tu diseño de sonrisa en un solo viaje de mínimo 4 días a Medellín. "
           "El control posterior es por videollamada."),

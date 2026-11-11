@@ -16,7 +16,7 @@ VEN_FAQS = [
 ]
 PAGES.append(dict(path=E_VEN, lang="en", alt="/diseno-de-sonrisa-medellin/", schema_type="MedicalWebPage",
     title="Veneers in Medellín, Colombia | Dr. Catalina Beltrán, El Poblado",
-    desc="Porcelain and composite veneers in Medellín with no tooth reduction. E-max veneers USD 380 per tooth, full smile of 20 for USD 5,900. Fixed price before you travel. English spoken.",
+    desc="Veneers in Medellín with no tooth reduction: E-max USD 380 per tooth, 20 veneers USD 5,900. Fixed price before you travel. English spoken.",
     h1="Veneers in Medellín, Colombia",
     lead=("Dr. Catalina Beltrán places E-max porcelain veneers (USD 380 per tooth) and composite veneers (USD 145 per tooth) with no tooth reduction at her office in El Poblado, Medellín. "
           "A full smile of 20 porcelain veneers is USD 5,900, and you get a fixed price in US dollars before you book your flight."),
@@ -47,7 +47,7 @@ COST_FAQS = [
 ]
 PAGES.append(dict(path=E_COST, lang="en", alt="/precio-diseno-de-sonrisa-colombia/", crumb="Cost of veneers in Colombia",
     title="Cost of Veneers in Colombia (2026): Real Prices in Medellín",
-    desc="How much do veneers cost in Colombia? E-max porcelain USD 380 per tooth, composite USD 145, 20 veneers USD 5,900. What's included and how it compares with the US.",
+    desc="Cost of veneers in Colombia: E-max porcelain USD 380 per tooth, composite USD 145, 20 veneers USD 5,900. What is included and how it compares with the US.",
     h1="Cost of veneers in Colombia",
     lead=("In Medellín, with Dr. Catalina Beltrán, a full smile of 20 E-max porcelain veneers costs USD 5,900, about USD 295 per tooth. "
           "A single porcelain veneer is USD 380 and a composite veneer USD 145, with a fixed price before you travel."),
@@ -63,7 +63,7 @@ PAGES.append(dict(path=E_COST, lang="en", alt="/precio-diseno-de-sonrisa-colombi
 
 PAGES.append(dict(path=E_DRA, lang="en", alt="/dra-catalina-beltran/", crumb="Dr. Catalina Beltrán", schema_type="ProfilePage", byline=False,
     title="Dr. Catalina Beltrán | Cosmetic Dentist in Medellín, Colombia",
-    desc="Meet Dr. Catalina Beltrán: a dentist with 15 years of experience, specialist in Cosmetic Dentistry, licensed in Colombia since 2011. Office in El Poblado, Medellín. English spoken.",
+    desc="Dr. Catalina Beltrán: cosmetic dentist with 15 years of experience, licensed in Colombia since 2011. Office in El Poblado, Medellín. English spoken.",
     h1="Dr. Catalina Beltrán",
     lead="Dr. Catalina Beltrán is a dentist with 15 years of experience, licensed in Colombia's national health registry (RETHUS) since 2011 and a specialist in Cosmetic Dentistry. She treats every patient personally at her office in El Poblado, Medellín.",
     wa="Hi Dr. Catalina 👋 I saw your website and I'd like to know the price of my smile design.", image="/img/dra-catalina-900.webp",
