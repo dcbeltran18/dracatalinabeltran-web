@@ -39,7 +39,7 @@ def schema_graph(p):
         page["lastReviewed"] = p.get("updated", UPDATED)
     if p.get("image"):
         page["primaryImageOfPage"] = DOMAIN + p["image"]
-    crumbs = [("Inicio" if es else "Home", HOME_ES if es else HOME_EN)] + p.get("parents", []) + [(p["crumb"], p["path"])] if p.get("crumb") else None
+    crumbs = [("Inicio" if es else "Veneers in Medellín", HOME_ES if es else HOME_EN)] + p.get("parents", []) + [(p["crumb"], p["path"])] if p.get("crumb") else None
     if crumbs:
         page["breadcrumb"] = {"@id": url + "#breadcrumb"}
         g.append({"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
@@ -54,7 +54,7 @@ def crumbs_html(p):
     if not p.get("crumb"):
         return ""
     es = p["lang"] == "es"
-    items = [("Inicio" if es else "Home", HOME_ES if es else HOME_EN)] + p.get("parents", [])
+    items = [("Inicio" if es else "Veneers in Medellín", HOME_ES if es else HOME_EN)] + p.get("parents", [])
     links = " › ".join(f'<a href="{u}">{n}</a>' for n, u in items)
     return f'<nav class="crumbs" aria-label="breadcrumb">{links} › <span>{p["crumb"]}</span></nav>'
 
@@ -93,7 +93,7 @@ def layout(p):
                f'<link rel="alternate" hreflang="x-default" href="{DOMAIN}{es_url}">')
     robots = '<meta name="robots" content="noindex">' if p.get("noindex") else '<meta name="robots" content="index,follow,max-image-preview:large">'
     ld = json.dumps(schema_graph(p), ensure_ascii=False)
-    nav = NAV_ES if es else NAV_EN
+    nav = (NAV_ES if es else NAV_EN).replace("{ALT}", p.get("alt") or (HOME_EN if es else HOME_ES))
     foot = (FOOTER_ES if es else FOOTER_EN).replace("{WA}", wa)
     body = p["body"].replace("{WA}", wa).replace("{WAICON}", WA_ICON)
     cta = (CTA_ES if es else CTA_EN).replace("{WA}", wa).replace("{WAICON}", WA_ICON)
@@ -107,8 +107,7 @@ def layout(p):
 <meta property="og:image" content="{DOMAIN}/img/og.jpg"><meta property="og:url" content="{DOMAIN}{p["path"]}"><meta property="og:type" content="website">
 <meta property="og:locale" content="{"es_CO" if es else "en_US"}"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/icon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/jost-300.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">{ld}</script>
 </head><body>
@@ -124,6 +123,7 @@ def layout(p):
 </article></main>
 <footer><div class="wrap">{foot}</div></footer>
 <a class="float" href="{wa}" aria-label="WhatsApp">{WA_ICON}<span>WhatsApp</span></a>
+<script src="/site.js" defer></script>
 </body></html>"""
 
 def main():

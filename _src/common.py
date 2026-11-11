@@ -24,8 +24,8 @@ DENTIST_SCHEMA = {
     "url": DOMAIN + "/", "image": DOMAIN + "/img/og.jpg", "logo": DOMAIN + "/icon-180.png",
     "telephone": PHONE, "email": EMAIL,
     "address": {"@type": "PostalAddress", "streetAddress": "Cra. 25 #12 Sur 59", "addressLocality": "Medellín",
-                "addressRegion": "Antioquia", "addressCountry": "CO", "areaServed": "El Poblado"},
-    "areaServed": [{"@type": "City", "name": "Medellín"}, {"@type": "City", "name": "Bogotá"}],
+                "addressRegion": "Antioquia", "addressCountry": "CO"},
+    "areaServed": {"@type": "City", "name": "Medellín"},
     "priceRange": "USD 145 – USD 5.900", "currenciesAccepted": "USD, COP",
     "knowsLanguage": ["es", "en"],
     "employee": {"@id": ID_PERSON}, "founder": {"@id": ID_PERSON},
@@ -53,6 +53,10 @@ PERSON_SCHEMA = {
 }
 
 CSS = """
+@font-face{font-family:"Tenor Sans";src:url(/fonts/tenor-sans-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Jost";src:url(/fonts/jost-300.woff2) format("woff2");font-weight:300;font-display:swap}
+@font-face{font-family:"Jost";src:url(/fonts/jost-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Jost";src:url(/fonts/jost-500.woff2) format("woff2");font-weight:500;font-display:swap}
 :root{--ink:#0b0a09;--ink2:#15130f;--line:#2b271f;--text:#efe9df;--muted:#b9b0a2;--gold:#c9a96e;--wa:#25d366;--wa-ink:#062b14;
 --display:"Tenor Sans","Optima",sans-serif;--body:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
@@ -101,23 +105,22 @@ WA_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><p
 
 NAV_ES = ('<a href="/diseno-de-sonrisa/">Tratamientos</a><a href="/precio-diseno-de-sonrisa-colombia/">Precios</a>'
           '<a href="/antes-y-despues/" class="d">Resultados</a><a href="/dra-catalina-beltran/" class="d">La doctora</a>'
-          '<a href="/pacientes-internacionales/" class="d">Pacientes internacionales</a><a href="/en/veneers-medellin/" hreflang="en">EN</a>')
+          '<a href="/pacientes-internacionales/" class="d">Pacientes internacionales</a><a href="{ALT}" hreflang="en">EN</a>')
 NAV_EN = ('<a href="/en/veneers-medellin/">Veneers</a><a href="/en/cost-of-veneers-colombia/">Prices</a>'
-          '<a href="/en/dr-catalina-beltran/" class="d">The doctor</a><a href="/" hreflang="es">ES</a>')
+          '<a href="/en/dr-catalina-beltran/" class="d">The doctor</a><a href="{ALT}" hreflang="es">ES</a>')
 
 FOOTER_ES = f"""<div class="cols">
-<div><b>Dra. Catalina Beltrán</b><br>Odontología estética<br>{ADDRESS}<br>También atiende en Bogotá.<br>
+<div><b>Dra. Catalina Beltrán</b><br>Odontología estética<br>{ADDRESS}<br>
 WhatsApp <a href="{{WA}}">{PHONE}</a><br><a href="{INSTAGRAM}">Instagram</a></div>
 <div><b>Tratamientos</b><ul><li><a href="/diseno-de-sonrisa/">Diseño de sonrisa</a></li><li><a href="/diseno-de-sonrisa/carillas-de-porcelana-emax/">Carillas de porcelana E-max</a></li>
-<li><a href="/diseno-de-sonrisa/carillas-de-resina/">Carillas de resina</a></li><li><a href="/diseno-de-sonrisa/microdiseno-de-sonrisa/">Microdiseño de sonrisa</a></li>
-<li><a href="/diseno-de-sonrisa/blanqueamiento-dental/">Blanqueamiento dental</a></li></ul></div>
+<li><a href="/diseno-de-sonrisa/carillas-de-resina/">Carillas de resina</a></li></ul></div>
 <div><b>Pacientes</b><ul><li><a href="/diseno-de-sonrisa-medellin/">Diseño de sonrisa en Medellín</a></li><li><a href="/precio-diseno-de-sonrisa-colombia/">Precios</a></li>
 <li><a href="/antes-y-despues/">Antes y después</a></li><li><a href="/pacientes-internacionales/">Pacientes internacionales</a></li>
-<li><a href="/preguntas-frecuentes/">Preguntas frecuentes</a></li><li><a href="/contacto/">Contacto</a></li><li><a href="/privacidad/">Privacidad</a></li></ul></div>
+<li><a href="/contacto/">Contacto</a></li><li><a href="/privacidad/">Privacidad</a></li></ul></div>
 </div><p class="muted">Los precios publicados son de referencia; el precio exacto lo confirma la doctora tras revisar tu caso. La información de este sitio es orientativa y no reemplaza una valoración odontológica.</p>"""
 
 FOOTER_EN = f"""<div class="cols">
-<div><b>Dr. Catalina Beltrán</b><br>Cosmetic dentistry<br>{ADDRESS}, Colombia<br>Also sees patients in Bogotá.<br>
+<div><b>Dr. Catalina Beltrán</b><br>Cosmetic dentistry<br>{ADDRESS}, Colombia<br>
 WhatsApp <a href="{{WA}}">{PHONE}</a><br><a href="{INSTAGRAM}">Instagram</a></div>
 <div><b>Pages</b><ul><li><a href="/en/veneers-medellin/">Veneers in Medellín</a></li><li><a href="/en/cost-of-veneers-colombia/">Cost of veneers in Colombia</a></li>
 <li><a href="/en/dr-catalina-beltran/">About Dr. Catalina</a></li><li><a href="/">Español</a></li></ul></div>

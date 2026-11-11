@@ -1,3 +1,7 @@
+@font-face{font-family:"Tenor Sans";src:url(/fonts/tenor-sans-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Jost";src:url(/fonts/jost-300.woff2) format("woff2");font-weight:300;font-display:swap}
+@font-face{font-family:"Jost";src:url(/fonts/jost-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Jost";src:url(/fonts/jost-500.woff2) format("woff2");font-weight:500;font-display:swap}
 :root{--ink:#0b0a09;--ink2:#15130f;--line:#2b271f;--text:#efe9df;--muted:#b9b0a2;--gold:#c9a96e;--wa:#25d366;--wa-ink:#062b14;
 --display:"Tenor Sans","Optima",sans-serif;--body:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}

@@ -8,15 +8,13 @@ E_DRA = "/en/dr-catalina-beltran/"
 PAGES = []
 
 VEN_FAQS = [
-    ("How much do veneers cost in Medellín?",
-     f'With Dr. Catalina Beltrán, an E-max porcelain veneer is USD 380 per tooth and a composite veneer USD 145. A full smile of 20 E-max porcelain veneers is USD 5,900. <a href="{E_COST}">See all prices</a>.'),
     ("How many days do I need in Medellín?", "One trip of at least 4 days. You know your fixed price before you book your flight."),
     ("Does the doctor speak English?", "Yes. Dr. Catalina treats patients in English and Spanish, on WhatsApp and in person."),
     ("Do I need X-rays to get a quote?", "No. For an exact price you send 3 photos taken with your phone, and the doctor shows you how."),
     ("Do veneers damage your teeth?", "Dr. Catalina places veneers with no tooth reduction. What damages a tooth is decay from poor hygiene, so daily brushing, flossing and check-ups keep it healthy."),
     ("Where is the office?", f"At {ADDRESS}, Colombia, in El Poblado. The Ibis Medellín hotel is 300 m away."),
 ]
-PAGES.append(dict(path=E_VEN, lang="en", alt="/diseno-de-sonrisa-medellin/", crumb="Veneers in Medellín", schema_type="MedicalWebPage",
+PAGES.append(dict(path=E_VEN, lang="en", alt="/diseno-de-sonrisa-medellin/", schema_type="MedicalWebPage",
     title="Veneers in Medellín, Colombia | Dr. Catalina Beltrán, El Poblado",
     desc="Porcelain and composite veneers in Medellín with no tooth reduction. E-max veneers USD 380 per tooth, full smile of 20 for USD 5,900. Fixed price before you travel. English spoken.",
     h1="Veneers in Medellín, Colombia",
@@ -30,7 +28,7 @@ PAGES.append(dict(path=E_VEN, lang="en", alt="/diseno-de-sonrisa-medellin/", cru
 <li><b>Get your assessment and fixed price.</b> The doctor tells you which option fits and how many teeth to treat. By video call if you prefer.</li>
 <li><b>Travel once.</b> Your design is planned before any work starts. Plan at least 4 days in Medellín.</li>
 <li><b>Fly home smiling.</b> Follow-up is by video call.</li></ol></section>
-<section><h2>How much do veneers cost?</h2>{PRICE_TABLE_EN}{INCLUDES_EN}<p><a href="{E_COST}">Full price details and US comparison</a></p></section>
+<section><h2>How much do veneers cost?</h2><p>E-max porcelain USD 380 per tooth · composite USD 145 per tooth · full smile of 20 porcelain veneers USD 5,900, about USD 295 per tooth. The price includes assessment and digital design, a cleaning beforehand and video follow-up. <a href="{E_COST}">Full price details and US comparison</a>.</p></section>
 <section><h2>Porcelain or composite veneers?</h2>
 <table><thead><tr><th></th><th>Composite</th><th>E-max porcelain</th></tr></thead><tbody>
 <tr><td>Price per tooth</td><td>USD 145</td><td>USD 380</td></tr><tr><td>Color over time</td><td>Can stain</td><td>Keeps its color</td></tr><tr><td>Durability</td><td>Lower</td><td>Higher</td></tr><tr><td>Repairs</td><td>Can be touched up</td><td>The piece is replaced</td></tr></tbody></table></section>
@@ -42,12 +40,12 @@ PAGES.append(dict(path=E_VEN, lang="en", alt="/diseno-de-sonrisa-medellin/", cru
 
 COST_FAQS = [
     ("How much is 20 veneers in Colombia?", "With Dr. Catalina Beltrán in Medellín, a full smile of 20 E-max porcelain veneers is USD 5,900, about USD 295 per tooth. Bought one by one, 20 veneers would be USD 7,600."),
-    ("Is it cheaper to get veneers in Colombia?", "Yes. Published US ranges are USD 1,000–2,500 per porcelain veneer; in Medellín with Dr. Catalina it is USD 380, using the same E-max material."),
+    ("Is it cheaper to get veneers in Colombia?", "Yes. Published US ranges are USD 925–2,500 per porcelain veneer (MedicineNet); in Medellín with Dr. Catalina it is USD 380, using the same E-max material."),
     ("Can I get veneers for $5,000?", "Yes. 10 E-max porcelain veneers for the upper smile are USD 3,800. A full smile of 20 porcelain veneers is USD 5,900."),
     ("What is included in the price?", "Assessment and digital design, veneers with no tooth reduction, a cleaning beforehand and video follow-up once you are home. Flights and hotel are not included."),
     ("Why do veneer prices vary so much between clinics?", "Material (composite or porcelain), porcelain brand, number of teeth, any treatment needed beforehand, and whether design and follow-up are included. Always ask what the price includes and whether it is fixed."),
 ]
-PAGES.append(dict(path=E_COST, lang="en", alt="/precio-diseno-de-sonrisa-colombia/", crumb="Cost of veneers in Colombia", parents=[("Veneers in Medellín", E_VEN)],
+PAGES.append(dict(path=E_COST, lang="en", alt="/precio-diseno-de-sonrisa-colombia/", crumb="Cost of veneers in Colombia",
     title="Cost of Veneers in Colombia (2026): Real Prices in Medellín",
     desc="How much do veneers cost in Colombia? E-max porcelain USD 380 per tooth, composite USD 145, 20 veneers USD 5,900. What's included and how it compares with the US.",
     h1="Cost of veneers in Colombia",
@@ -57,7 +55,8 @@ PAGES.append(dict(path=E_COST, lang="en", alt="/precio-diseno-de-sonrisa-colombi
     body=f"""<section><h2>2026 reference prices</h2>{PRICE_TABLE_EN}<p class="muted">Prices as of {fecha_en(UPDATED)}. Your exact price depends on how many teeth you need; the doctor confirms it for free on WhatsApp.</p></section>
 <section><h2>How do prices in Colombia compare with the US?</h2>
 <table><thead><tr><th>Treatment</th><th>US (published range)</th><th>Dr. Catalina, Medellín</th></tr></thead><tbody>
-<tr><td>Porcelain veneer</td><td>USD 1,000–2,500</td><td>USD 380</td></tr><tr><td>Composite veneer</td><td>USD 400–1,500</td><td>USD 145</td></tr><tr><td>10 porcelain veneers</td><td>USD 10,000+</td><td>USD 3,800</td></tr></tbody></table></section>
+<tr><td>Porcelain veneer</td><td>USD 925–2,500</td><td>USD 380</td></tr><tr><td>Composite veneer</td><td>USD 250–1,500</td><td>USD 145</td></tr></tbody></table>
+<p class="muted">US ranges: <a href="https://www.medicinenet.com/how_much_do_teeth_veneers_cost/article.htm" rel="noopener">MedicineNet, “How Much Do Teeth Veneers Cost?”</a>, accessed {fecha_en(UPDATED)}.</p></section>
 <section><h2>What's included?</h2>{INCLUDES_EN}<p>We recommend the Ibis Medellín, 300 m from the office.</p></section>
 <section><h2>How long does the trip take?</h2><p>One trip of at least 4 days. <a href="{E_VEN}">See how the process works</a>.</p></section>""",
     related=[("Veneers in Medellín", E_VEN), ("About Dr. Catalina", E_DRA), ("Español", "/precio-diseno-de-sonrisa-colombia/")]))
