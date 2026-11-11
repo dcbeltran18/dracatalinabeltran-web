@@ -20,7 +20,7 @@ PAGES.append(dict(path=E_VEN, lang="en", alt="/diseno-de-sonrisa-medellin/", sch
     h1="Veneers in Medellín, Colombia",
     lead=("Dr. Catalina Beltrán places E-max porcelain veneers (USD 380 per tooth) and composite veneers (USD 145 per tooth) with no tooth reduction at her office in El Poblado, Medellín. "
           "A full smile of 20 porcelain veneers is USD 5,900, and you get a fixed price in US dollars before you book your flight."),
-    wa="Hi Dr. Catalina 👋 I saw your website and I'd like to know the price of my smile design.", faqs=VEN_FAQS, image="/img/caso1-despues-600.webp",
+    wa="Hi Dr. Catalina 👋 I saw your website and I'd like to know the price of my smile design.", faqs=VEN_FAQS, video=True, image="/img/diseno-de-sonrisa-medellin-despues-caso-1.webp",
     body=f"""<div class="cards"><div class="card"><b>USD 295</b><span>per tooth on a 20-veneer porcelain smile</span></div><div class="card"><b>4 days</b><span>one trip to Medellín</span></div>
 <div class="card"><b>5.0</b><span>Google rating</span></div><div class="card"><b>15 years</b><span>of experience</span></div></div>
 <section><h2>How does it work?</h2><ol>
@@ -66,8 +66,8 @@ PAGES.append(dict(path=E_DRA, lang="en", alt="/dra-catalina-beltran/", crumb="Dr
     desc="Dr. Catalina Beltrán: cosmetic dentist with 15 years of experience, licensed in Colombia since 2011. Office in El Poblado, Medellín. English spoken.",
     h1="Dr. Catalina Beltrán",
     lead="Dr. Catalina Beltrán is a dentist with 15 years of experience, licensed in Colombia's national health registry (RETHUS) since 2011 and a specialist in Cosmetic Dentistry. She treats every patient personally at her office in El Poblado, Medellín.",
-    wa="Hi Dr. Catalina 👋 I saw your website and I'd like to know the price of my smile design.", image="/img/dra-catalina-900.webp",
-    body=f"""<img src="/img/dra-catalina-900.webp" width="900" height="1200" alt="Dr. Catalina Beltrán, cosmetic dentist" style="max-width:360px;border-radius:16px;margin:18px 0">
+    wa="Hi Dr. Catalina 👋 I saw your website and I'd like to know the price of my smile design.", image="/img/dra-catalina-beltran-odontologa-estetica-medellin.webp",
+    body=f"""<img src="/img/dra-catalina-beltran-odontologa-estetica-medellin.webp" width="900" height="1200" alt="Dr. Catalina Beltrán, cosmetic dentist" style="max-width:360px;border-radius:16px;margin:18px 0">
 <section><h2>Training</h2><table><tbody>
 <tr><td>Dentist with an emphasis in surgical sciences</td><td>Colegio Odontológico Colombiano</td></tr>
 <tr><td>Specialist in Cosmetic Dentistry</td><td>Federación Odontológica Colombiana</td></tr>

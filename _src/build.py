@@ -44,6 +44,9 @@ def schema_graph(p):
         page["breadcrumb"] = {"@id": url + "#breadcrumb"}
         g.append({"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
             {"@type": "ListItem", "position": i + 1, "name": n, "item": DOMAIN + u} for i, (n, u) in enumerate(crumbs)]})
+    if p.get("video"):
+        page["video"] = {"@id": VIDEO_SCHEMA["@id"]}
+        g.append(VIDEO_SCHEMA)
     g.append(page)
     if p.get("faqs"):
         g.append({"@type": "FAQPage", "@id": url + "#faq", "mainEntity": [
@@ -64,10 +67,10 @@ def byline_html(p):
     es = p["lang"] == "es"
     d = p.get("updated", UPDATED)
     if es:
-        return (f'<p class="byline"><img src="/img/dra-catalina-480.webp" width="40" height="40" alt="" loading="lazy">'
+        return (f'<p class="byline"><img src="/img/dra-catalina-beltran-odontologa-estetica-medellin-480.webp" width="40" height="40" alt="" loading="lazy">'
                 f'<span>Escrito y revisado por <a href="/dra-catalina-beltran/">Dra. Catalina Beltrán</a>, odontóloga estética, RETHUS desde 2011 · '
                 f'Actualizado el <time datetime="{d}">{fecha_es(d)}</time></span></p>')
-    return (f'<p class="byline"><img src="/img/dra-catalina-480.webp" width="40" height="40" alt="" loading="lazy">'
+    return (f'<p class="byline"><img src="/img/dra-catalina-beltran-odontologa-estetica-medellin-480.webp" width="40" height="40" alt="" loading="lazy">'
             f'<span>Written and reviewed by <a href="/en/dr-catalina-beltran/">Dr. Catalina Beltrán</a>, cosmetic dentist, licensed in Colombia since 2011 · '
             f'Updated <time datetime="{d}">{fecha_en(d)}</time></span></p>')
 
@@ -153,9 +156,18 @@ def main():
     for p in pages:
         if p.get("noindex"):
             continue
-        sm.append(f'<url><loc>{DOMAIN}{p["path"]}</loc><lastmod>{p.get("updated", UPDATED)}</lastmod></url>')
+        html_out = layout(p)
+        imgs = sorted(set(re.findall(r'<img src="(/img/[^"]+)"', html_out)))
+        ix = "".join(f"<image:image><image:loc>{DOMAIN}{i}</image:loc></image:image>" for i in imgs)
+        vx = ""
+        if 'video/mp4' in html_out:
+            vx = (f"<video:video><video:thumbnail_loc>{VIDEO_SCHEMA['thumbnailUrl']}</video:thumbnail_loc>"
+                  f"<video:title>{html.escape(VIDEO_SCHEMA['name'])}</video:title><video:description>{html.escape(VIDEO_SCHEMA['description'])}</video:description>"
+                  f"<video:content_loc>{VIDEO_SCHEMA['contentUrl']}</video:content_loc><video:duration>19</video:duration>"
+                  f"<video:publication_date>2026-11-07</video:publication_date></video:video>")
+        sm.append(f'<url><loc>{DOMAIN}{p["path"]}</loc><lastmod>{p.get("updated", UPDATED)}</lastmod>{ix}{vx}</url>')
     with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8") as f:
-        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(sm) + "\n</urlset>\n")
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">\n' + "\n".join(sm) + "\n</urlset>\n")
     with open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8") as f:
         f.write("User-agent: *\nAllow: /\nDisallow: /_src/\n\n"
                 "User-agent: Googlebot\nAllow: /\n\nUser-agent: Bingbot\nAllow: /\n\n"

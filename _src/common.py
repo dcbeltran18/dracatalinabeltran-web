@@ -40,7 +40,7 @@ DENTIST_SCHEMA = {
 PERSON_SCHEMA = {
     "@type": "Person", "@id": ID_PERSON, "name": "Catalina Beltrán", "honorificPrefix": "Dra.",
     "jobTitle": "Odontóloga estética", "url": DOMAIN + "/dra-catalina-beltran/",
-    "image": DOMAIN + "/img/dra-catalina-900.webp", "worksFor": {"@id": ID_DENTIST},
+    "image": DOMAIN + "/img/dra-catalina-beltran-odontologa-estetica-medellin.webp", "worksFor": {"@id": ID_DENTIST},
     "knowsLanguage": ["es", "en"],
     "alumniOf": [{"@type": "Organization", "name": "Colegio Odontológico Colombiano"},
                  {"@type": "Organization", "name": "Federación Odontológica Colombiana"},
@@ -144,16 +144,43 @@ PRICE_TABLE_EN = """<table><thead><tr><th>Treatment</th><th>Reference price</th>
 INCLUDES_ES = "<ul><li>Valoración y diseño digital</li><li>Carillas sin desgaste dental</li><li>Limpieza previa</li><li>Control por videollamada</li></ul><p>No incluye vuelos ni hotel.</p>"
 INCLUDES_EN = "<ul><li>Assessment and digital design</li><li>No tooth reduction</li><li>Cleaning beforehand</li><li>Video follow-up at home</li></ul><p>Flights and hotel are not included.</p>"
 
-def ba(n, es=True):
-    a, d = ("Antes", "Después") if es else ("Before", "After")
-    alt_a = "Sonrisa antes del tratamiento" if es else "Smile before treatment"
-    alt_d = "Sonrisa después del diseño de sonrisa con la Dra. Catalina Beltrán" if es else "Smile after smile design with Dr. Catalina Beltrán"
-    w, h = (400, 600) if n == "caso2b" else (600, 367)
-    return (f'<div class="ba"><figure><img src="/img/{n}-antes-600.webp" width="{w}" height="{h}" alt="{alt_a}" loading="lazy"><figcaption>{a}</figcaption></figure>'
-            f'<figure><img src="/img/{n}-despues-600.webp" width="{w}" height="{h}" alt="{alt_d}" loading="lazy"><figcaption>{d}</figcaption></figure></div>')
+CASES = {
+    # archivo antes, archivo después, ancho, alto, alt antes ES, alt después ES, alt antes EN, alt después EN
+    "caso1": ("diseno-de-sonrisa-medellin-antes-caso-1.webp", "diseno-de-sonrisa-medellin-despues-caso-1.webp", 600, 367,
+              "Sonrisa antes del diseño de sonrisa, caso 1",
+              "La misma sonrisa después del diseño de sonrisa con la Dra. Catalina Beltrán en Medellín",
+              "Smile before smile design, case 1", "The same smile after smile design with Dr. Catalina Beltrán in Medellín"),
+    "caso2": ("carillas-emax-antes-caso-2.webp", "carillas-emax-sin-desgaste-despues-caso-2.webp", 600, 367,
+              "Dientes antes de las carillas de porcelana E-max, caso 2",
+              "Los mismos dientes después de carillas de porcelana E-max sin desgaste, Dra. Catalina Beltrán, Medellín",
+              "Teeth before E-max porcelain veneers, case 2", "The same teeth after no-prep E-max porcelain veneers, Dr. Catalina Beltrán, Medellín"),
+    "caso2b": ("caso2b-antes-600.webp", "caso2b-despues-600.webp", 400, 600,
+               "Sonrisa antes del tratamiento, vista de perfil", "La misma sonrisa después del tratamiento, vista de perfil",
+               "Smile before treatment, side view", "The same smile after treatment, side view"),
+}
+CAPTIONS = {"caso2": ("Caso real de carillas de porcelana E-max, sin desgaste dental, de la Dra. Catalina Beltrán en Medellín.",
+                      "Real case of no-prep E-max porcelain veneers by Dr. Catalina Beltrán in Medellín.")}
 
-VIDEO_ES = ('<figure><video controls playsinline preload="none" poster="/video/testimonio-eeuu-sub.webp" width="720" height="720">'
-            '<source src="/video/testimonio-eeuu-sub.mp4" type="video/mp4"></video>'
+def ba(n, es=True):
+    fa, fd, w, h, aa, ad, ea, ed = CASES[n]
+    a, d = ("Antes", "Después") if es else ("Before", "After")
+    alt_a, alt_d = (aa, ad) if es else (ea, ed)
+    cap = CAPTIONS.get(n)
+    capt = f'<p class="muted">{cap[0] if es else cap[1]}</p>' if cap else ""
+    return (f'<div class="ba"><figure><img src="/img/{fa}" width="{w}" height="{h}" alt="{alt_a}" loading="lazy" decoding="async"><figcaption>{a}</figcaption></figure>'
+            f'<figure><img src="/img/{fd}" width="{w}" height="{h}" alt="{alt_d}" loading="lazy" decoding="async"><figcaption>{d}</figcaption></figure></div>{capt}')
+
+VIDEO_FILE = "/video/paciente-estados-unidos-se-ve-por-primera-vez-diseno-de-sonrisa-medellin"
+VIDEO_SCHEMA = {
+    "@type": "VideoObject", "@id": DOMAIN + "/#video-paciente-eeuu",
+    "name": "Paciente de Estados Unidos se ve por primera vez después de su diseño de sonrisa en Medellín",
+    "description": "Un paciente de Estados Unidos se mira por primera vez al terminar su diseño de sonrisa con la Dra. Catalina Beltrán, odontóloga estética en El Poblado, Medellín.",
+    "thumbnailUrl": DOMAIN + VIDEO_FILE + ".webp", "contentUrl": DOMAIN + VIDEO_FILE + ".mp4",
+    "uploadDate": "2026-11-07", "duration": "PT19S", "inLanguage": "en",
+    "creator": {"@id": ID_PERSON}, "publisher": {"@id": ID_DENTIST},
+}
+VIDEO_ES = ('<figure><video controls title="Paciente de Estados Unidos se ve por primera vez después de su diseño de sonrisa en Medellín" playsinline preload="none" poster="/video/paciente-estados-unidos-se-ve-por-primera-vez-diseno-de-sonrisa-medellin.webp" width="720" height="720">'
+            '<source src="/video/paciente-estados-unidos-se-ve-por-primera-vez-diseno-de-sonrisa-medellin.mp4" type="video/mp4"></video>'
             '<figcaption>Paciente de Estados Unidos al verse por primera vez, al terminar su tratamiento en Medellín.</figcaption></figure>')
 VIDEO_EN = VIDEO_ES.replace("Paciente de Estados Unidos al verse por primera vez, al terminar su tratamiento en Medellín.",
                             "A patient from the United States seeing his new smile for the first time, right after treatment in Medellín.")
@@ -170,10 +197,10 @@ PATIENTS_EN = (PATIENTS_ES.replace("Paciente de Estados Unidos junto a la Dra. C
                .replace(">Paciente de Estados Unidos<", ">Patient from the United States<").replace(">Paciente de Italia<", ">Patient from Italy<")
                .replace(">Paciente de Manizales, Colombia<", ">Patient from Manizales, Colombia<"))
 
-DOCTOR_ES = """<div class="doc"><img src="/img/dra-catalina-480.webp" width="480" height="640" alt="Dra. Catalina Beltrán, odontóloga estética en Medellín" loading="lazy">
+DOCTOR_ES = """<div class="doc"><img src="/img/dra-catalina-beltran-odontologa-estetica-medellin-480.webp" width="480" height="640" alt="Dra. Catalina Beltrán, odontóloga estética en Medellín" loading="lazy">
 <div><h3>Dra. Catalina Beltrán</h3><p>Odontóloga con 15 años de experiencia, registrada en el RETHUS desde 2011 y especialista en Estética Dental. Revisa personalmente tus fotos, diseña tu sonrisa y te atiende en su consultorio de El Poblado, en español o en inglés.</p>
 <p><a href="/dra-catalina-beltran/">Conoce su formación y experiencia</a></p></div></div>"""
-DOCTOR_EN = """<div class="doc"><img src="/img/dra-catalina-480.webp" width="480" height="640" alt="Dr. Catalina Beltrán, cosmetic dentist in Medellín" loading="lazy">
+DOCTOR_EN = """<div class="doc"><img src="/img/dra-catalina-beltran-odontologa-estetica-medellin-480.webp" width="480" height="640" alt="Dr. Catalina Beltrán, cosmetic dentist in Medellín" loading="lazy">
 <div><h3>Dr. Catalina Beltrán</h3><p>A dentist with 15 years of experience, licensed in Colombia's national health registry (RETHUS) since 2011 and a specialist in Cosmetic Dentistry. She reviews your photos herself, designs your smile and treats you personally at her office in El Poblado, in English or Spanish.</p>
 <p><a href="/en/dr-catalina-beltran/">Her training and experience</a></p></div></div>"""
 

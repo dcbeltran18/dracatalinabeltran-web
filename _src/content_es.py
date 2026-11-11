@@ -58,14 +58,19 @@ PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Dis
     h1="Diseño de sonrisa en Medellín",
     lead=("En Medellín, la Dra. Catalina Beltrán hace diseños de sonrisa con carillas de porcelana E-max (USD 380 por diente) y de resina (USD 145 por diente), sin desgaste dental, en su consultorio de El Poblado. "
           "Recibes el plan y el precio cerrado antes de empezar, y la valoración es gratis por WhatsApp."),
-    wa=wa("diseño de sonrisa Medellín"), faqs=MED_FAQS, image="/img/caso2-despues-600.webp",
+    wa=wa("diseño de sonrisa Medellín"), faqs=MED_FAQS, image="/img/carillas-emax-sin-desgaste-despues-caso-2.webp", video=True,
     body=f"""<section><h2>¿Cuánto cuesta un diseño de sonrisa en Medellín?</h2>
 <p>Con la Dra. Catalina, una sonrisa completa de 20 carillas de porcelana E-max cuesta USD 5.900 (USD 295 por diente) y una sonrisa superior de 10 carillas, USD 3.800. En resina, cada diente cuesta USD 145. El precio incluye valoración y diseño digital, limpieza previa y control por videollamada. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
 <section><h2>¿Qué opciones hay?</h2>
 <p>Las dos formas de hacer un diseño completo son las <a href="{P_EMAX}">carillas de porcelana E-max</a>, más duraderas, y las <a href="{P_RES}">carillas de resina</a>, más económicas. Si solo quieres corregir pocos dientes o aclarar el color, hay opciones más pequeñas: <a href="{T}">compáralas en la guía de diseño de sonrisa</a>.</p></section>
 <section><h2>¿Cómo es el proceso en el consultorio?</h2>
 <p>Le escribes a la doctora por WhatsApp y le envías 3 fotos con tu celular. Ella te dice qué opción te conviene, cuántos dientes tratar y el precio cerrado; si prefieres, por videollamada. Antes de tocar un diente, planifica tu diseño digital. En el consultorio hace la limpieza previa y el tratamiento, y el control posterior es por videollamada.</p></section>
-<section><h2>Resultados en Medellín</h2>{ba("caso2")}<p><a href="{P_BA}">Ver todos los casos</a></p></section>
+<section><h2>Resultados en Medellín</h2>
+<h3>El momento en que se ve por primera vez</h3>
+<p>Este paciente viajó desde Estados Unidos a Medellín para su diseño de sonrisa con la Dra. Catalina. El video lo muestra en el consultorio de El Poblado, al terminar el tratamiento, cuando se mira por primera vez.</p>
+{VIDEO_ES}
+<h3>Antes y después: carillas de porcelana E-max</h3>
+{ba("caso2")}<p><a href="{P_BA}">Ver todos los casos de antes y después</a> · <a href="{P_EMAX}">Más sobre las carillas E-max</a></p></section>
 <section><h2>¿Por qué elegir a la Dra. Catalina?</h2>
 <ul><li>Carillas sin desgaste dental: tus dientes naturales se conservan.</li><li>Precio cerrado antes de empezar, publicado en dólares.</li><li>Atención personal de la doctora, en español e inglés.</li>
 <li>15 años de experiencia y registro en el RETHUS desde 2011.</li><li>Consultorio en El Poblado, una de las zonas de Medellín con más hoteles y restaurantes.</li></ul>
@@ -193,8 +198,8 @@ PAGES.append(dict(path=P_DRA, lang="es", alt="/en/dr-catalina-beltran/", crumb="
     h1="Dra. Catalina Beltrán",
     lead=("La Dra. Catalina Beltrán es odontóloga con 15 años de experiencia, registrada en el RETHUS desde 2011 y especialista en Estética Dental. "
           "Atiende personalmente a cada paciente en su consultorio de El Poblado, Medellín."),
-    wa="Hola Dra. Catalina 👋 Vi su página web y quiero saber el precio de mi diseño de sonrisa.", image="/img/dra-catalina-900.webp",
-    body=f"""<img src="/img/dra-catalina-900.webp" width="900" height="1200" alt="Dra. Catalina Beltrán, odontóloga estética" style="max-width:360px;border-radius:16px;margin:18px 0">
+    wa="Hola Dra. Catalina 👋 Vi su página web y quiero saber el precio de mi diseño de sonrisa.", image="/img/dra-catalina-beltran-odontologa-estetica-medellin.webp",
+    body=f"""<img src="/img/dra-catalina-beltran-odontologa-estetica-medellin.webp" width="900" height="1200" alt="Dra. Catalina Beltrán, odontóloga estética" style="max-width:360px;border-radius:16px;margin:18px 0">
 <section><h2>Formación</h2><table><tbody>
 <tr><td>Odontóloga con énfasis en ciencias quirúrgicas</td><td>Colegio Odontológico Colombiano</td></tr>
 <tr><td>Especialista en Estética Dental</td><td>Federación Odontológica Colombiana</td></tr>
@@ -212,7 +217,7 @@ PAGES.append(dict(path=P_BA, lang="es", crumb="Antes y después", schema_type="W
     desc="Fotos reales de antes y después de diseño de sonrisa en Medellín con la Dra. Catalina Beltrán, y el video de un paciente al ver su nueva sonrisa.",
     h1="Diseño de sonrisa: antes y después",
     lead="Estos son casos reales de pacientes de la Dra. Catalina Beltrán en Medellín, publicados con su autorización. Cada sonrisa se diseñó según la cara, el tono de piel y la mordida de cada persona.",
-    wa=wa("antes y después"),
+    wa=wa("antes y después"), video=True,
     body=f"""<section><h2>Caso 1</h2>{ba("caso1")}</section>
 <section><h2>Caso 2</h2>{ba("caso2")}{ba("caso2b")}</section>
 <section><h2>El momento en que se ve por primera vez</h2>{VIDEO_ES}</section>
@@ -232,7 +237,7 @@ PAGES.append(dict(path=P_INT, lang="es", crumb="Pacientes internacionales", sche
     h1="Diseño de sonrisa para pacientes internacionales",
     lead=("Si vives fuera de Colombia, recibes la valoración y el precio cerrado en dólares por WhatsApp antes de comprar el vuelo, y haces tu diseño de sonrisa en un solo viaje de mínimo 4 días a Medellín. "
           "El control posterior es por videollamada."),
-    wa="Hola Dra. Catalina 👋 Vi su página web (pacientes internacionales) y quiero saber el precio de mi caso.", faqs=INT_FAQS,
+    wa="Hola Dra. Catalina 👋 Vi su página web (pacientes internacionales) y quiero saber el precio de mi caso.", faqs=INT_FAQS, video=True,
     body=f"""<section><h2>¿Cómo funciona?</h2><ol>
 <li><b>Escríbele por WhatsApp</b> desde tu país. Cuéntale qué quieres cambiar y envía 3 fotos con tu celular.</li>
 <li><b>Recibe tu valoración y tu precio cerrado</b> en dólares. Si prefieres, por videollamada.</li>
