@@ -11,7 +11,7 @@ VEN_FAQS = [
     ("How many days do I need in Medellín?", "One trip of at least 4 days. You know your fixed price before you book your flight."),
     ("Does the doctor speak English?", "Yes. Dr. Catalina treats patients in English and Spanish, on WhatsApp and in person."),
     ("Do I need X-rays to get a quote?", "No. For an exact price you send 3 photos taken with your phone, and the doctor shows you how."),
-    ("Do veneers damage your teeth?", "Dr. Catalina places veneers with no tooth reduction. What damages a tooth is decay from poor hygiene, so daily brushing, flossing and check-ups keep it healthy."),
+    ("Do you need to shave down your teeth for veneers?", "No. Dr. Catalina places veneers with no tooth reduction, so your natural teeth are preserved. Daily brushing, flossing and check-ups keep them healthy."),
     ("Where is the office?", f"At {ADDRESS}, Colombia, in El Poblado. The Ibis Medellín hotel is 300 m away."),
 ]
 PAGES.append(dict(path=E_VEN, lang="en", alt="/diseno-de-sonrisa-medellin/", schema_type="MedicalWebPage",

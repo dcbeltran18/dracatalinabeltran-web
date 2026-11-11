@@ -23,13 +23,13 @@ PAGES = []
 # ---------------- INICIO ----------------
 PAGES.append(dict(path="/", lang="es", byline=False,
     title="Dra. Catalina Beltrán | Odontóloga estética en Medellín",
-    desc="Odontóloga estética en El Poblado, Medellín, con 15 años de experiencia y 5,0 en Google. Diseño de sonrisa con carillas de porcelana E-max y resina, precio cerrado y valoración gratis por WhatsApp.",
+    desc="Odontóloga estética en El Poblado, Medellín, con 15 años de experiencia y 5,0 en Google. Diseño de sonrisa con carillas sin desgaste dental, en porcelana E-max y resina, precio cerrado y valoración gratis por WhatsApp.",
     h1="Dra. Catalina Beltrán, odontóloga estética en Medellín",
     lead=("La Dra. Catalina Beltrán es odontóloga estética en El Poblado, Medellín, con 15 años de experiencia y calificación de 5,0 en Google. "
-          "Hace diseños de sonrisa con carillas de porcelana E-max y de resina, con precio cerrado antes de empezar: desde USD 145 por diente en resina y USD 5.900 por una sonrisa completa de 20 carillas de porcelana."),
+          "Hace diseños de sonrisa con carillas de porcelana E-max y de resina sin desgaste dental, con precio cerrado antes de empezar: desde USD 145 por diente en resina y USD 5.900 por una sonrisa completa de 20 carillas de porcelana."),
     wa="Hola Dra. Catalina 👋 Vi su página web y quiero saber el precio de mi diseño de sonrisa.",
     body=f"""<div class="cards"><div class="card"><b>5,0</b><span>Calificación en Google</span></div><div class="card"><b>15 años</b><span>de experiencia</span></div>
-<div class="card"><b>2011</b><span>Registrada en el RETHUS</span></div><div class="card"><b>USD 295</b><span>por diente en sonrisa completa de porcelana</span></div></div>
+<div class="card"><b>0 desgaste</b><span>Carillas sin desgastar tus dientes</span></div><div class="card"><b>USD 295</b><span>por diente en sonrisa completa de porcelana</span></div></div>
 <section><h2>Tratamientos</h2>
 <div class="cards">
 <a class="card" href="{P_EMAX}"><b>Porcelana E-max</b><span>Carillas de porcelana a la medida. USD 380 por diente.</span></a>
@@ -53,10 +53,10 @@ MED_FAQS = [
     ("¿Atienden en inglés?", "Sí. La doctora atiende en español e inglés, por WhatsApp y en el consultorio."),
 ]
 PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Diseño de sonrisa en Medellín", schema_type="MedicalWebPage",
-    title="Diseño de sonrisa en Medellín | Carillas en El Poblado",
-    desc="Diseño de sonrisa en Medellín con la Dra. Catalina Beltrán: carillas de porcelana E-max desde USD 380 y de resina desde USD 145 por diente, en El Poblado. Precio cerrado y valoración gratis.",
+    title="Diseño de sonrisa en Medellín | Carillas sin desgaste en El Poblado",
+    desc="Diseño de sonrisa en Medellín con la Dra. Catalina Beltrán: carillas sin desgaste dental, en porcelana E-max desde USD 380 y resina desde USD 145 por diente, en El Poblado. Precio cerrado y valoración gratis.",
     h1="Diseño de sonrisa en Medellín",
-    lead=("En Medellín, la Dra. Catalina Beltrán hace diseños de sonrisa con carillas de porcelana E-max (USD 380 por diente) y de resina (USD 145 por diente) en su consultorio de El Poblado. "
+    lead=("En Medellín, la Dra. Catalina Beltrán hace diseños de sonrisa con carillas de porcelana E-max (USD 380 por diente) y de resina (USD 145 por diente), sin desgaste dental, en su consultorio de El Poblado. "
           "Recibes el plan y el precio cerrado antes de empezar, y la valoración es gratis por WhatsApp."),
     wa=wa("diseño de sonrisa Medellín"), faqs=MED_FAQS, image="/img/caso2-despues-600.webp",
     body=f"""<section><h2>¿Cuánto cuesta un diseño de sonrisa en Medellín?</h2>
@@ -67,7 +67,7 @@ PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Dis
 <p>Le escribes a la doctora por WhatsApp y le envías 3 fotos con tu celular. Ella te dice qué opción te conviene, cuántos dientes tratar y el precio cerrado; si prefieres, por videollamada. Antes de tocar un diente, planifica tu diseño digital. En el consultorio hace la limpieza previa y el tratamiento, y el control posterior es por videollamada.</p></section>
 <section><h2>Resultados en Medellín</h2>{ba("caso2")}<p><a href="{P_BA}">Ver todos los casos</a></p></section>
 <section><h2>¿Por qué elegir a la Dra. Catalina?</h2>
-<ul><li>Precio cerrado antes de empezar, publicado en dólares.</li><li>Atención personal de la doctora, en español e inglés.</li>
+<ul><li>Carillas sin desgaste dental: tus dientes naturales se conservan.</li><li>Precio cerrado antes de empezar, publicado en dólares.</li><li>Atención personal de la doctora, en español e inglés.</li>
 <li>15 años de experiencia y registro en el RETHUS desde 2011.</li><li>Consultorio en El Poblado, una de las zonas de Medellín con más hoteles y restaurantes.</li></ul>
 {DOCTOR_ES}</section>
 <section><h2>¿Dónde queda el consultorio?</h2><p>{ADDRESS}. Si vienes de otro país, el hotel Ibis Medellín está a 300 m.</p>{MAP}</section>""",
@@ -108,16 +108,17 @@ PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="Me
 
 # ---------------- E-MAX ----------------
 EMAX_FAQS = [
+    ("¿Las carillas E-max requieren desgastar los dientes?", "Con la Dra. Catalina, no. Coloca las carillas sin desgaste dental, de modo que tus dientes naturales se conservan."),
     ("¿Las carillas E-max se manchan?", "No. La porcelana E-max no absorbe pigmentos como el café o el vino, por eso conserva su color."),  # [REVISAR]
     ("¿Las carillas pudren los dientes?", "No. Lo que daña un diente es la caries por mala higiene debajo o alrededor de la carilla. Con higiene diaria y controles, el diente se mantiene sano."),
     ("¿Cuándo no se pueden poner carillas?", "Cuando hay caries o enfermedad de encías sin tratar, o un bruxismo fuerte sin control. La doctora lo revisa en la valoración y, si hace falta, lo trata antes."),
 ]
 PAGES.append(dict(path=P_EMAX, lang="es", crumb="Carillas de porcelana E-max", parents=[TRAT], schema_type="MedicalWebPage",
     title="Carillas de porcelana E-max en Medellín: precio y duración",
-    desc="Carillas de porcelana E-max en Medellín: USD 380 por diente, 20 carillas por USD 5.900. Qué son, para quién, cuánto duran, ventajas y desventajas, y cómo se cuidan.",
+    desc="Carillas de porcelana E-max sin desgaste dental en Medellín: USD 380 por diente, 20 carillas por USD 5.900. Qué son, para quién, cuánto duran, ventajas y desventajas, y cómo se cuidan.",
     h1="Carillas de porcelana E-max",
     lead=("Las carillas E-max son láminas delgadas de porcelana de disilicato de litio que se adhieren al frente de los dientes para cambiar su forma, tamaño y color. "
-          "Con la Dra. Catalina Beltrán en Medellín cuestan USD 380 por diente, y la sonrisa completa de 20 carillas, USD 5.900."),
+          "Con la Dra. Catalina Beltrán en Medellín se colocan sin desgaste dental y cuestan USD 380 por diente; la sonrisa completa de 20 carillas cuesta USD 5.900."),
     wa=wa("carillas E-max"), faqs=EMAX_FAQS,
     body=f"""<section><h2>¿Qué son las carillas E-max?</h2>
 <p>E-max es una marca de porcelana de disilicato de litio. Es resistente y deja pasar la luz de forma parecida al esmalte natural, por eso se ve real de cerca. Cada carilla se fabrica a la medida según el diseño digital de tu sonrisa.</p></section>
@@ -130,7 +131,7 @@ PAGES.append(dict(path=P_EMAX, lang="es", crumb="Carillas de porcelana E-max", p
 <section><h2>Ventajas y desventajas de las carillas E-max</h2>
 <table><thead><tr><th>Ventajas</th><th>Desventajas</th></tr></thead><tbody>
 <tr><td>Conservan su color</td><td>Cuestan más que la resina</td></tr><tr><td>Aspecto natural de cerca</td><td>Se fabrican en laboratorio: no se hacen en una sola cita</td></tr>
-<tr><td>Más duraderas que la resina</td><td>Si una se fractura, se reemplaza la pieza</td></tr><tr><td>Se fabrican a la medida de tu diseño</td><td>Necesitan higiene y controles como cualquier diente</td></tr></tbody></table></section>
+<tr><td>Más duraderas que la resina</td><td>Si una se fractura, se reemplaza la pieza</td></tr><tr><td>Sin desgaste dental con la doctora</td><td>Necesitan higiene y controles como cualquier diente</td></tr></tbody></table></section>
 <section><h2>¿Cuánto tiempo toma el tratamiento?</h2>
 <p>Se hace en el <a href="{P_MED}">consultorio de El Poblado, Medellín</a>. Si vives fuera de Colombia, en un solo viaje de mínimo 4 días; antes de viajar ya tienes la valoración, el diseño y el precio cerrado. <a href="{P_INT}">Ver cómo funciona el viaje</a>.</p></section>
 <section><h2>¿Cómo se cuidan las carillas E-max?</h2><ul><li>Cepillado y seda dental todos los días.</li><li>Controles con la doctora (el primero, por videollamada).</li><li>No morder objetos duros ni abrir paquetes con los dientes.</li><li>Placa nocturna si aprietas o rechinas los dientes.</li></ul></section>
@@ -147,7 +148,7 @@ PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", parents=[TR
     desc="Diseño de sonrisa en resina en Medellín: USD 145 por diente. Cuánto dura, si se mancha y en qué se diferencia de la porcelana E-max. Tabla comparativa.",
     h1="Carillas de resina",
     lead=("Las carillas de resina se hacen con un material del color del diente que la doctora moldea sobre cada pieza para cambiar su forma, tamaño y color. "
-          f"Con la Dra. Catalina Beltrán en <a href='{P_MED}'>Medellín</a> cuestan USD 145 por diente y son la forma más económica de hacer un diseño de sonrisa completo."),
+          f"Con la Dra. Catalina Beltrán en <a href='{P_MED}'>Medellín</a> cuestan USD 145 por diente, sin desgaste dental, y son la forma más económica de hacer un diseño de sonrisa completo."),
     wa=wa("carillas de resina"), faqs=RES_FAQS,
     body=f"""<section><h2>¿Cuánto cuesta un diseño de sonrisa en resina?</h2>
 <p>USD 145 por diente. El total depende de cuántos dientes necesitas; la doctora te lo confirma gratis por WhatsApp. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
@@ -199,7 +200,7 @@ PAGES.append(dict(path=P_DRA, lang="es", alt="/en/dr-catalina-beltran/", crumb="
 <tr><td>Especialista en Estética Dental</td><td>Federación Odontológica Colombiana</td></tr>
 <tr><td>Especialización en Auditoría y Garantía de Calidad en Salud</td><td>Universidad EAN</td></tr>
 <tr><td>Registro profesional</td><td>RETHUS, desde 2011</td></tr></tbody></table></section>
-<section><h2>Cómo trabaja</h2><p>Revisa personalmente las fotos de cada paciente, diseña la sonrisa según la cara, el tono de piel y la mordida, y da un precio cerrado antes de empezar. Atiende en español e inglés.</p></section>
+<section><h2>Cómo trabaja</h2><p>Revisa personalmente las fotos de cada paciente, diseña la sonrisa según la cara, el tono de piel y la mordida, y da un precio cerrado antes de empezar. Trabaja carillas sin desgaste dental y atiende en español e inglés.</p></section>
 <section><h2>Pacientes</h2><p>Calificación de 5,0 en Google.</p>{PATIENTS_ES}</section>
 <section><h2>Tratamientos</h2><div class="related"><a href="{P_EMAX}">Carillas de porcelana E-max</a><a href="{P_RES}">Carillas de resina</a><a href="{T}">Guía de diseño de sonrisa</a></div></section>
 <section><h2>Consultorio</h2><p>{ADDRESS}. <a href="{P_CONT}">Contacto y mapa</a> · <a href="{INSTAGRAM}">Instagram</a></p></section>""",
