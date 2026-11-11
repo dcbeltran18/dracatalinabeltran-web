@@ -58,7 +58,7 @@ PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Dis
     h1="Diseño de sonrisa en Medellín",
     lead=("En Medellín, la Dra. Catalina Beltrán hace diseños de sonrisa con carillas de porcelana E-max (USD 380 por diente) y de resina (USD 145 por diente), sin desgaste dental, en su consultorio de El Poblado. "
           "Recibes el plan y el precio cerrado antes de empezar, y la valoración es gratis por WhatsApp."),
-    wa=wa("diseño de sonrisa Medellín"), faqs=MED_FAQS, image="/img/carillas-emax-sin-desgaste-despues-caso-2.webp", video=True,
+    wa=wa("diseño de sonrisa Medellín"), faqs=MED_FAQS, image="/video/paciente-estados-unidos-se-ve-por-primera-vez-diseno-de-sonrisa-medellin.webp", video=True,
     body=f"""<section><h2>¿Cuánto cuesta un diseño de sonrisa en Medellín?</h2>
 <p>Con la Dra. Catalina, una sonrisa completa de 20 carillas de porcelana E-max cuesta USD 5.900 (USD 295 por diente) y una sonrisa superior de 10 carillas, USD 3.800. En resina, cada diente cuesta USD 145. El precio incluye valoración y diseño digital, limpieza previa y control por videollamada. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
 <section><h2>¿Qué opciones hay?</h2>
@@ -69,8 +69,7 @@ PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Dis
 <h3>El momento en que se ve por primera vez</h3>
 <p>Este paciente viajó desde Estados Unidos a Medellín para su diseño de sonrisa con la Dra. Catalina. El video lo muestra en el consultorio de El Poblado, al terminar el tratamiento, cuando se mira por primera vez.</p>
 {VIDEO_ES}
-<h3>Antes y después: carillas de porcelana E-max</h3>
-{ba("caso2")}<p><a href="{P_BA}">Ver todos los casos de antes y después</a> · <a href="{P_EMAX}">Más sobre las carillas E-max</a></p></section>
+<p>Mira un <a href="{P_EMAX}">caso de carillas E-max sin desgaste, de frente y de perfil</a>, o <a href="{P_BA}">todos los casos de antes y después</a>.</p></section>
 <section><h2>¿Por qué elegir a la Dra. Catalina?</h2>
 <ul><li>Carillas sin desgaste dental: tus dientes naturales se conservan.</li><li>Precio cerrado antes de empezar, publicado en dólares.</li><li>Atención personal de la doctora, en español e inglés.</li>
 <li>15 años de experiencia y registro en el RETHUS desde 2011.</li><li>Consultorio en El Poblado, una de las zonas de Medellín con más hoteles y restaurantes.</li></ul>
@@ -124,9 +123,12 @@ PAGES.append(dict(path=P_EMAX, lang="es", crumb="Carillas de porcelana E-max", p
     h1="Carillas de porcelana E-max",
     lead=("Las carillas E-max son láminas delgadas de porcelana de disilicato de litio que se adhieren al frente de los dientes para cambiar su forma, tamaño y color. "
           "Con la Dra. Catalina Beltrán en Medellín se colocan sin desgaste dental y cuestan USD 380 por diente; la sonrisa completa de 20 carillas cuesta USD 5.900."),
-    wa=wa("carillas E-max"), faqs=EMAX_FAQS,
+    wa=wa("carillas E-max"), faqs=EMAX_FAQS, image="/img/carillas-emax-sin-desgaste-despues-caso-2.webp",
     body=f"""<section><h2>¿Qué son las carillas E-max?</h2>
 <p>E-max es una marca de porcelana de disilicato de litio. Es resistente y deja pasar la luz de forma parecida al esmalte natural, por eso se ve real de cerca. Cada carilla se fabrica a la medida según el diseño digital de tu sonrisa.</p></section>
+<section><h2>Resultados con carillas E-max</h2>
+<p>Este es un caso real de la Dra. Catalina: carillas de porcelana E-max colocadas sin desgaste dental, en su consultorio de El Poblado, Medellín. Arriba, la sonrisa de frente; abajo, el mismo paciente de perfil.</p>
+{ba("caso2")}{ba("caso2b")}<p><a href="{P_BA}">Ver más casos de antes y después</a></p></section>
 <section><h2>¿Cuánto cuestan las carillas E-max en Medellín?</h2>
 <p>USD 380 por diente. Diez carillas para la sonrisa superior cuestan USD 3.800 y la sonrisa completa de 20 carillas, USD 5.900, es decir, USD 295 por diente. <a href="{P_PRICE}">Ver qué incluye y la comparación con Estados Unidos</a>.</p></section>
 <section><h2>¿Para quién son?</h2>
@@ -218,8 +220,8 @@ PAGES.append(dict(path=P_BA, lang="es", crumb="Antes y después", schema_type="W
     h1="Diseño de sonrisa: antes y después",
     lead="Estos son casos reales de pacientes de la Dra. Catalina Beltrán en Medellín, publicados con su autorización. Cada sonrisa se diseñó según la cara, el tono de piel y la mordida de cada persona.",
     wa=wa("antes y después"), video=True,
-    body=f"""<section><h2>Caso 1</h2>{ba("caso1")}</section>
-<section><h2>Caso 2</h2>{ba("caso2")}{ba("caso2b")}</section>
+    body=f"""<section><h2>Caso 1: diseño de sonrisa</h2>{ba("caso1")}</section>
+<section><h2>Caso 2: carillas de porcelana E-max sin desgaste</h2>{ba("caso2")}{ba("caso2b")}<p><a href="{P_EMAX}">Qué son las carillas E-max y cuánto cuestan</a></p></section>
 <section><h2>El momento en que se ve por primera vez</h2>{VIDEO_ES}</section>
 <section><h2>Pacientes que viajaron a Medellín por su sonrisa</h2>{PATIENTS_ES}</section>
 <p class="note">Los resultados varían según cada caso. La doctora te dice qué es posible en el tuyo después de ver tus fotos.</p>""",

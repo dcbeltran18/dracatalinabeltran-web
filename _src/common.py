@@ -154,11 +154,15 @@ CASES = {
               "Dientes antes de las carillas de porcelana E-max, caso 2",
               "Los mismos dientes después de carillas de porcelana E-max sin desgaste, Dra. Catalina Beltrán, Medellín",
               "Teeth before E-max porcelain veneers, case 2", "The same teeth after no-prep E-max porcelain veneers, Dr. Catalina Beltrán, Medellín"),
-    "caso2b": ("caso2b-antes-600.webp", "caso2b-despues-600.webp", 400, 600,
-               "Sonrisa antes del tratamiento, vista de perfil", "La misma sonrisa después del tratamiento, vista de perfil",
-               "Smile before treatment, side view", "The same smile after treatment, side view"),
+    "caso2b": ("carillas-emax-antes-perfil-caso-2.webp", "carillas-emax-sin-desgaste-despues-perfil-caso-2.webp", 400, 600,
+               "Perfil de la sonrisa antes de las carillas de porcelana E-max, caso 2",
+               "Perfil de la misma sonrisa después de carillas de porcelana E-max sin desgaste, Dra. Catalina Beltrán, Medellín",
+               "Side view of the smile before E-max porcelain veneers, case 2",
+               "Side view of the same smile after no-prep E-max porcelain veneers, Dr. Catalina Beltrán, Medellín"),
 }
-CAPTIONS = {"caso2": ("Caso real de carillas de porcelana E-max, sin desgaste dental, de la Dra. Catalina Beltrán en Medellín.",
+CAPTIONS = {"caso2b": ("Mismo paciente, vista de perfil, antes y después de sus carillas E-max.",
+                       "Same patient, side view, before and after his E-max veneers."),
+            "caso2": ("Caso real de carillas de porcelana E-max, sin desgaste dental, de la Dra. Catalina Beltrán en Medellín.",
                       "Real case of no-prep E-max porcelain veneers by Dr. Catalina Beltrán in Medellín.")}
 
 def ba(n, es=True):
