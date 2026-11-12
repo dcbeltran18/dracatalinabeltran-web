@@ -135,6 +135,10 @@ def main():
     with open(os.path.join(ROOT, "style.css"), "w", encoding="utf-8") as f:
         f.write(CSS.strip() + "\n")
     errors = []
+    import shutil
+    for base, new in COPIES:
+        if not os.path.exists(os.path.join(ROOT, "img", new)):
+            shutil.copy(os.path.join(ROOT, "img", base), os.path.join(ROOT, "img", new))
     for p in pages:
         out = layout(p)
         # control de enlaces internos rotos

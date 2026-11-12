@@ -174,6 +174,16 @@ def ba(n, es=True):
     return (f'<div class="ba"><figure><img src="/img/{fa}" width="{w}" height="{h}" alt="{alt_a}" loading="lazy" decoding="async"><figcaption>{a}</figcaption></figure>'
             f'<figure><img src="/img/{fd}" width="{w}" height="{h}" alt="{alt_d}" loading="lazy" decoding="async"><figcaption>{d}</figcaption></figure></div>{capt}')
 
+COPIES = []  # (archivo base, archivo nuevo): build.py crea las copias con nombre propio por página
+
+def ba_page(n, fa_new, fd_new, alt_a, alt_d, caption):
+    """El mismo caso en otra página, con nombre de archivo, alt y leyenda propios de ese tema."""
+    fa, fd, w, h = CASES[n][:4]
+    COPIES.extend([(fa, fa_new), (fd, fd_new)])
+    return (f'<div class="ba"><figure><img src="/img/{fa_new}" width="{w}" height="{h}" alt="{alt_a}" loading="lazy" decoding="async"><figcaption>Antes</figcaption></figure>'
+            f'<figure><img src="/img/{fd_new}" width="{w}" height="{h}" alt="{alt_d}" loading="lazy" decoding="async"><figcaption>Después</figcaption></figure></div>'
+            f'<p class="muted">{caption}</p>')
+
 VIDEO_FILE = "/video/paciente-estados-unidos-se-ve-por-primera-vez-diseno-de-sonrisa-medellin"
 VIDEO_SCHEMA = {
     "@type": "VideoObject", "@id": DOMAIN + "/#video-paciente-eeuu",

@@ -69,7 +69,12 @@ PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Dis
 <h3>El momento en que se ve por primera vez</h3>
 <p>Este paciente viajó desde Estados Unidos a Medellín para su diseño de sonrisa con la Dra. Catalina. El video lo muestra en el consultorio de El Poblado, al terminar el tratamiento, cuando se mira por primera vez.</p>
 {VIDEO_ES}
-<p>Mira un <a href="{P_EMAX}">caso de carillas E-max sin desgaste, de frente y de perfil</a>, o <a href="{P_BA}">todos los casos de antes y después</a>.</p></section>
+<h3>Antes y después en el consultorio de El Poblado</h3>
+<p>Un caso real de la Dra. Catalina en Medellín: carillas de porcelana E-max colocadas sin desgaste dental, en su consultorio de El Poblado.</p>
+{ba_page("caso2", "diseno-de-sonrisa-medellin-el-poblado-antes.webp", "diseno-de-sonrisa-medellin-el-poblado-despues-carillas-emax.webp",
+ "Sonrisa antes del diseño de sonrisa en Medellín", "La misma sonrisa después del diseño de sonrisa con carillas E-max sin desgaste en El Poblado, Medellín",
+ "Caso real en el consultorio de El Poblado, Medellín: carillas de porcelana E-max sin desgaste.")}
+<p>Mira el <a href="{P_EMAX}">mismo caso de frente y de perfil</a>, o <a href="{P_BA}">todos los casos de antes y después</a>.</p></section>
 <section><h2>¿Por qué elegir a la Dra. Catalina?</h2>
 <ul><li>Carillas sin desgaste dental: tus dientes naturales se conservan.</li><li>Precio cerrado antes de empezar, publicado en dólares.</li><li>Atención personal de la doctora, en español e inglés.</li>
 <li>15 años de experiencia y registro en el RETHUS desde 2011.</li><li>Consultorio en El Poblado, una de las zonas de Medellín con más hoteles y restaurantes.</li></ul>
@@ -98,6 +103,17 @@ PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="Me
 <tr><td>Microdiseño</td><td>Detalles en pocos dientes</td><td>Corregir un borde, un espacio o un diente</td></tr>
 <tr><td>Blanqueamiento</td><td>Solo el color de dientes naturales</td><td>Dientes sanos con manchas</td></tr></tbody></table>
 <p>Precios: {PRICE_LINE}</p></section>
+<section><h2>¿Cómo se ve un diseño de sonrisa antes y después?</h2>
+<p>Un diseño de sonrisa cambia la forma, el tamaño y el color de los dientes visibles, siempre en proporción con la cara. Estos son dos casos reales de la Dra. Catalina en Medellín.</p>
+<h3>Diseño de sonrisa completo</h3>
+{ba_page("caso1", "que-es-diseno-de-sonrisa-antes.webp", "que-es-diseno-de-sonrisa-despues.webp",
+ "Dientes antes de un diseño de sonrisa, caso real en Medellín", "Los mismos dientes después del diseño de sonrisa: forma, tamaño y color en proporción con la cara",
+ "Ejemplo de diseño de sonrisa: cambio de forma, tamaño y color de los dientes visibles.")}
+<h3>Diseño de sonrisa con carillas de porcelana E-max</h3>
+{ba_page("caso2", "tipos-de-diseno-de-sonrisa-carillas-emax-antes.webp", "tipos-de-diseno-de-sonrisa-carillas-emax-despues.webp",
+ "Sonrisa antes de un diseño de sonrisa con carillas de porcelana", "La misma sonrisa después de un diseño de sonrisa con carillas de porcelana E-max sin desgaste",
+ "Uno de los tipos de diseño de sonrisa: carillas de porcelana E-max, colocadas sin desgaste dental.")}
+<p><a href="{P_BA}">Ver todos los casos de antes y después</a></p></section>
 <section><h2>¿Qué es mejor, diseño de sonrisa o microdiseño?</h2>
 <p>Si solo te molestan uno o pocos dientes (un borde desgastado, un espacio pequeño, un diente más corto), un microdiseño basta y la inversión es menor. Si quieres cambiar forma, tamaño y color de toda la zona visible al sonreír, conviene un diseño completo con carillas. El microdiseño se cobra según el número de dientes tratados.</p></section>
 <section><h2>¿Blanqueamiento o carillas?</h2>
@@ -185,6 +201,11 @@ PAGES.append(dict(path=P_PRICE, lang="es", alt="/en/cost-of-veneers-colombia/", 
     body=f"""<section><h2>Precios de referencia 2026</h2>{PRICE_TABLE_ES}
 <p class="muted">Precios vigentes al {fecha_es(UPDATED)}. Tu precio exacto depende de cuántos dientes necesitas: la doctora te lo confirma gratis por WhatsApp.</p></section>
 <section><h2>¿Qué incluye el precio?</h2>{INCLUDES_ES}<p>Si vives fuera de Colombia, <a href="{P_INT}">así funciona el viaje</a>.</p></section>
+<section><h2>¿Qué resultado obtienes por ese precio?</h2>
+<p>Este es un caso real de carillas de porcelana E-max de la Dra. Catalina, del tipo de tratamiento que se cotiza con precio cerrado en dólares. El precio exacto de tu caso depende de cuántos dientes necesitas.</p>
+{ba_page("caso2", "precio-carillas-emax-colombia-antes.webp", "precio-carillas-emax-colombia-despues.webp",
+ "Sonrisa antes de carillas de porcelana E-max cotizadas con precio cerrado", "Resultado de carillas de porcelana E-max sin desgaste con precio cerrado en dólares, Medellín, Colombia",
+ "Resultado real de carillas E-max sin desgaste en Medellín, con precio cerrado antes de empezar.")}</section>
 <section><h2>¿Cuánto cuesta en Colombia frente a Estados Unidos?</h2>
 <table><thead><tr><th>Tratamiento</th><th>EE. UU. (rango publicado)</th><th>Dra. Catalina, Medellín</th></tr></thead><tbody>
 <tr><td>Carilla de porcelana</td><td>USD 925–2.500</td><td>USD 380</td></tr><tr><td>Carilla de resina</td><td>USD 250–1.500</td><td>USD 145</td></tr></tbody></table>
