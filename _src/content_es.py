@@ -173,7 +173,8 @@ PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", parents=[TR
     lead=("Las carillas de resina se hacen con un material del color del diente que la doctora moldea sobre cada pieza para cambiar su forma, tamaño y color. "
           f"Con la Dra. Catalina Beltrán en <a href='{P_MED}'>Medellín</a> cuestan USD 145 por diente, sin desgaste dental, y son la forma más económica de hacer un diseño de sonrisa completo."),
     wa=wa("carillas de resina"), faqs=RES_FAQS,
-    body=f"""<section><h2>¿Cuánto cuesta un diseño de sonrisa en resina?</h2>
+    body=f"""<section><h2>Un caso real en resina</h2><p>Así cambió esta sonrisa con un diseño en resina hecho por la Dra. Catalina Beltrán.</p>{ba("caso3")}<p><a href="{P_BA}">Ver todos los casos de antes y después</a></p></section>
+<section><h2>¿Cuánto cuesta un diseño de sonrisa en resina?</h2>
 <p>USD 145 por diente. El total depende de cuántos dientes necesitas; la doctora te lo confirma gratis por WhatsApp. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
 <section><h2>¿Qué es mejor, resina o porcelana?</h2>
 <p>La porcelana E-max dura más y conserva su color; la resina cuesta menos de la mitad y se puede retocar. Si buscas el resultado más duradero, conviene porcelana; si quieres un cambio completo con menor inversión, o probar un diseño, conviene resina.</p>
@@ -243,6 +244,7 @@ PAGES.append(dict(path=P_BA, lang="es", crumb="Antes y después", schema_type="W
     wa=wa("antes y después"), video=True,
     body=f"""<section><h2>Caso 1: diseño de sonrisa</h2>{ba("caso1")}</section>
 <section><h2>Caso 2: carillas de porcelana E-max sin desgaste</h2>{ba("caso2")}{ba("caso2b")}<p><a href="{P_EMAX}">Qué son las carillas E-max y cuánto cuestan</a></p></section>
+<section><h2>Caso 3: diseño de sonrisa en resina</h2>{ba("caso3")}<p><a href="{P_RES}">Qué es el diseño de sonrisa en resina y cuánto cuesta</a></p></section>
 <section><h2>El momento en que se ve por primera vez</h2>{VIDEO_ES}</section>
 <section><h2>Pacientes que viajaron a Medellín por su sonrisa</h2>{PATIENTS_ES}</section>
 <p class="note">Los resultados varían según cada caso. La doctora te dice qué es posible en el tuyo después de ver tus fotos.</p>""",

@@ -159,9 +159,15 @@ CASES = {
                "Perfil de la misma sonrisa después de carillas de porcelana E-max sin desgaste, Dra. Catalina Beltrán, Medellín",
                "Side view of the smile before E-max porcelain veneers, case 2",
                "Side view of the same smile after no-prep E-max porcelain veneers, Dr. Catalina Beltrán, Medellín"),
+    "caso3": ("diseno-de-sonrisa-en-resina-antes-caso-3.webp", "diseno-de-sonrisa-en-resina-despues-caso-3.webp", 600, 367,
+              "Sonrisa antes del diseño de sonrisa en resina, caso 3",
+              "La misma sonrisa después del diseño de sonrisa en resina con la Dra. Catalina Beltrán en Medellín",
+              "Smile before composite smile design, case 3", "The same smile after composite smile design with Dr. Catalina Beltrán in Medellín"),
 }
 CAPTIONS = {"caso2b": ("Mismo paciente, vista de perfil, antes y después de sus carillas E-max.",
                        "Same patient, side view, before and after his E-max veneers."),
+            "caso3": ("Caso real de diseño de sonrisa en resina de la Dra. Catalina Beltrán en Medellín.",
+                      "Real case of composite smile design by Dr. Catalina Beltrán in Medellín."),
             "caso2": ("Caso real de carillas de porcelana E-max, sin desgaste dental, de la Dra. Catalina Beltrán en Medellín.",
                       "Real case of no-prep E-max porcelain veneers by Dr. Catalina Beltrán in Medellín.")}
 
