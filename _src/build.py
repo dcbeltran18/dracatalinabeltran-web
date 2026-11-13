@@ -117,7 +117,7 @@ def layout(p):
 <meta property="og:locale" content="{"es_CO" if es else "en_US"}"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/icon-180.png">
 <link rel="preload" href="/fonts/jost-300.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css?v={ASSET_V}">
 <script type="application/ld+json">{ld}</script>
 </head><body>
 <a class="skip" href="#main">{"Saltar al contenido" if es else "Skip to content"}</a>
@@ -132,8 +132,16 @@ def layout(p):
 </article></main>
 <footer><div class="wrap">{foot}</div></footer>
 <a class="float" href="{wa}" aria-label="WhatsApp">{WA_ICON}<span>WhatsApp</span></a>
-<script src="/site.js" defer></script>
+<script src="/site.js?v={ASSET_V}" defer></script>
 </body></html>"""
+
+def _asset_v():
+    import hashlib
+    h = hashlib.md5(CSS.strip().encode())
+    with open(os.path.join(ROOT, "site.js"), "rb") as f:
+        h.update(f.read())
+    return h.hexdigest()[:8]
+ASSET_V = _asset_v()
 
 def main():
     pages = content_es.PAGES + content_en.PAGES
