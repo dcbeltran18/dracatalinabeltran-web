@@ -173,7 +173,7 @@ PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", parents=[TR
     lead=("Las carillas de resina se hacen con un material del color del diente que la doctora moldea sobre cada pieza para cambiar su forma, tamaño y color. "
           f"Con la Dra. Catalina Beltrán en <a href='{P_MED}'>Medellín</a> cuestan USD 145 por diente, sin desgaste dental, y son la forma más económica de hacer un diseño de sonrisa completo."),
     wa=wa("carillas de resina"), faqs=RES_FAQS,
-    body=f"""<section><h2>Un caso real en resina</h2><p>Así cambió esta sonrisa con un diseño en resina hecho por la Dra. Catalina Beltrán.</p>{ba("caso3")}<p><a href="{P_BA}">Ver todos los casos de antes y después</a></p></section>
+    body=f"""<section><h2>Un caso real en resina</h2><p>Este paciente viajó desde Estados Unidos para su diseño de sonrisa en resina con la Dra. Catalina Beltrán: 12 dientes, 6 superiores y 6 inferiores.</p>{ba("caso3")}<p><a href="{P_BA}">Ver todos los casos de antes y después</a></p></section>
 <section><h2>¿Cuánto cuesta un diseño de sonrisa en resina?</h2>
 <p>USD 145 por diente. El total depende de cuántos dientes necesitas; la doctora te lo confirma gratis por WhatsApp. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
 <section><h2>¿Qué es mejor, resina o porcelana?</h2>
