@@ -244,7 +244,6 @@ PAGES.append(dict(path=P_BA, lang="es", crumb="Antes y después", schema_type="W
     wa=wa("antes y después"), video=True,
     body=f"""<section><h2>Caso 1: diseño de sonrisa</h2>{ba("caso1")}</section>
 <section><h2>Caso 2: carillas de porcelana E-max sin desgaste</h2>{ba("caso2")}{ba("caso2b")}<p><a href="{P_EMAX}">Qué son las carillas E-max y cuánto cuestan</a></p></section>
-<section><h2>Caso 3: diseño de sonrisa en resina</h2>{ba("caso3")}<p><a href="{P_RES}">Qué es el diseño de sonrisa en resina y cuánto cuesta</a></p></section>
 <section><h2>El momento en que se ve por primera vez</h2>{VIDEO_ES}</section>
 <section><h2>Pacientes que viajaron a Medellín por su sonrisa</h2>{PATIENTS_ES}</section>
 <p class="note">Los resultados varían según cada caso. La doctora te dice qué es posible en el tuyo después de ver tus fotos.</p>""",
