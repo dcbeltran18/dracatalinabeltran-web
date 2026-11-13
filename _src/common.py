@@ -99,6 +99,15 @@ footer{border-top:1px solid var(--line);margin-top:56px;padding:28px 0 96px;font
 footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}footer b{color:var(--text);font-weight:500}
 footer ul{list-style:none;padding:0;margin:6px 0}footer li{margin:4px 0}
 .float{position:fixed;right:16px;bottom:16px;z-index:9;display:flex;gap:8px;align-items:center;background:var(--wa);color:var(--wa-ink);border-radius:999px;padding:12px 18px;font-weight:500;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.cmp{position:relative;width:100%;margin:14px 0 6px;overflow:hidden;user-select:none;touch-action:pan-y;border-radius:6px;background:#1b3034}
+.cmp>div{position:absolute;inset:0}.cmp img{width:100%;height:100%;object-fit:cover;display:block}
+.cmp-a{clip-path:inset(0 0 0 var(--pos,50%))}
+.cmp-t{position:absolute;top:12px;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;background:rgba(13,27,30,.75);color:#fff;pointer-events:none}
+.cmp-t.l{left:12px}.cmp-t.r{right:12px}
+.cmp-h{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:#fff;transform:translateX(-1px);pointer-events:none}
+.cmp-h::after{content:"";position:absolute;top:50%;left:50%;width:42px;height:42px;border-radius:50%;background:#fff;transform:translate(-50%,-50%);box-shadow:0 2px 10px rgba(0,0,0,.25);background-image:linear-gradient(90deg,transparent 13px,#0d1b1e 13px 15px,transparent 15px 27px,#0d1b1e 27px 29px,transparent 29px)}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.cmp-hint{text-align:center;font-size:13px;margin-top:0}
 """
 
 WA_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>'
@@ -179,6 +188,23 @@ def ba(n, es=True):
     capt = f'<p class="muted">{cap[0] if es else cap[1]}</p>' if cap else ""
     return (f'<div class="ba"><figure><img src="/img/{fa}" width="{w}" height="{h}" alt="{alt_a}" loading="lazy" decoding="async"><figcaption>{a}</figcaption></figure>'
             f'<figure><img src="/img/{fd}" width="{w}" height="{h}" alt="{alt_d}" loading="lazy" decoding="async"><figcaption>{d}</figcaption></figure></div>{capt}')
+
+def ba_slider(n, es=True):
+    """Antes y después con máscara deslizable. Las dos fotos siguen en el HTML con su alt (SEO igual)."""
+    fa, fd, w, h, aa, ad, ea, ed = CASES[n]
+    a, d = ("Antes", "Después") if es else ("Before", "After")
+    alt_a, alt_d = (aa, ad) if es else (ea, ed)
+    hint = "Desliza la línea para comparar." if es else "Drag the line to compare."
+    lab = "Comparar antes y después" if es else "Compare before and after"
+    cap = CAPTIONS.get(n)
+    capt = f'<p class="muted">{cap[0] if es else cap[1]}</p>' if cap else ""
+    def im(f, alt):
+        b = f[:-5]
+        return (f'<img src="/img/{f}" srcset="/img/{f} 600w, /img/{b}-910.webp 910w" sizes="(min-width:880px) 840px, calc(100vw - 40px)" '
+                f'width="{w}" height="{h}" alt="{alt}" loading="lazy" decoding="async">')
+    return (f'<figure class="cmp" style="--pos:50%;aspect-ratio:{w}/{h}"><div class="cmp-b">{im(fa, alt_a)}</div><div class="cmp-a">{im(fd, alt_d)}</div>'
+            f'<span class="cmp-t l">{a}</span><span class="cmp-t r">{d}</span><span class="cmp-h" aria-hidden="true"></span>'
+            f'<input type="range" min="0" max="100" value="50" aria-label="{lab}"></figure><p class="muted cmp-hint">{hint}</p>{capt}')
 
 COPIES = []  # (archivo base, archivo nuevo): build.py crea las copias con nombre propio por página
 

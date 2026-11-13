@@ -39,6 +39,11 @@ def schema_graph(p):
         page["lastReviewed"] = p.get("updated", UPDATED)
     if p.get("image"):
         page["primaryImageOfPage"] = DOMAIN + p["image"]
+    if p.get("image_obj"):
+        src, iw, ih, icap = p["image_obj"]
+        page["primaryImageOfPage"] = {"@type": "ImageObject", "contentUrl": DOMAIN + src, "url": DOMAIN + src, "width": iw, "height": ih,
+            "caption": icap, "creditText": "Dra. Catalina Beltrán", "creator": {"@id": ID_PERSON},
+            "copyrightNotice": "© Dra. Catalina Beltrán"}
     crumbs = [("Inicio" if es else "Veneers in Medellín", HOME_ES if es else HOME_EN)] + p.get("parents", []) + [(p["crumb"], p["path"])] if p.get("crumb") else None
     if crumbs:
         page["breadcrumb"] = {"@id": url + "#breadcrumb"}
@@ -102,12 +107,13 @@ def layout(p):
     cta = (CTA_ES if es else CTA_EN).replace("{WA}", wa).replace("{WAICON}", WA_ICON)
     lead = f'<p class="lead">{p["lead"]}</p>' if p.get("lead") else ""
     first_cta = "" if p.get("no_top_cta") else cta
+    og_extra = (f'<meta property="og:image:alt" content="{p["og_alt"]}">') if p.get("og_alt") else ""
     return f"""<!doctype html>
 <html lang="{p["lang"]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{p["title"]}</title><meta name="description" content="{p["desc"]}">{robots}
 <link rel="canonical" href="{DOMAIN}{p["path"]}">{alt}
 <meta property="og:title" content="{p["title"]}"><meta property="og:description" content="{p["desc"]}">
-<meta property="og:image" content="{DOMAIN}/img/og.jpg"><meta property="og:url" content="{DOMAIN}{p["path"]}"><meta property="og:type" content="website">
+<meta property="og:image" content="{DOMAIN}{p.get("og", "/img/og.jpg")}">{og_extra}<meta property="og:url" content="{DOMAIN}{p["path"]}"><meta property="og:type" content="website">
 <meta property="og:locale" content="{"es_CO" if es else "en_US"}"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/icon-180.png">
 <link rel="preload" href="/fonts/jost-300.woff2" as="font" type="font/woff2" crossorigin>

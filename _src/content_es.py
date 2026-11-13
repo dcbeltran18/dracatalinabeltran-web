@@ -166,14 +166,14 @@ RES_FAQS = [
     ("¿Las carillas de resina se manchan?", "Pueden pigmentarse con los años, sobre todo con café, vino o cigarrillo. Un pulido en el control ayuda a mantener el brillo."),  # [REVISAR]
     ("¿Se pueden cambiar después a porcelana?", "Sí. Muchas personas empiezan con resina y luego pasan a porcelana E-max. La doctora te dice cuándo conviene."),
 ]
-PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", parents=[TRAT], schema_type="MedicalWebPage",
+PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", updated="2026-11-13", og="/img/og-diseno-de-sonrisa-en-resina-caso-3.jpg", og_alt="Sonrisa después del diseño de sonrisa en resina en 12 dientes con la Dra. Catalina Beltrán en Medellín", image_obj=("/img/diseno-de-sonrisa-en-resina-despues-caso-3-910.webp", 910, 556, "Diseño de sonrisa en resina en 12 dientes de un paciente de Estados Unidos, hecho por la Dra. Catalina Beltrán en Medellín"), parents=[TRAT], schema_type="MedicalWebPage",
     title="Carillas de resina en Medellín: precio, duración y diferencias",
     desc="Diseño de sonrisa en resina en Medellín: USD 145 por diente. Cuánto dura, si se mancha y en qué se diferencia de la porcelana E-max. Tabla comparativa.",
     h1="Carillas de resina",
     lead=("Las carillas de resina se hacen con un material del color del diente que la doctora moldea sobre cada pieza para cambiar su forma, tamaño y color. "
           f"Con la Dra. Catalina Beltrán en <a href='{P_MED}'>Medellín</a> cuestan USD 145 por diente, sin desgaste dental, y son la forma más económica de hacer un diseño de sonrisa completo."),
     wa=wa("carillas de resina"), faqs=RES_FAQS,
-    body=f"""<section><h2>Un caso real en resina</h2><p>Este paciente viajó desde Estados Unidos para su diseño de sonrisa en resina con la Dra. Catalina Beltrán: 12 dientes, 6 superiores y 6 inferiores.</p>{ba("caso3")}<p><a href="{P_BA}">Ver todos los casos de antes y después</a></p></section>
+    body=f"""<section><h2>Un caso real en resina</h2><p>Este paciente viajó desde Estados Unidos para su diseño de sonrisa en resina con la Dra. Catalina Beltrán: 12 dientes, 6 superiores y 6 inferiores.</p>{ba_slider("caso3")}<p><a href="{P_BA}">Ver todos los casos de antes y después</a></p></section>
 <section><h2>¿Cuánto cuesta un diseño de sonrisa en resina?</h2>
 <p>USD 145 por diente. El total depende de cuántos dientes necesitas; la doctora te lo confirma gratis por WhatsApp. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
 <section><h2>¿Qué es mejor, resina o porcelana?</h2>

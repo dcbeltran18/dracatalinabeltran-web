@@ -32,3 +32,4 @@ const carga=()=>{try{const n=performance.getEntriesByType('navigation')[0];const
 let sent=false;
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&!sent){sent=true;send({ev:'out',hasta:Math.min(max,100)+'%',seg:Math.round((Date.now()-t0)/1000),carga:carga(),videos:''});}});
 })();
+document.querySelectorAll('.cmp input').forEach(r=>r.addEventListener('input',()=>r.parentNode.style.setProperty('--pos',r.value+'%')));
