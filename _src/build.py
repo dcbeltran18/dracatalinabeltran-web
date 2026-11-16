@@ -32,7 +32,7 @@ def schema_graph(p):
     ]
     page = {"@type": p.get("schema_type", "WebPage"), "@id": url + "#webpage", "url": url, "name": p["title"],
             "description": p["desc"], "inLanguage": p["lang"], "isPartOf": {"@id": DOMAIN + "/#website"},
-            "about": {"@id": ID_DENTIST}, "dateModified": p.get("updated", UPDATED) + "T09:00:00-05:00"}
+            "about": {"@id": ID_DENTIST}, "dateModified": p.get("updated", UPDATED) + "T00:00:00-05:00"}
     if p.get("schema_type") == "ProfilePage":
         page["mainEntity"] = {"@id": ID_PERSON}
     if p.get("byline", True):
