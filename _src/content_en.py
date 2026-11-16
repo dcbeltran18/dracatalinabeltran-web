@@ -32,7 +32,7 @@ PAGES.append(dict(path=E_VEN, lang="en", alt="/diseno-de-sonrisa-medellin/", sch
 <section><h2>Porcelain or composite veneers?</h2>
 <p>E-max porcelain lasts longer, 10 to 20 years or even more with proper care, and keeps its color; composite costs less than half and can be touched up.</p>
 <table><thead><tr><th></th><th>Composite</th><th>E-max porcelain</th></tr></thead><tbody>
-<tr><td>Price per tooth</td><td>USD 145</td><td>USD 380</td></tr><tr><td>Color over time</td><td>Can stain</td><td>Keeps its color</td></tr><tr><td>Durability</td><td>Lower</td><td>10 to 20 years, or more</td></tr><tr><td>Repairs</td><td>Can be touched up</td><td>The piece is replaced</td></tr></tbody></table></section>
+<tr><td>Price per tooth</td><td>USD 145</td><td>USD 380</td></tr><tr><td>Color over time</td><td>Can stain</td><td>Keeps its color</td></tr><tr><td>Durability</td><td>5 to 7 years on average, up to 10 with care</td><td>10 to 20 years, or more</td></tr><tr><td>Repairs</td><td>Can be touched up</td><td>The piece is replaced</td></tr></tbody></table></section>
 <section><h2>Real results</h2><p>These are real results of smile design by Dr. Catalina Beltrán at her office in El Poblado, Medellín, published with the patients' permission. The video shows a patient from the United States seeing his new smile for the first time.</p>{ba("caso1", False)}{VIDEO_EN}</section>
 <section><h2>Patients who flew to Medellín</h2><p>Patients from the United States, Italy and other parts of Colombia have had their smile design with Dr. Catalina Beltrán in Medellín.</p>{PATIENTS_EN}</section>
 <section><h2>Your dentist</h2>{DOCTOR_EN}</section>

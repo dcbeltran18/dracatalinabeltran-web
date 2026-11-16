@@ -124,7 +124,7 @@ PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="Me
 <section><h2>¿Cómo se hace un diseño de sonrisa?</h2>
 <p>La doctora revisa tus fotos y la salud de tus dientes y encías. Luego diseña digitalmente tu sonrisa según tu cara, tu tono de piel y tu mordida, y te muestra el plan con el precio cerrado. Solo cuando lo apruebas se hace la limpieza previa y el tratamiento en el <a href="{P_MED}">consultorio de El Poblado, Medellín</a>. El control posterior es por videollamada.</p></section>
 <section><h2>¿Cuánto dura un diseño de sonrisa?</h2>
-<p>Depende del material y de tus cuidados. La porcelana E-max es la opción más duradera: entre 10 y 20 años, e incluso más con un mantenimiento adecuado, y conserva su color; la resina dura menos y con los años puede necesitar pulido o retoques. En ambos casos influyen la higiene diaria, los controles y hábitos como morder objetos duros o apretar los dientes.</p></section>
+<p>Depende del material y de tus cuidados. La porcelana E-max es la opción más duradera: entre 10 y 20 años, e incluso más con un mantenimiento adecuado, y conserva su color. La resina dura en promedio de 5 a 7 años y, con mantenimiento, puede llegar hasta 10 años; con los años puede necesitar pulido o retoques. En ambos casos influyen la higiene diaria, los controles y hábitos como morder objetos duros o apretar los dientes.</p></section>
 <section><h2>¿Quién puede hacerse un diseño de sonrisa?</h2>
 <p>Adultos con dientes y encías sanos, o que los tratan antes. Si tienes caries, enfermedad de las encías o bruxismo, la doctora lo evalúa primero y te dice si conviene tratarlo antes de empezar.</p></section>""",
     related=[("Carillas de porcelana E-max", P_EMAX), ("Carillas de resina", P_RES), ("Diseño de sonrisa en Medellín", P_MED)]))
@@ -172,7 +172,7 @@ RES_FAQS = [
 ]
 PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", updated="2026-11-13", og="/img/og-diseno-de-sonrisa-en-resina-caso-3.jpg", og_alt="Sonrisa después del diseño de sonrisa en resina en 12 dientes con la Dra. Catalina Beltrán en Medellín", image_obj=("/img/diseno-de-sonrisa-en-resina-despues-caso-3-910.webp", 910, 556, "Diseño de sonrisa en resina en 12 dientes de un paciente de Estados Unidos, hecho por la Dra. Catalina Beltrán en Medellín"), parents=[TRAT], schema_type="MedicalWebPage",
     title="Carillas de resina en Medellín: precio, duración y diferencias",
-    desc="Diseño de sonrisa en resina en Medellín: USD 145 por diente. Cuánto dura, si se mancha y en qué se diferencia de la porcelana E-max. Tabla comparativa.",
+    desc="Diseño de sonrisa en resina en Medellín: USD 145 por diente y una duración promedio de 5 a 7 años, hasta 10 con mantenimiento. Diferencias con la porcelana E-max.",
     h1="Carillas de resina",
     lead=("Las carillas de resina se hacen con un material del color del diente que la doctora moldea sobre cada pieza para cambiar su forma, tamaño y color. "
           f"Con la Dra. Catalina Beltrán en <a href='{P_MED}'>Medellín</a> cuestan USD 145 por diente, sin desgaste dental, y son la forma más económica de hacer un diseño de sonrisa completo."),
@@ -184,9 +184,9 @@ PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", updated="20
 <p>La porcelana E-max dura más (entre 10 y 20 años, e incluso más con buen mantenimiento) y conserva su color; la resina cuesta menos de la mitad y se puede retocar. Si buscas el resultado más duradero, conviene porcelana; si quieres un cambio completo con menor inversión, o probar un diseño, conviene resina.</p>
 <table><thead><tr><th></th><th>Resina</th><th><a href="{P_EMAX}">Porcelana E-max</a></th></tr></thead><tbody>
 <tr><td>Precio por diente</td><td>USD 145</td><td>USD 380</td></tr><tr><td>Color con los años</td><td>Puede pigmentarse</td><td>Lo conserva</td></tr>
-<tr><td>Duración</td><td>Menor</td><td>Entre 10 y 20 años, o más</td></tr><tr><td>Si se daña</td><td>Se puede retocar</td><td>Se reemplaza la pieza</td></tr></tbody></table></section>
+<tr><td>Duración</td><td>De 5 a 7 años en promedio, hasta 10 con mantenimiento</td><td>Entre 10 y 20 años, o más</td></tr><tr><td>Si se daña</td><td>Se puede retocar</td><td>Se reemplaza la pieza</td></tr></tbody></table></section>
 <section><h2>¿Cuánto dura un diseño de sonrisa en resina?</h2>
-<p>Dura menos que la porcelana y con los años puede necesitar pulido o retoques. La duración depende sobre todo de la higiene, los controles y hábitos como el café o el cigarrillo. La doctora te dice qué esperar en tu caso.</p></section>
+<p>Un diseño de sonrisa en resina dura en promedio de 5 a 7 años y, con un buen mantenimiento, puede llegar hasta los 10 años. Dura menos que la porcelana y con los años puede necesitar pulido o retoques. La duración depende sobre todo de la higiene, los controles y hábitos como el café o el cigarrillo. La doctora te dice qué esperar en tu caso.</p></section>
 <section><h2>¿Para quién es el diseño de sonrisa en resina?</h2><p>El diseño de sonrisa en resina es para quien quiere un cambio completo con menor inversión, o quiere probar un diseño antes de pasar a porcelana. También se usa para corregir pocos dientes en un microdiseño.</p></section>
 <section><h2>¿Cómo se cuidan las carillas de resina?</h2><p>Las carillas de resina se cuidan con higiene diaria, controles y pulidos cuando la doctora los indique:</p><ul><li>Cepillado y seda dental todos los días.</li><li>Pulido en los controles.</li><li>Moderar café, vino y cigarrillo.</li><li>No morder objetos duros.</li></ul></section>""",
     related=[("Carillas de porcelana E-max", P_EMAX), ("Guía de diseño de sonrisa", T), ("Precios", P_PRICE)]))
