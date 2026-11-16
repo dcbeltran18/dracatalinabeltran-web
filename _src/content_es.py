@@ -81,7 +81,7 @@ PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Dis
 <ul><li>Carillas sin desgaste dental: tus dientes naturales se conservan.</li><li>Precio cerrado antes de empezar, publicado en dólares.</li><li>Atención personal de la doctora, en español e inglés.</li>
 <li>15 años de experiencia y registro en el RETHUS desde 2011.</li><li>Consultorio en El Poblado, una de las zonas de Medellín con más hoteles y restaurantes.</li></ul>
 {DOCTOR_ES}</section>
-<section><h2>¿Dónde queda el consultorio?</h2><p>{ADDRESS}. Si vienes de otro país, el hotel Ibis Medellín está a 300 m.</p>{MAP}</section>""",
+<section><h2>¿Dónde queda el consultorio?</h2><p><b>Dra. Catalina Beltrán - Diseño de Sonrisa en Medellín</b><br>Carrera 25 # 12 Sur 59, El Poblado, Medellín · WhatsApp <a href="{{WA}}">{PHONE}</a></p><p>Si vienes de otro país, el hotel Ibis Medellín está a 300 m.</p>{MAP}</section>""",
     related=[("Precios", P_PRICE), ("Guía de diseño de sonrisa", T), ("Pacientes internacionales", P_INT)]))
 
 # ---------------- PILAR ----------------
