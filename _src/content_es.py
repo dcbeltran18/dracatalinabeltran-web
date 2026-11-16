@@ -294,3 +294,27 @@ PAGES.append(dict(path="/privacidad/", lang="es", crumb="Privacidad", byline=Fal
 <h2>Para qué los usamos</h2><p>Para responder tu solicitud, hacer tu valoración, darte un presupuesto, hacer seguimiento a tu caso y mejorar este sitio. No vendemos ni compartimos tus datos con terceros para fines comerciales. Tus fotos y datos de salud solo los ve el equipo del consultorio y no se usan en publicidad sin tu autorización expresa y por escrito.</p>
 <h2>Tus derechos</h2><p>De acuerdo con la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Colombia, puedes conocer, actualizar, rectificar y pedir que eliminemos tus datos, así como revocar tu autorización. Escríbenos por WhatsApp o al correo indicado y te respondemos en un máximo de 15 días hábiles.</p>
 <h2>Cuánto tiempo los guardamos</h2><p>Mientras sean necesarios para tu atención y por el tiempo que exige la normatividad colombiana para historias clínicas.</p>"""))
+
+# Imagen para compartir (og:image) y foto principal de cada página (la convierte en ImageObject build.py)
+OG_ES = {
+    "/": dict(image="/img/diseno-de-sonrisa-medellin-despues-caso-1.webp"),
+    P_MED: dict(og="/img/og-diseno-de-sonrisa-medellin.jpg",
+                og_alt="Antes y después de carillas de porcelana E-max sin desgaste con la Dra. Catalina Beltrán en El Poblado, Medellín",
+                image_caption="Paciente de Estados Unidos se ve por primera vez después de su diseño de sonrisa en Medellín"),
+    T: dict(og="/img/og-que-es-diseno-de-sonrisa.jpg", image="/img/que-es-diseno-de-sonrisa-despues.webp",
+            og_alt="Antes y después de un diseño de sonrisa hecho por la Dra. Catalina Beltrán en Medellín"),
+    P_EMAX: dict(og="/img/og-carillas-de-porcelana-emax.jpg",
+                 og_alt="Antes y después de carillas de porcelana E-max sin desgaste, caso real de la Dra. Catalina Beltrán"),
+    P_PRICE: dict(og="/img/og-precio-diseno-de-sonrisa-colombia.jpg", image="/img/precio-carillas-emax-colombia-despues.webp",
+                  og_alt="Antes y después de carillas de porcelana E-max y el precio de 20 carillas por USD 5.900"),
+    P_DRA: dict(og="/img/og-dra-catalina-beltran.jpg", og_alt="Dra. Catalina Beltrán, odontóloga estética en Medellín"),
+    P_BA: dict(og="/img/og-antes-y-despues-diseno-de-sonrisa.jpg", image="/img/diseno-de-sonrisa-medellin-despues-caso-1.webp",
+               og_alt="Antes y después de un diseño de sonrisa, caso real de la Dra. Catalina Beltrán en Medellín"),
+    P_INT: dict(og="/img/og-pacientes-internacionales.jpg",
+                og_alt="Paciente de Estados Unidos junto a la Dra. Catalina Beltrán en su consultorio de Medellín"),
+    P_CONT: dict(og="/img/og-contacto-dra-catalina-beltran.jpg",
+                 og_alt="Dra. Catalina Beltrán, odontóloga estética, consultorio en El Poblado, Medellín",
+                 image_caption="Dra. Catalina Beltrán, odontóloga estética en Medellín"),
+}
+for _p in PAGES:
+    _p.update(OG_ES.get(_p["path"], {}))

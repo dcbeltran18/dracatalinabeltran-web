@@ -66,8 +66,8 @@ PAGES.append(dict(path=E_DRA, lang="en", alt="/dra-catalina-beltran/", crumb="Dr
     desc="Dr. Catalina Beltrán: cosmetic dentist with 15 years of experience, licensed in Colombia since 2011. Office in El Poblado, Medellín. English spoken.",
     h1="Dr. Catalina Beltrán",
     lead="Dr. Catalina Beltrán is a dentist with 15 years of experience, licensed in Colombia's national health registry (RETHUS) since 2011 and a specialist in Cosmetic Dentistry. She treats every patient personally at her office in El Poblado, Medellín.",
-    wa="Hi Dr. Catalina 👋 I saw your website and I'd like to know the price of my smile design.", image="/img/dra-catalina-beltran-odontologa-estetica-medellin.webp",
-    body=f"""<img src="/img/dra-catalina-beltran-odontologa-estetica-medellin.webp" width="900" height="1200" alt="Dr. Catalina Beltrán, cosmetic dentist" style="max-width:360px;border-radius:16px;margin:18px 0">
+    wa="Hi Dr. Catalina 👋 I saw your website and I'd like to know the price of my smile design.", image="/img/dr-catalina-beltran-cosmetic-dentist-medellin.webp",
+    body=f"""<img src="/img/dr-catalina-beltran-cosmetic-dentist-medellin.webp" width="900" height="1200" alt="Dr. Catalina Beltrán, cosmetic dentist" style="max-width:360px;border-radius:16px;margin:18px 0">
 <section><h2>Training</h2><table><tbody>
 <tr><td>Dentist with an emphasis in surgical sciences</td><td>Colegio Odontológico Colombiano</td></tr>
 <tr><td>Specialist in Cosmetic Dentistry</td><td>Federación Odontológica Colombiana</td></tr>
@@ -76,3 +76,15 @@ PAGES.append(dict(path=E_DRA, lang="en", alt="/dra-catalina-beltran/", crumb="Dr
 <section><h2>How she works</h2><p>She reviews each patient's photos herself, designs the smile around the face, skin tone and bite, and gives a fixed price before any work starts. She places veneers with no tooth reduction and speaks English and Spanish.</p></section>
 <section><h2>Patients</h2>{PATIENTS_EN}</section>""",
     related=[("Veneers in Medellín", E_VEN), ("Cost of veneers in Colombia", E_COST)]))
+
+# Image for sharing (og:image) and main image of each page (build.py turns it into an ImageObject)
+OG_EN = {
+    E_VEN: dict(og="/img/og-veneers-medellin.jpg", image="/img/veneers-medellin-after-case-1.webp",
+                og_alt="Before and after veneers with Dr. Catalina Beltrán in Medellín, Colombia"),
+    E_COST: dict(og="/img/og-cost-of-veneers-colombia.jpg",
+                 og_alt="Before and after E-max porcelain veneers and the price per tooth in Medellín, Colombia",
+                 image_caption="The same smile after smile design with Dr. Catalina Beltrán in Medellín"),
+    E_DRA: dict(og="/img/og-dr-catalina-beltran.jpg", og_alt="Dr. Catalina Beltrán, cosmetic dentist in Medellín, Colombia"),
+}
+for _p in PAGES:
+    _p.update(OG_EN.get(_p["path"], {}))

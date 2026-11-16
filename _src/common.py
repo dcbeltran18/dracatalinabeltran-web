@@ -180,8 +180,16 @@ CAPTIONS = {"caso2b": ("Mismo paciente, vista de perfil, antes y después de sus
             "caso2": ("Caso real de carillas de porcelana E-max, sin desgaste dental, de la Dra. Catalina Beltrán en Medellín.",
                       "Real case of no-prep E-max porcelain veneers by Dr. Catalina Beltrán in Medellín.")}
 
+COPIES = []  # (archivo base, archivo nuevo): build.py crea las copias con nombre propio por página
+
+# Nombres en inglés para las fotos de casos que salen en páginas en inglés
+CASES_EN_FILES = {"caso1": ("veneers-medellin-before-case-1.webp", "veneers-medellin-after-case-1.webp")}
+
 def ba(n, es=True):
     fa, fd, w, h, aa, ad, ea, ed = CASES[n]
+    if not es and n in CASES_EN_FILES:
+        COPIES.extend([(fa, CASES_EN_FILES[n][0]), (fd, CASES_EN_FILES[n][1])])
+        fa, fd = CASES_EN_FILES[n]
     a, d = ("Antes", "Después") if es else ("Before", "After")
     alt_a, alt_d = (aa, ad) if es else (ea, ed)
     cap = CAPTIONS.get(n)
@@ -206,7 +214,6 @@ def ba_slider(n, es=True):
             f'<span class="cmp-t l">{a}</span><span class="cmp-t r">{d}</span><span class="cmp-h" aria-hidden="true"></span>'
             f'<input type="range" min="0" max="100" value="50" aria-label="{lab}"></figure><p class="muted cmp-hint">{hint}</p>{capt}')
 
-COPIES = []  # (archivo base, archivo nuevo): build.py crea las copias con nombre propio por página
 
 def ba_page(n, fa_new, fd_new, alt_a, alt_d, caption):
     """El mismo caso en otra página, con nombre de archivo, alt y leyenda propios de ese tema."""
@@ -232,22 +239,31 @@ VIDEO_EN = VIDEO_ES.replace("Paciente de Estados Unidos al verse por primera vez
                             "A patient from the United States seeing his new smile for the first time, right after treatment in Medellín.")
 
 PATIENTS_ES = """<div class="gallery">
-<figure><img src="/img/paciente-1.webp" width="600" height="800" alt="Paciente de Estados Unidos junto a la Dra. Catalina en el consultorio" loading="lazy"><figcaption>Paciente de Estados Unidos</figcaption></figure>
-<figure><img src="/img/paciente-2.webp" width="600" height="800" alt="Paciente de Italia con su nueva sonrisa en Medellín" loading="lazy"><figcaption>Paciente de Italia</figcaption></figure>
-<figure><img src="/img/paciente-3.webp" width="600" height="800" alt="Paciente de Manizales en el consultorio después de su tratamiento" loading="lazy"><figcaption>Paciente de Manizales, Colombia</figcaption></figure>
-<figure><img src="/img/paciente-4.webp" width="600" height="800" alt="Paciente de Estados Unidos junto a la doctora en el consultorio" loading="lazy"><figcaption>Paciente de Estados Unidos</figcaption></figure></div>"""
+<figure><img src="/img/paciente-estados-unidos-con-la-dra-catalina-beltran-medellin.webp" width="600" height="800" alt="Paciente de Estados Unidos junto a la Dra. Catalina en el consultorio" loading="lazy"><figcaption>Paciente de Estados Unidos</figcaption></figure>
+<figure><img src="/img/paciente-italia-nueva-sonrisa-medellin.webp" width="600" height="800" alt="Paciente de Italia con su nueva sonrisa en Medellín" loading="lazy"><figcaption>Paciente de Italia</figcaption></figure>
+<figure><img src="/img/paciente-manizales-diseno-de-sonrisa-consultorio.webp" width="600" height="800" alt="Paciente de Manizales en el consultorio después de su tratamiento" loading="lazy"><figcaption>Paciente de Manizales, Colombia</figcaption></figure>
+<figure><img src="/img/paciente-estados-unidos-consultorio-dra-catalina-beltran.webp" width="600" height="800" alt="Paciente de Estados Unidos junto a la doctora en el consultorio" loading="lazy"><figcaption>Paciente de Estados Unidos</figcaption></figure></div>"""
 PATIENTS_EN = (PATIENTS_ES.replace("Paciente de Estados Unidos junto a la Dra. Catalina en el consultorio", "Patient from the United States with Dr. Catalina at the office")
                .replace("Paciente de Italia con su nueva sonrisa en Medellín", "Patient from Italy with her new smile in Medellín")
                .replace("Paciente de Manizales en el consultorio después de su tratamiento", "Patient from Manizales after treatment")
                .replace("Paciente de Estados Unidos junto a la doctora en el consultorio", "Patient from the United States with the doctor")
                .replace(">Paciente de Estados Unidos<", ">Patient from the United States<").replace(">Paciente de Italia<", ">Patient from Italy<")
                .replace(">Paciente de Manizales, Colombia<", ">Patient from Manizales, Colombia<"))
+# Las páginas en inglés usan copias de las fotos con nombre de archivo en inglés (build.py las crea)
+EN_FILES = {'paciente-estados-unidos-con-la-dra-catalina-beltran-medellin.webp': 'patient-united-states-with-dr-catalina-beltran-medellin.webp', 'paciente-italia-nueva-sonrisa-medellin.webp': 'patient-italy-new-smile-medellin.webp', 'paciente-manizales-diseno-de-sonrisa-consultorio.webp': 'patient-manizales-colombia-smile-design.webp', 'paciente-estados-unidos-consultorio-dra-catalina-beltran.webp': 'patient-united-states-dr-catalina-beltran-office.webp'}
+for _es, _en in EN_FILES.items():
+    COPIES.append((_es, _en))
+    PATIENTS_EN = PATIENTS_EN.replace("/img/" + _es, "/img/" + _en)
+
 
 DOCTOR_ES = """<div class="doc"><img src="/img/dra-catalina-beltran-odontologa-estetica-medellin-480.webp" width="480" height="640" alt="Dra. Catalina Beltrán, odontóloga estética en Medellín" loading="lazy">
 <div><h3>Dra. Catalina Beltrán</h3><p>Odontóloga con 15 años de experiencia, registrada en el RETHUS desde 2011 y especialista en Estética Dental. Revisa personalmente tus fotos, diseña tu sonrisa y te atiende en su consultorio de El Poblado, en español o en inglés.</p>
 <p><a href="/dra-catalina-beltran/">Conoce su formación y experiencia</a></p></div></div>"""
-DOCTOR_EN = """<div class="doc"><img src="/img/dra-catalina-beltran-odontologa-estetica-medellin-480.webp" width="480" height="640" alt="Dr. Catalina Beltrán, cosmetic dentist in Medellín" loading="lazy">
+DOCTOR_EN = """<div class="doc"><img src="/img/dr-catalina-beltran-cosmetic-dentist-medellin-480.webp" width="480" height="640" alt="Dr. Catalina Beltrán, cosmetic dentist in Medellín" loading="lazy">
 <div><h3>Dr. Catalina Beltrán</h3><p>A dentist with 15 years of experience, licensed in Colombia's national health registry (RETHUS) since 2011 and a specialist in Cosmetic Dentistry. She reviews your photos herself, designs your smile and treats you personally at her office in El Poblado, in English or Spanish.</p>
 <p><a href="/en/dr-catalina-beltran/">Her training and experience</a></p></div></div>"""
 
 MAP = '<iframe class="map" title="Mapa del consultorio" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Dra.%20Catalina%20Beltr%C3%A1n%20Cra.%2025%20%2312%20Sur%2059%20Medell%C3%ADn&output=embed"></iframe>'
+
+COPIES.extend([("dra-catalina-beltran-odontologa-estetica-medellin-480.webp", "dr-catalina-beltran-cosmetic-dentist-medellin-480.webp"),
+               ("dra-catalina-beltran-odontologa-estetica-medellin.webp", "dr-catalina-beltran-cosmetic-dentist-medellin.webp")])

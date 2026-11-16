@@ -37,8 +37,14 @@ def schema_graph(p):
         page["author"] = {"@id": ID_PERSON}
         page["reviewedBy"] = {"@id": ID_PERSON}
         page["lastReviewed"] = p.get("updated", UPDATED)
-    if p.get("image"):
-        page["primaryImageOfPage"] = DOMAIN + p["image"]
+    if p.get("image") and not p.get("image_obj"):
+        # Foto principal como ImageObject: medidas del archivo y la leyenda = su alt en la página
+        from PIL import Image as _I
+        with _I.open(os.path.join(ROOT, p["image"].lstrip("/"))) as _im:
+            _w, _h = _im.size
+        m = re.search(r'src="' + re.escape(p["image"]) + r'"[^>]*?alt="([^"]+)"', p["body"]) or re.search(r'poster="' + re.escape(p["image"]) + r'"', p["body"])
+        cap = p.get("image_caption") or (m.group(1) if m and m.groups() else None) or p.get("og_alt") or p["title"]
+        p["image_obj"] = (p["image"], _w, _h, cap)
     if p.get("image_obj"):
         src, iw, ih, icap = p["image_obj"]
         page["primaryImageOfPage"] = {"@type": "ImageObject", "contentUrl": DOMAIN + src, "url": DOMAIN + src, "width": iw, "height": ih,
@@ -72,10 +78,10 @@ def byline_html(p):
     es = p["lang"] == "es"
     d = p.get("updated", UPDATED)
     if es:
-        return (f'<p class="byline"><img src="/img/dra-catalina-beltran-odontologa-estetica-medellin-480.webp" width="40" height="40" alt="" loading="lazy">'
+        return (f'<p class="byline"><img src="/img/dra-catalina-beltran-odontologa-estetica-medellin-80.webp" width="40" height="40" alt="" loading="lazy">'
                 f'<span>Escrito y revisado por <a href="/dra-catalina-beltran/">Dra. Catalina Beltrán</a>, odontóloga estética, RETHUS desde 2011 · '
                 f'Actualizado el <time datetime="{d}">{fecha_es(d)}</time></span></p>')
-    return (f'<p class="byline"><img src="/img/dra-catalina-beltran-odontologa-estetica-medellin-480.webp" width="40" height="40" alt="" loading="lazy">'
+    return (f'<p class="byline"><img src="/img/dr-catalina-beltran-cosmetic-dentist-medellin-80.webp" width="40" height="40" alt="" loading="lazy">'
             f'<span>Written and reviewed by <a href="/en/dr-catalina-beltran/">Dr. Catalina Beltrán</a>, cosmetic dentist, licensed in Colombia since 2011 · '
             f'Updated <time datetime="{d}">{fecha_en(d)}</time></span></p>')
 
@@ -197,6 +203,8 @@ def main():
               body='<p><a href="/">Volver al inicio</a> · <a href="/diseno-de-sonrisa-medellin/">Diseño de sonrisa en Medellín</a> · <a href="/precio-diseno-de-sonrisa-colombia/">Precios</a></p>')
     with open(os.path.join(ROOT, "404.html"), "w", encoding="utf-8") as f:
         f.write(layout(nf))
+    import img_meta
+    print(f"Metadatos de autoría escritos en {img_meta.run(ROOT)} imágenes")
     print(f"OK: {len(pages)} páginas")
     for path, n in sorted(inbound.items(), key=lambda x: x[1]):
         print(f"  {n:2d} enlaces entrantes  {path}")
