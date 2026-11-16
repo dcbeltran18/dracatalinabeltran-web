@@ -177,8 +177,8 @@ CAPTIONS = {"caso2b": ("Mismo paciente, vista de perfil, antes y después de sus
                        "Same patient, side view, before and after his E-max veneers."),
             "caso3": ("Caso real de la Dra. Catalina Beltrán: diseño de sonrisa en resina en 12 dientes, 6 superiores y 6 inferiores. El paciente viajó desde Estados Unidos.",
                       "Real case by Dr. Catalina Beltrán: composite smile design on 12 teeth, 6 upper and 6 lower. The patient traveled from the United States."),
-            "caso2": ("Caso real de carillas de porcelana E-max, sin desgaste dental, de la Dra. Catalina Beltrán en Medellín.",
-                      "Real case of no-prep E-max porcelain veneers by Dr. Catalina Beltrán in Medellín.")}
+            "caso2": ("Caso real de la Dra. Catalina Beltrán: 6 carillas superiores de porcelana E-max, sin desgaste dental. El paciente viajó desde Francia.",
+                      "Real case by Dr. Catalina Beltrán: 6 upper no-prep E-max porcelain veneers. The patient traveled from France.")}
 
 COPIES = []  # (archivo base, archivo nuevo): build.py crea las copias con nombre propio por página
 
