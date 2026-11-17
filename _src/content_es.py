@@ -60,16 +60,15 @@ PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Dis
     lead=("En Medellín, la Dra. Catalina Beltrán hace diseños de sonrisa con carillas de porcelana E-max (USD 380 por diente) y de resina (USD 145 por diente), sin desgaste dental, en su consultorio de El Poblado. "
           "Recibes el plan y el precio cerrado antes de empezar, y la valoración es gratis por WhatsApp."),
     wa=wa("diseño de sonrisa Medellín"), faqs=MED_FAQS, image="/video/paciente-estados-unidos-se-ve-por-primera-vez-diseno-de-sonrisa-medellin.webp", video=True,
-    body=f"""<section><h2>¿Cuánto cuesta un diseño de sonrisa en Medellín?</h2>
+    body=f"""<section><p>Este paciente viajó desde Estados Unidos a Medellín para su diseño de sonrisa con la Dra. Catalina. El video lo muestra en el consultorio de El Poblado, al terminar el tratamiento, cuando se mira por primera vez.</p>
+{VIDEO_ES}</section>
+<section><h2>¿Cuánto cuesta un diseño de sonrisa en Medellín?</h2>
 <p>Con la Dra. Catalina, una sonrisa completa de 20 carillas de porcelana E-max cuesta USD 5.900 (USD 295 por diente) y una sonrisa superior de 10 carillas, USD 3.800. En resina, cada diente cuesta USD 145. El precio incluye valoración y diseño digital, limpieza previa y control por videollamada. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
 <section><h2>¿Qué opciones de diseño de sonrisa hay en Medellín?</h2>
 <p>Las dos formas de hacer un diseño completo son las <a href="{P_EMAX}">carillas de porcelana E-max</a>, más duraderas, y las <a href="{P_RES}">carillas de resina</a>, más económicas. Si solo quieres corregir pocos dientes o aclarar el color, hay opciones más pequeñas: <a href="{T}">compáralas en la guía de diseño de sonrisa</a>.</p></section>
 <section><h2>¿Cómo es el proceso en el consultorio?</h2>
 <p>Le escribes a la doctora por WhatsApp y le envías 3 fotos con tu celular. Ella te dice qué opción te conviene, cuántos dientes tratar y el precio cerrado; si prefieres, por videollamada. Antes de tocar un diente, planifica tu diseño digital. En el consultorio hace la limpieza previa y el tratamiento, y el control posterior es por videollamada.</p></section>
 <section><h2>Resultados en Medellín</h2>
-<h3>El momento en que se ve por primera vez</h3>
-<p>Este paciente viajó desde Estados Unidos a Medellín para su diseño de sonrisa con la Dra. Catalina. El video lo muestra en el consultorio de El Poblado, al terminar el tratamiento, cuando se mira por primera vez.</p>
-{VIDEO_ES}
 <h3>Antes y después en el consultorio de El Poblado</h3>
 <p>Un caso real de la Dra. Catalina en Medellín: 6 carillas superiores de porcelana E-max colocadas sin desgaste dental, en su consultorio de El Poblado. El paciente viajó desde Francia.</p>
 {ba_page("caso2", "diseno-de-sonrisa-medellin-el-poblado-antes.webp", "diseno-de-sonrisa-medellin-el-poblado-despues-carillas-emax.webp",
