@@ -13,6 +13,7 @@ P_DRA = "/dra-catalina-beltran/"
 P_BA = "/antes-y-despues/"
 P_INT = "/pacientes-internacionales/"
 P_CONT = "/contacto/"
+P_MEJOR = "/mejor-diseno-de-sonrisa-medellin/"
 
 TRAT = ("Tratamientos", T)
 def wa(t): return f"Hola Dra. Catalina 👋 Vi su página web ({t}) y quiero saber el precio de mi caso."
@@ -49,8 +50,6 @@ PAGES.append(dict(path="/", lang="es", byline=False,
 
 # ---------------- MEDELLÍN ----------------
 MED_FAQS = [
-    ("¿Cómo elegir dónde hacerse un diseño de sonrisa en Medellín?",
-     "Verifica que la odontóloga esté registrada en el RETHUS, que publique sus precios, que muestre casos reales y que te entregue un plan con precio cerrado antes de empezar."),
     ("¿Atienden en inglés?", "Sí. La doctora atiende en español e inglés, por WhatsApp y en el consultorio."),
 ]
 PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Diseño de sonrisa en Medellín", schema_type="MedicalWebPage",
@@ -79,9 +78,57 @@ PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Dis
 <p>La Dra. Catalina Beltrán coloca las carillas sin desgaste dental, da un precio cerrado antes de empezar y atiende personalmente a cada paciente.</p>
 <ul><li>Carillas sin desgaste dental: tus dientes naturales se conservan.</li><li>Precio cerrado antes de empezar, publicado en dólares.</li><li>Atención personal de la doctora, en español e inglés.</li>
 <li>15 años de experiencia y registro en el RETHUS desde 2011.</li><li>Consultorio en El Poblado, una de las zonas de Medellín con más hoteles y restaurantes.</li></ul>
+<p>Si estás comparando opciones, revisa <a href="{P_MEJOR}">cómo elegir el mejor diseño de sonrisa en Medellín</a>.</p>
 {DOCTOR_ES}</section>
 <section><h2>¿Dónde queda el consultorio?</h2><p><b>Dra. Catalina Beltrán - Diseño de Sonrisa en Medellín</b><br>Carrera 25 # 12 Sur 59, El Poblado, Medellín · WhatsApp <a href="{{WA}}">{PHONE}</a></p><p>Si vienes de otro país, el hotel Ibis Medellín está a 300 m.</p>{MAP}</section>""",
     related=[("Precios", P_PRICE), ("Guía de diseño de sonrisa", T), ("Pacientes internacionales", P_INT)]))
+
+# ---------------- CÓMO ELEGIR (MEJOR) ----------------
+MEJOR_FAQS = [
+    ("¿Cómo verifico si una odontóloga está registrada?",
+     "En la consulta pública del RETHUS (Registro Único Nacional del Talento Humano en Salud) del Ministerio de Salud de Colombia, buscando su nombre o su número de documento. La Dra. Catalina Beltrán está registrada desde 2011."),
+    ("¿Puedo saber si soy candidato antes de ir al consultorio?",
+     "Sí. La valoración es gratis por WhatsApp: envías 3 fotos con tu celular y la Dra. Catalina te dice qué opción te conviene y el precio cerrado de tu caso."),
+]
+PAGES.append(dict(path=P_MEJOR, lang="es", crumb="Cómo elegir diseño de sonrisa en Medellín", schema_type="MedicalWebPage",
+    title="¿Cuál es el mejor diseño de sonrisa en Medellín? Cómo elegir",
+    desc="Cómo elegir el mejor diseño de sonrisa y la odontóloga correcta en Medellín: 6 criterios verificables, preguntas para la consulta y señales de alerta.",
+    h1="¿Cuál es el mejor diseño de sonrisa en Medellín?",
+    lead=("No hay un diseño de sonrisa que sea el mejor para todos: el mejor es el que conserva tus dientes, se ve natural con tu cara y dura muchos años. "
+          "Para elegir dónde hacértelo en Medellín, revisa seis criterios que puedes comprobar tú mismo: registro profesional, desgaste dental, casos reales, opiniones verificables, precio cerrado y material. "
+          "Aquí te explicamos cómo comprobar cada uno y cómo los cumple la Dra. Catalina Beltrán."),
+    wa="Hola Dra. Catalina 👋 Vi su página web (cómo elegir diseño de sonrisa) y quiero una valoración de mi caso.", faqs=MEJOR_FAQS,
+    body=f"""<section><h2>¿Qué hace que un diseño de sonrisa sea el mejor?</h2>
+<p>Un buen diseño de sonrisa se planifica según tu cara, tu tono de piel y tu mordida, para que el resultado se vea natural y no exagerado. Conserva la mayor cantidad posible de diente natural, empieza por revisar la salud de dientes y encías, y usa un material que dure lo que esperas. Si un tratamiento solo promete dientes muy blancos y parejos, sin hablar de nada de esto, no es la mejor opción aunque sea la más rápida o la más barata.</p></section>
+<section><h2>6 criterios para elegir dónde hacerte el diseño de sonrisa en Medellín</h2>
+<p>Estos son los puntos que conviene revisar con cualquier odontóloga antes de pagar, y lo que encontrarás con la Dra. Catalina Beltrán.</p>
+<table><thead><tr><th>Criterio</th><th>Qué revisar</th><th>Con la Dra. Catalina Beltrán</th></tr></thead><tbody>
+<tr><td><b>1. Registro profesional</b></td><td>Que esté registrada en el RETHUS y que tenga formación en estética dental.</td><td>Registrada en el RETHUS desde 2011, 15 años de experiencia y especialista en Estética Dental. <a href="{P_DRA}">Ver su formación</a>.</td></tr>
+<tr><td><b>2. Que conserve tus dientes</b></td><td>Pregunta si las carillas requieren desgastar tus dientes y cuánto.</td><td>Carillas sin desgaste dental: tus dientes naturales se conservan.</td></tr>
+<tr><td><b>3. Casos reales</b></td><td>Fotos de antes y después de pacientes reales, no imágenes de catálogo.</td><td>Casos publicados con autorización, entre ellos pacientes que viajaron desde Francia y Estados Unidos. <a href="{P_BA}">Ver antes y después</a>.</td></tr>
+<tr><td><b>4. Opiniones verificables</b></td><td>Reseñas en Google con nombre, no testimonios anónimos.</td><td>Calificación de 5,0 en Google.</td></tr>
+<tr><td><b>5. Precio claro y cerrado</b></td><td>Que el precio esté publicado, que diga qué incluye y que no cambie después de empezar.</td><td>Porcelana E-max USD 380 por diente, resina USD 145 por diente y sonrisa completa de 20 carillas de porcelana USD 5.900, con precio cerrado antes de empezar. <a href="{P_PRICE}">Ver precios</a>.</td></tr>
+<tr><td><b>6. Material y duración</b></td><td>Que te explique la diferencia entre porcelana y resina, y cuánto dura cada una.</td><td>Porcelana E-max: de 10 a 20 años o más con mantenimiento. Resina: de 5 a 7 años en promedio, hasta 10 con mantenimiento.</td></tr>
+</tbody></table></section>
+<section><h2>¿Cuál es la mejor doctora para diseño de sonrisa en Medellín?</h2>
+<p>La mejor odontóloga para ti es la que cumple los seis criterios anteriores y te explica tu caso antes de cobrarte. Estas son las preguntas que conviene hacerle en la valoración:</p>
+<ul><li>¿Mis dientes y encías están sanos para hacerme carillas, o hay que tratar algo antes?</li>
+<li>¿Hay que desgastar mis dientes? ¿Cuánto y por qué?</li>
+<li>¿Porcelana o resina en mi caso, y cuánto dura cada una?</li>
+<li>¿Cuál es el precio cerrado y qué incluye: diseño digital, limpieza, controles?</li>
+<li>¿Puedo ver casos reales parecidos al mío?</li>
+<li>¿Quién me atiende en cada cita?</li></ul>
+<p>La Dra. Catalina Beltrán responde estas preguntas en la valoración gratis por WhatsApp, antes de que tomes cualquier decisión, y atiende personalmente a cada paciente en su consultorio de El Poblado.</p>
+{DOCTOR_ES}</section>
+<section><h2>Señales de alerta antes de hacerte un diseño de sonrisa</h2>
+<ul><li>Un precio que no dice qué incluye o que cambia una vez empezado el tratamiento.</li>
+<li>Desgastar dientes sanos sin explicarte por qué es necesario en tu caso.</li>
+<li>Empezar sin revisar la salud de tus dientes y encías.</li>
+<li>Fotos de resultados que no son de pacientes de esa misma odontóloga.</li>
+<li>Presión para pagar antes de recibir una valoración y un plan.</li></ul></section>
+<section><h2>Pacientes de la Dra. Catalina</h2><p>Pacientes de Colombia y de otros países que se hicieron su diseño de sonrisa en el consultorio de El Poblado.</p>{PATIENTS_ES}</section>
+<section><h2>¿Dónde queda el consultorio?</h2><p><b>Dra. Catalina Beltrán - Diseño de Sonrisa en Medellín</b><br>{ADDRESS} · WhatsApp <a href="{{WA}}">{PHONE}</a>. Si vives fuera de Colombia, el tratamiento se hace en <a href="{P_INT}">un solo viaje de mínimo 4 días</a>.</p></section>""",
+    related=[("Diseño de sonrisa en Medellín", P_MED), ("Precios", P_PRICE), ("Antes y después", P_BA)]))
 
 # ---------------- PILAR ----------------
 PILAR_FAQS = [
