@@ -43,7 +43,7 @@ PAGES.append(dict(path="/", lang="es", byline=False,
 <li><b>Escríbele por WhatsApp.</b> Cuéntale qué te gustaría cambiar y envía 3 fotos con tu celular; no necesitas radiografías.</li>
 <li><b>Recibe tu valoración.</b> La doctora te dice qué opción te conviene, cuántos dientes tratar y el precio cerrado.</li>
 <li><b>Haz tu tratamiento</b> en el <a href="{P_MED}">consultorio de El Poblado, Medellín</a>. Si vives fuera de Colombia: <a href="{P_INT}">un solo viaje de mínimo 4 días</a>.</li></ol></section>
-<section><h2>Tu odontóloga</h2>{DOCTOR_ES}</section>
+<section><h2>Tu odontóloga</h2>{DOCTOR_ES}<p>¿Estás comparando opciones? Mira <a href="{P_MEJOR}">cómo elegir dónde hacerte el diseño de sonrisa en Medellín</a>.</p></section>
 <section><h2>Pacientes</h2><p>Calificación de 5,0 en Google.</p>{PATIENTS_ES}</section>
 <section><h2>Consultorio</h2><p>{ADDRESS}. <a href="{P_CONT}">Ver mapa y contacto</a>.</p></section>""",
     related=[("Diseño de sonrisa en Medellín", P_MED), ("Precios", P_PRICE), ("Pacientes internacionales", P_INT)]))
@@ -280,6 +280,7 @@ PAGES.append(dict(path=P_DRA, lang="es", alt="/en/dr-catalina-beltran/", crumb="
 <tr><td>Especialista en Estética Dental</td><td>Federación Odontológica Colombiana</td></tr>
 <tr><td>Especialización en Auditoría y Garantía de Calidad en Salud</td><td>Universidad EAN</td></tr>
 <tr><td>Registro profesional</td><td>RETHUS, desde 2011</td></tr></tbody></table></section>
+<p>Si estás eligiendo odontóloga, revisa <a href="{P_MEJOR}">qué conviene verificar antes de un diseño de sonrisa en Medellín</a>.</p>
 <section><h2>Cómo trabaja</h2><p>Revisa personalmente las fotos de cada paciente, diseña la sonrisa según la cara, el tono de piel y la mordida, y da un precio cerrado antes de empezar. Trabaja carillas sin desgaste dental y atiende en español e inglés.</p></section>
 <section><h2>Pacientes</h2><p>Calificación de 5,0 en Google.</p>{PATIENTS_ES}</section>
 <section><h2>Tratamientos</h2><p>La Dra. Catalina Beltrán hace diseños de sonrisa con carillas de porcelana E-max y carillas de resina, sin desgaste dental.</p><div class="related"><a href="{P_EMAX}">Carillas de porcelana E-max</a><a href="{P_RES}">Carillas de resina</a><a href="{T}">Guía de diseño de sonrisa</a></div></section>
