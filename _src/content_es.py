@@ -89,8 +89,10 @@ MEJOR_FAQS = [
      "En la consulta pública del RETHUS (Registro Único Nacional del Talento Humano en Salud) del Ministerio de Salud de Colombia, buscando su nombre o su número de documento. La Dra. Catalina Beltrán está registrada desde 2011."),
     ("¿Puedo saber si soy candidato antes de ir al consultorio?",
      "Sí. La valoración es gratis por WhatsApp: envías 3 fotos con tu celular y la Dra. Catalina te dice qué opción te conviene y el precio cerrado de tu caso."),
+    ("¿Qué formas de pago aceptan?",
+     "Efectivo, transferencia bancaria y tarjeta."),
 ]
-PAGES.append(dict(path=P_MEJOR, lang="es", crumb="Cómo elegir diseño de sonrisa en Medellín", schema_type="MedicalWebPage",
+PAGES.append(dict(path=P_MEJOR, lang="es", updated="2026-11-19", crumb="Cómo elegir diseño de sonrisa en Medellín", schema_type="MedicalWebPage",
     title="¿Cuál es el mejor diseño de sonrisa en Medellín? Cómo elegir",
     desc="Cómo elegir el mejor diseño de sonrisa y la odontóloga correcta en Medellín: 6 criterios verificables, preguntas para la consulta y señales de alerta.",
     h1="¿Cuál es el mejor diseño de sonrisa en Medellín?",
@@ -99,14 +101,15 @@ PAGES.append(dict(path=P_MEJOR, lang="es", crumb="Cómo elegir diseño de sonris
           "Aquí te explicamos cómo comprobar cada uno y cómo los cumple la Dra. Catalina Beltrán."),
     wa="Hola Dra. Catalina 👋 Vi su página web (cómo elegir diseño de sonrisa) y quiero una valoración de mi caso.", faqs=MEJOR_FAQS,
     body=f"""<section><h2>¿Qué hace que un diseño de sonrisa sea el mejor?</h2>
-<p>Un buen diseño de sonrisa se planifica según tu cara, tu tono de piel y tu mordida, para que el resultado se vea natural y no exagerado. Conserva la mayor cantidad posible de diente natural, empieza por revisar la salud de dientes y encías, y usa un material que dure lo que esperas. Si un tratamiento solo promete dientes muy blancos y parejos, sin hablar de nada de esto, no es la mejor opción aunque sea la más rápida o la más barata.</p></section>
+<p>Un buen diseño de sonrisa se planifica según tu cara, tu tono de piel y tu mordida, para que el resultado se vea natural y no exagerado. Conserva la mayor cantidad posible de diente natural, empieza por revisar la salud de dientes y encías, y usa un material que dure lo que esperas. Si un tratamiento solo promete dientes muy blancos y parejos, sin hablar de nada de esto, no es la mejor opción aunque sea la más rápida o la más barata.</p>
+<p>Además, no todas las personas necesitan carillas. Si tus dientes tienen buena forma y solo quieres aclarar el color o corregir pocos dientes, un blanqueamiento o un microdiseño puede ser suficiente; <a href="{T}">compara las opciones en la guía de diseño de sonrisa</a>. Y si hay caries o encías inflamadas, se tratan primero: una buena odontóloga te lo dice en la valoración, aunque eso signifique no hacer carillas.</p></section>
 <section><h2>6 criterios para elegir dónde hacerte el diseño de sonrisa en Medellín</h2>
 <p>Estos son los puntos que conviene revisar con cualquier odontóloga antes de pagar, y lo que encontrarás con la Dra. Catalina Beltrán.</p>
 <table><thead><tr><th>Criterio</th><th>Qué revisar</th><th>Con la Dra. Catalina Beltrán</th></tr></thead><tbody>
 <tr><td><b>1. Registro profesional</b></td><td>Que esté registrada en el RETHUS y que tenga formación en estética dental.</td><td>Registrada en el RETHUS desde 2011, 15 años de experiencia y especialista en Estética Dental. <a href="{P_DRA}">Ver su formación</a>.</td></tr>
 <tr><td><b>2. Que conserve tus dientes</b></td><td>Pregunta si las carillas requieren desgastar tus dientes y cuánto.</td><td>Carillas sin desgaste dental: tus dientes naturales se conservan.</td></tr>
 <tr><td><b>3. Casos reales</b></td><td>Fotos de antes y después de pacientes reales, no imágenes de catálogo.</td><td>Casos publicados con autorización, entre ellos pacientes que viajaron desde Francia y Estados Unidos. <a href="{P_BA}">Ver antes y después</a>.</td></tr>
-<tr><td><b>4. Opiniones verificables</b></td><td>Reseñas en Google con nombre, no testimonios anónimos.</td><td>Calificación de 5,0 en Google.</td></tr>
+<tr><td><b>4. Opiniones verificables</b></td><td>Reseñas en Google con nombre, no testimonios anónimos.</td><td>Calificación de 5,0 en Google con 23 reseñas (noviembre de 2026). <a href="https://www.google.com/maps/search/?api=1&amp;query=Dra.%20Catalina%20Beltr%C3%A1n%20-%20Dise%C3%B1o%20de%20Sonrisa%20en%20Medellin&amp;query_place_id=ChIJ5UxszfqDRo4R-RxohnoXKdA" rel="noopener" target="_blank">Ver las opiniones en Google</a>.</td></tr>
 <tr><td><b>5. Precio claro y cerrado</b></td><td>Que el precio esté publicado, que diga qué incluye y que no cambie después de empezar.</td><td>Porcelana E-max USD 380 por diente, resina USD 145 por diente y sonrisa completa de 20 carillas de porcelana USD 5.900, con precio cerrado antes de empezar. <a href="{P_PRICE}">Ver precios</a>.</td></tr>
 <tr><td><b>6. Material y duración</b></td><td>Que te explique la diferencia entre porcelana y resina, y cuánto dura cada una.</td><td>Porcelana E-max: de 10 a 20 años o más con mantenimiento. Resina: de 5 a 7 años en promedio, hasta 10 con mantenimiento.</td></tr>
 </tbody></table></section>
