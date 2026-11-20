@@ -5,6 +5,8 @@ E_VEN = "/en/veneers-medellin/"
 E_COST = "/en/cost-of-veneers-colombia/"
 E_DRA = "/en/dr-catalina-beltran/"
 
+def wa_en(t): return f"Hi Dr. Catalina 👋 I saw your website ({t}) and I have a question. My name is: "
+
 PAGES = []
 
 VEN_FAQS = [
@@ -20,7 +22,7 @@ PAGES.append(dict(path=E_VEN, lang="en", alt="/diseno-de-sonrisa-medellin/", sch
     h1="Veneers in Medellín, Colombia",
     lead=("Dr. Catalina Beltrán places E-max porcelain veneers (USD 380 per tooth) and composite veneers (USD 145 per tooth) with no tooth reduction at her office in El Poblado, Medellín. "
           "A full smile of 20 porcelain veneers is USD 5,900, and you get a fixed price in US dollars before you book your flight."),
-    wa="Hi Dr. Catalina 👋 I saw your website and I'd like to know the price of my smile design.", faqs=VEN_FAQS, video=True, image="/img/diseno-de-sonrisa-medellin-despues-caso-1.webp",
+    wa=wa_en("veneers Medellín"), faqs=VEN_FAQS, video=True, image="/img/diseno-de-sonrisa-medellin-despues-caso-1.webp",
     body=f"""<div class="cards"><div class="card"><b>USD 295</b><span>per tooth on a 20-veneer porcelain smile</span></div><div class="card"><b>4 days</b><span>one trip to Medellín</span></div>
 <div class="card"><b>5.0</b><span>Google rating</span></div><div class="card"><b>15 years</b><span>of experience</span></div></div>
 <section><h2>How does it work?</h2><p>Everything is arranged on WhatsApp before you travel, and treatment is done in one trip of at least 4 days to Medellín.</p><ol>
@@ -52,7 +54,7 @@ PAGES.append(dict(path=E_COST, lang="en", alt="/precio-diseno-de-sonrisa-colombi
     h1="Cost of veneers in Colombia",
     lead=("In Medellín, with Dr. Catalina Beltrán, a full smile of 20 E-max porcelain veneers costs USD 5,900, about USD 295 per tooth. "
           "A single porcelain veneer is USD 380 and a composite veneer USD 145, with a fixed price before you travel."),
-    wa="Hi Dr. Catalina 👋 I saw your website (prices) and I'd like to know the exact price of my case.", faqs=COST_FAQS,
+    wa=wa_en("prices"), faqs=COST_FAQS,
     body=f"""<section><h2>2026 reference prices</h2><p>In 2026, with Dr. Catalina Beltrán in Medellín, an E-max porcelain veneer costs USD 380 per tooth, a composite veneer USD 145 and a full smile of 20 porcelain veneers USD 5,900.</p>{PRICE_TABLE_EN}<p class="muted">Prices as of {fecha_en(UPDATED)}. Your exact price depends on how many teeth you need; the doctor confirms it for free on WhatsApp.</p></section>
 <section><h2>How do prices in Colombia compare with the US?</h2>
 <p>A porcelain veneer costs USD 380 with Dr. Catalina in Medellín, compared with USD 925–2,500 in the US according to MedicineNet. A composite veneer costs USD 145, compared with USD 250–1,500.</p>
@@ -68,7 +70,7 @@ PAGES.append(dict(path=E_DRA, lang="en", alt="/dra-catalina-beltran/", crumb="Dr
     desc="Dr. Catalina Beltrán: cosmetic dentist with 15 years of experience, licensed in Colombia since 2011. Office in El Poblado, Medellín. English spoken.",
     h1="Dr. Catalina Beltrán",
     lead="Dr. Catalina Beltrán is a dentist with 15 years of experience, licensed in Colombia's national health registry (RETHUS) since 2011 and a specialist in Cosmetic Dentistry. She treats every patient personally at her office in El Poblado, Medellín.",
-    wa="Hi Dr. Catalina 👋 I saw your website and I'd like to know the price of my smile design.", image="/img/dr-catalina-beltran-cosmetic-dentist-medellin.webp",
+    wa=wa_en("Dr. profile"), image="/img/dr-catalina-beltran-cosmetic-dentist-medellin.webp",
     body=f"""<img src="/img/dr-catalina-beltran-cosmetic-dentist-medellin.webp" width="900" height="1200" alt="Dr. Catalina Beltrán, cosmetic dentist" style="max-width:360px;border-radius:16px;margin:18px 0">
 <section><h2>Training</h2><p>Dr. Catalina Beltrán is a dentist with an emphasis in surgical sciences, a specialist in Cosmetic Dentistry and licensed in Colombia's RETHUS since 2011.</p><table><tbody>
 <tr><td>Dentist with an emphasis in surgical sciences</td><td>Colegio Odontológico Colombiano</td></tr>

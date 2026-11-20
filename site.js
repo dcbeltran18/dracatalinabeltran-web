@@ -18,8 +18,8 @@ const src=()=>{if(click.gclid||click.gbraid||click.wbraid)return'Google Ads';con
   if(/chatgpt\.com$|openai\.com$/.test(rh))return'ChatGPT';if(/perplexity\.ai$/.test(rh))return'Perplexity';return rh;};
 const s0=src();ss('src',s0);
 const origen=s0+' (web: '+slug+')';
-/* Código de referencia en cada mensaje de WhatsApp, igual que en la página de valoración */
-document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a=>{try{const u=new URL(a.href);const t=(u.searchParams.get('text')||'')+' (ref. '+ref.replace(/^DS-/,'')+')';a.href=u.origin+u.pathname+'?text='+encodeURIComponent(t);}catch(e){}
+/* Código de referencia dentro del paréntesis de la página: "(viajar a Medellín, ref. 7KQM)". Si no hay paréntesis, va al final. */
+document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a=>{try{const u=new URL(a.href);const c=ref.replace(/^DS-/,''),t0=u.searchParams.get('text')||'';const t=/\(([^)]*)\)/.test(t0)?t0.replace(/\(([^)]*)\)/,'($1, ref. '+c+')'):t0+' (ref. '+c+')';a.href=u.origin+u.pathname+'?text='+encodeURIComponent(t);}catch(e){}
   a.addEventListener('click',()=>{if(!on)return;try{navigator.sendBeacon(SHEET,JSON.stringify({ref,lang,boton:'web-'+slug,tz:(Intl.DateTimeFormat().resolvedOptions().timeZone||''),...click}))}catch(e){}});});
 if(!on)return;
 let nv=1;try{if(!sessionStorage.getItem('dcb_s')){sessionStorage.setItem('dcb_s','1');localStorage.setItem('dcb_vis',String(+(localStorage.getItem('dcb_vis')||0)+1));}nv=+(localStorage.getItem('dcb_vis')||1);}catch(e){}

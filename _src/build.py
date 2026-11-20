@@ -201,7 +201,7 @@ def main():
                 f"Sitemap: {DOMAIN}/sitemap.xml\n")
     nf = dict(path="/404.html", lang="es", title="Página no encontrada | Dra. Catalina Beltrán", desc="Página no encontrada.",
               h1="Esta página no existe", byline=False, noindex=True, no_top_cta=True,
-              wa="Hola Dra. Catalina 👋 Vi su página web y quiero saber el precio de mi diseño de sonrisa.",
+              wa="Hola Dra. Catalina 👋 Vi su página web (página no encontrada) y tengo una pregunta. Mi nombre es: ",
               body='<p><a href="/">Volver al inicio</a> · <a href="/diseno-de-sonrisa-medellin/">Diseño de sonrisa en Medellín</a> · <a href="/precio-diseno-de-sonrisa-colombia/">Precios</a></p>')
     with open(os.path.join(ROOT, "404.html"), "w", encoding="utf-8") as f:
         f.write(layout(nf))
