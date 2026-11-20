@@ -24,7 +24,7 @@ PAGES = []
 # ---------------- INICIO ----------------
 PAGES.append(dict(path="/", lang="es", byline=False,
     title="Dra. Catalina Beltrán | Odontóloga estética en Medellín",
-    desc="Odontóloga estética en El Poblado, Medellín. Carillas sin desgaste dental en porcelana E-max y resina, con precio cerrado. 15 años de experiencia, 5,0 en Google.",
+    desc="Odontóloga estética en El Poblado, Medellín. Carillas sin desgaste en porcelana E-max y resina, con precio cerrado. 15 años de experiencia, 5,0 en Google.",
     h1="Dra. Catalina Beltrán, odontóloga estética en Medellín",
     lead=("La Dra. Catalina Beltrán es odontóloga estética en El Poblado, Medellín, con 15 años de experiencia y calificación de 5,0 en Google. "
           "Hace diseños de sonrisa con carillas de porcelana E-max y de resina sin desgaste dental, con precio cerrado antes de empezar: desde USD 145 por diente en resina y USD 5.900 por una sonrisa completa de 20 carillas de porcelana."),
@@ -89,8 +89,6 @@ MEJOR_FAQS = [
      "En la consulta pública del RETHUS (Registro Único Nacional del Talento Humano en Salud) del Ministerio de Salud de Colombia, buscando su nombre o su número de documento. La Dra. Catalina Beltrán está registrada desde 2011."),
     ("¿Puedo saber si soy candidato antes de ir al consultorio?",
      "Sí. La valoración es gratis por WhatsApp: envías 3 fotos con tu celular y la Dra. Catalina te dice qué opción te conviene y el precio cerrado de tu caso."),
-    ("¿Qué formas de pago aceptan?",
-     "Efectivo, transferencia bancaria y tarjeta."),
 ]
 PAGES.append(dict(path=P_MEJOR, lang="es", updated="2026-11-19", crumb="Cómo elegir diseño de sonrisa en Medellín", schema_type="MedicalWebPage",
     title="¿Cuál es el mejor diseño de sonrisa en Medellín? Cómo elegir",
@@ -142,7 +140,7 @@ PILAR_FAQS = [
 ]
 PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="MedicalWebPage",
     title="¿Qué es el diseño de sonrisa? Tipos, duración y cómo elegir",
-    desc="Qué es el diseño de sonrisa, qué tipos hay (porcelana, resina, microdiseño, blanqueamiento), cuánto dura y quién puede hacérselo. Guía de una odontóloga estética.",
+    desc="Qué es el diseño de sonrisa, sus tipos (porcelana, resina, microdiseño, blanqueamiento), cuánto dura y quién puede hacérselo. Guía de una odontóloga estética.",
     h1="Diseño de sonrisa: qué es, tipos y cómo elegir",
     lead=("El diseño de sonrisa es un plan odontológico que define la forma, el tamaño, el color y la proporción de tus dientes según tu cara, y luego lo lleva a cabo con carillas de porcelana, carillas de resina, microdiseño o blanqueamiento. "
           "La opción correcta depende de cuánto quieres cambiar, de tu presupuesto y de la salud de tus dientes."),
@@ -187,7 +185,7 @@ EMAX_FAQS = [
 ]
 PAGES.append(dict(path=P_EMAX, lang="es", crumb="Carillas de porcelana E-max", parents=[TRAT], schema_type="MedicalWebPage",
     title="Carillas de porcelana E-max en Medellín: precio y duración",
-    desc="Carillas E-max sin desgaste dental en Medellín: USD 380 por diente, 20 carillas por USD 5.900 y una duración de 10 a 20 años. Ventajas, desventajas y cuidados.",
+    desc="Carillas E-max sin desgaste en Medellín: USD 380 por diente, 20 carillas por USD 5.900 y una duración de 10 a 20 años. Ventajas, desventajas y cuidados.",
     h1="Carillas de porcelana E-max",
     lead=("Las carillas E-max son láminas delgadas de porcelana de disilicato de litio que se adhieren al frente de los dientes para cambiar su forma, tamaño y color. "
           "Con la Dra. Catalina Beltrán en Medellín se colocan sin desgaste dental y cuestan USD 380 por diente; la sonrisa completa de 20 carillas cuesta USD 5.900."),
@@ -220,8 +218,8 @@ RES_FAQS = [
     ("¿Se pueden cambiar después a porcelana?", "Sí. Muchas personas empiezan con resina y luego pasan a porcelana E-max. La doctora te dice cuándo conviene."),
 ]
 PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", updated="2026-11-13", og="/img/og-diseno-de-sonrisa-en-resina-caso-3.jpg", og_alt="Sonrisa después del diseño de sonrisa en resina en 12 dientes con la Dra. Catalina Beltrán en Medellín", image_obj=("/img/diseno-de-sonrisa-en-resina-despues-caso-3-910.webp", 910, 556, "Diseño de sonrisa en resina en 12 dientes de un paciente de Estados Unidos, hecho por la Dra. Catalina Beltrán en Medellín"), parents=[TRAT], schema_type="MedicalWebPage",
-    title="Carillas de resina en Medellín: precio, duración y diferencias",
-    desc="Diseño de sonrisa en resina en Medellín: USD 145 por diente y una duración promedio de 5 a 7 años, hasta 10 con mantenimiento. Diferencias con la porcelana E-max.",
+    title="Carillas de resina en Medellín: precio y duración",
+    desc="Diseño de sonrisa en resina en Medellín: USD 145 por diente y una duración de 5 a 7 años, hasta 10 con mantenimiento. Diferencias con la porcelana E-max.",
     h1="Carillas de resina",
     lead=("Las carillas de resina se hacen con un material del color del diente que la doctora moldea sobre cada pieza para cambiar su forma, tamaño y color. "
           f"Con la Dra. Catalina Beltrán en <a href='{P_MED}'>Medellín</a> cuestan USD 145 por diente, sin desgaste dental, y son la forma más económica de hacer un diseño de sonrisa completo."),
@@ -243,7 +241,7 @@ PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", updated="20
 # ---------------- PRECIOS ----------------
 PRICE_FAQS = [
     ("¿Cuánto vale un diseño de sonrisa en dólares?", "Una sonrisa superior de 10 carillas de porcelana E-max cuesta USD 3.800 y la sonrisa completa de 20 carillas, USD 5.900, que equivale a USD 295 por diente."),
-    ("¿Puedo pagar en pesos colombianos?", "Sí. La doctora te confirma el valor en pesos por WhatsApp."),
+    ("¿Puedo pagar en pesos colombianos?", "Sí. La doctora te confirma el valor en pesos por WhatsApp. Puedes pagar en efectivo, por transferencia bancaria o con tarjeta."),
 ]
 PAGES.append(dict(path=P_PRICE, lang="es", alt="/en/cost-of-veneers-colombia/", crumb="Precios", schema_type="WebPage",
     title="¿Cuánto cuesta un diseño de sonrisa en Colombia? Precios 2026",

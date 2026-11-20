@@ -80,10 +80,10 @@ def byline_html(p):
     es = p["lang"] == "es"
     d = p.get("updated", UPDATED)
     if es:
-        return (f'<p class="byline"><img src="/img/dra-catalina-beltran-odontologa-estetica-medellin-80.webp" width="40" height="40" alt="" loading="lazy">'
+        return (f'<p class="byline"><img src="/img/dra-catalina-beltran-odontologa-estetica-medellin-80.webp" width="40" height="40" alt="Dra. Catalina Beltrán, odontóloga estética" loading="lazy">'
                 f'<span>Escrito y revisado por <a href="/dra-catalina-beltran/">Dra. Catalina Beltrán</a>, odontóloga estética, RETHUS desde 2011 · '
                 f'Actualizado el <time datetime="{d}">{fecha_es(d)}</time></span></p>')
-    return (f'<p class="byline"><img src="/img/dr-catalina-beltran-cosmetic-dentist-medellin-80.webp" width="40" height="40" alt="" loading="lazy">'
+    return (f'<p class="byline"><img src="/img/dr-catalina-beltran-cosmetic-dentist-medellin-80.webp" width="40" height="40" alt="Dr. Catalina Beltrán, cosmetic dentist" loading="lazy">'
             f'<span>Written and reviewed by <a href="/en/dr-catalina-beltran/">Dr. Catalina Beltrán</a>, cosmetic dentist, licensed in Colombia since 2011 · '
             f'Updated <time datetime="{d}">{fecha_en(d)}</time></span></p>')
 
@@ -119,7 +119,7 @@ def layout(p):
     return f"""<!doctype html>
 <html lang="{p["lang"]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{p["title"]}</title><meta name="description" content="{p["desc"]}">{robots}
-<link rel="canonical" href="{DOMAIN}{p["path"]}">{alt}
+{"" if p.get("noindex") else f'<link rel="canonical" href="{DOMAIN}{p["path"]}">'}{alt}
 <meta property="og:title" content="{p["title"]}"><meta property="og:description" content="{p["desc"]}">
 <meta property="og:image" content="{DOMAIN}{p.get("og", "/img/og.jpg")}">{og_extra}<meta property="og:url" content="{DOMAIN}{p["path"]}"><meta property="og:type" content="website">
 <meta property="og:locale" content="{"es_CO" if es else "en_US"}"><meta name="twitter:card" content="summary_large_image">
@@ -196,8 +196,8 @@ def main():
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">\n' + "\n".join(sm) + "\n</urlset>\n")
     with open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8") as f:
         f.write("User-agent: *\nAllow: /\nDisallow: /_src/\n\n"
-                "User-agent: Googlebot\nAllow: /\n\nUser-agent: Bingbot\nAllow: /\n\n"
-                "User-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\n"
+                "User-agent: Googlebot\nAllow: /\nDisallow: /_src/\n\nUser-agent: Bingbot\nAllow: /\nDisallow: /_src/\n\n"
+                "User-agent: OAI-SearchBot\nAllow: /\nDisallow: /_src/\n\nUser-agent: PerplexityBot\nAllow: /\nDisallow: /_src/\n\n"
                 f"Sitemap: {DOMAIN}/sitemap.xml\n")
     nf = dict(path="/404.html", lang="es", title="Página no encontrada | Dra. Catalina Beltrán", desc="Página no encontrada.",
               h1="Esta página no existe", byline=False, noindex=True, no_top_cta=True,

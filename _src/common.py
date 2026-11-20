@@ -9,7 +9,8 @@ UPDATED = "2026-11-10"
 HOME_ES = "/"
 HOME_EN = "/en/veneers-medellin/"
 INSTAGRAM = "https://www.instagram.com/dracatalinabeltran/"
-FACEBOOK = "https://www.facebook.com/cirugia.plastica.125"
+FACEBOOK = "https://www.facebook.com/dracatalinabeltran"
+GBP_MAP = "https://www.google.com/maps/search/?api=1&query=Dra.+Catalina+Belt%C3%A1n+Dise%C3%B1o+de+Sonrisa+Medellin&query_place_id=ChIJ5UxszfqDRo4R-RxohnoXKdA"
 ID_DENTIST = DOMAIN + "/#consultorio-medellin"
 ID_PERSON = DOMAIN + "/dra-catalina-beltran/#dra"
 
@@ -23,13 +24,20 @@ DENTIST_SCHEMA = {
     "name": "Dra. Catalina Beltrán - Diseño de Sonrisa en Medellín",
     "url": DOMAIN + "/", "image": DOMAIN + "/img/og.jpg", "logo": DOMAIN + "/icon-180.png",
     "telephone": PHONE, "email": EMAIL,
-    "address": {"@type": "PostalAddress", "streetAddress": "Cra. 25 #12 Sur 59", "addressLocality": "Medellín",
+    "address": {"@type": "PostalAddress", "streetAddress": "Cra. 25 #12 Sur 59, El Poblado", "addressLocality": "Medellín",
                 "addressRegion": "Antioquia", "addressCountry": "CO"},
+    "geo": {"@type": "GeoCoordinates", "latitude": 6.1974442, "longitude": -75.5571896},
+    "hasMap": GBP_MAP,
+    "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "21:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:00", "closes": "17:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "07:00", "closes": "14:00"},
+    ],
     "areaServed": {"@type": "City", "name": "Medellín"},
     "priceRange": "USD 145 – USD 5.900", "currenciesAccepted": "USD, COP",
     "knowsLanguage": ["es", "en"],
     "employee": {"@id": ID_PERSON}, "founder": {"@id": ID_PERSON},
-    "sameAs": [INSTAGRAM, FACEBOOK],
+    "sameAs": [INSTAGRAM, FACEBOOK, GBP_MAP],
     "makesOffer": [
         {"@type": "Offer", "name": "Carilla de porcelana E-max (por diente)", "price": "380", "priceCurrency": "USD"},
         {"@type": "Offer", "name": "Carilla de resina (por diente)", "price": "145", "priceCurrency": "USD"},
@@ -49,7 +57,7 @@ PERSON_SCHEMA = {
                        "name": "Odontóloga registrada en el RETHUS (Colombia) desde 2011"},
                       {"@type": "EducationalOccupationalCredential", "credentialCategory": "Especialización",
                        "name": "Especialista en Estética Dental, Federación Odontológica Colombiana"}],
-    "sameAs": [INSTAGRAM],
+    "sameAs": [INSTAGRAM, FACEBOOK],
 }
 
 CSS = """

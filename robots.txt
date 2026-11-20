@@ -4,14 +4,18 @@ Disallow: /_src/
 
 User-agent: Googlebot
 Allow: /
+Disallow: /_src/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /_src/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /_src/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /_src/
 
 Sitemap: https://dracatalinabeltran.com/sitemap.xml

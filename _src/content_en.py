@@ -15,7 +15,7 @@ VEN_FAQS = [
     ("Where is the office?", f"At {ADDRESS}, Colombia, in El Poblado. The Ibis Medellín hotel is 300 m away."),
 ]
 PAGES.append(dict(path=E_VEN, lang="en", alt="/diseno-de-sonrisa-medellin/", schema_type="MedicalWebPage",
-    title="Veneers in Medellín, Colombia | Dr. Catalina Beltrán, El Poblado",
+    title="Veneers in Medellín, Colombia | Dr. Catalina Beltrán",
     desc="Veneers in Medellín with no tooth reduction: E-max USD 380 per tooth, 20 veneers USD 5,900. Fixed price before you travel. English spoken.",
     h1="Veneers in Medellín, Colombia",
     lead=("Dr. Catalina Beltrán places E-max porcelain veneers (USD 380 per tooth) and composite veneers (USD 145 per tooth) with no tooth reduction at her office in El Poblado, Medellín. "
