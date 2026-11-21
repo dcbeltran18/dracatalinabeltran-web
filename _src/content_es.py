@@ -243,15 +243,15 @@ PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", updated="20
 MICRO_FAQS = [
     ("¿El microdiseño desgasta los dientes?", "No. El microdiseño de sonrisa no requiere ningún tipo de desgaste dental: la resina se agrega sobre los bordes de tus dientes naturales."),
     ("¿Se puede hacer el microdiseño en porcelana?", "No. El microdiseño solo se hace en resina de alta estética, porque la doctora lo hace a mano directamente sobre tus dientes. Las carillas, en cambio, las fabrica un laboratorio."),
-    ("¿Cuántas citas son?", "Dos sesiones, es decir, dos días de consulta y tratamiento."),
+    ("¿Cuánto tiempo toma el microdiseño?", "Dos sesiones, es decir, dos días de consulta y tratamiento."),
 ]
 PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", updated="2026-11-21", parents=[TRAT], schema_type="MedicalWebPage",
     title="Microdiseño de sonrisa en Medellín: sin desgaste, en 2 citas",
     desc="Microdiseño de sonrisa en Medellín con la Dra. Catalina Beltrán: resina en los bordes, sin desgaste, 6 dientes arriba y 6 abajo, en 2 citas.",
     h1="Microdiseño de sonrisa en Medellín",
-    lead=("El microdiseño de sonrisa mejora solo los bordes de tus dientes con resina de alta estética, sin cubrir el diente completo y sin ningún tipo de desgaste. "
+    lead=("El microdiseño de sonrisa (también llamado micro diseño) mejora solo los bordes de tus dientes con resina de alta estética, sin cubrir el diente completo y sin ningún tipo de desgaste. "
           "Lo habitual es tratar los 6 dientes de arriba y los 6 de abajo que se ven al sonreír, y se hace en 2 sesiones. "
-          "Con la Dra. Catalina Beltrán en Medellín es la forma más rápida y económica de mejorar tu sonrisa."),
+          "Con la Dra. Catalina Beltrán en Medellín es más rápido y más económico que las carillas."),
     wa=wa("microdiseño de sonrisa"), faqs=MICRO_FAQS,
     body=f"""<section><h2>¿Qué es el microdiseño de sonrisa?</h2>
 <p>El microdiseño de sonrisa es un tratamiento en el que la doctora agrega resina de alta estética solo en los bordes de cada diente, a mano y directamente en el consultorio. A diferencia de las carillas, no cubre el diente completo. Con la resina se logran texturas muy naturales y, si lo deseas, un borde translúcido como el de un diente natural.</p></section>
@@ -260,19 +260,19 @@ PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", upda
 <section><h2>¿El microdiseño desgasta los dientes?</h2>
 <p>No. El microdiseño no requiere ningún tipo de desgaste: la resina se agrega sobre tus dientes naturales, que se conservan. Es el mismo principio que sigue la Dra. Catalina en sus carillas sin desgaste dental.</p></section>
 <section><h2>¿Cuánto tiempo toma el microdiseño?</h2>
-<p>El microdiseño se hace en 2 sesiones, es decir, dos días de consulta y tratamiento en el <a href="{P_MED}">consultorio de El Poblado, Medellín</a>. Si vienes de otro país, la doctora te dice antes de viajar cuántos días conviene quedarte. <a href="{P_INT}">Ver cómo funciona para pacientes internacionales</a>.</p></section>
+<p>El microdiseño se hace en 2 sesiones, es decir, dos días de consulta y tratamiento en el <a href="{P_MED}">consultorio de El Poblado, Medellín</a>. Si vienes de otro país, escríbele por WhatsApp para organizar las 2 citas dentro de tu viaje. <a href="{P_INT}">Ver cómo funciona para pacientes internacionales</a>.</p></section>
 <section><h2>¿Cuál es la diferencia entre microdiseño y carillas?</h2>
 <p>Las carillas son láminas ultradelgadas que cubren el diente completo y las fabrica un laboratorio con equipos CNC a partir de un escáner 3D de tu boca. El microdiseño solo trabaja los bordes y lo hace la doctora a mano, por eso es más rápido y más económico.</p>
 <table><thead><tr><th></th><th>Microdiseño</th><th><a href="{P_RES}">Carillas de resina</a></th><th><a href="{P_EMAX}">Carillas de porcelana E-max</a></th></tr></thead><tbody>
 <tr><td>Qué cubre</td><td>Solo los bordes de cada diente</td><td>El diente completo</td><td>El diente completo</td></tr>
 <tr><td>Cómo se hace</td><td>A mano, por la doctora</td><td>En laboratorio, con escáner 3D</td><td>En laboratorio, con escáner 3D</td></tr>
 <tr><td>Material</td><td>Resina de alta estética</td><td>Resina</td><td>Disilicato de litio</td></tr>
-<tr><td>Manchas</td><td>Puede pigmentarse, como el diente natural</td><td>Puede pigmentarse, como el diente natural</td><td>No se mancha</td></tr>
+<tr><td>Manchas</td><td>Es resina: puede pigmentarse, como el diente natural</td><td>Puede pigmentarse, como el diente natural</td><td>No se mancha</td></tr>
 <tr><td>Precio</td><td>El más económico; te lo confirma la doctora</td><td>USD 145 por diente</td><td>USD 380 por diente</td></tr>
 </tbody></table>
 <p>Ordenados de mayor a menor inversión: carillas de porcelana E-max, carillas de resina y microdiseño. Si quieres cambiar por completo la forma, el tamaño y el color de tus dientes, conviene una carilla; si solo quieres mejorar los bordes, el microdiseño puede ser suficiente.</p></section>
 <section><h2>¿Cuánto cuesta un microdiseño de sonrisa?</h2>
-<p>El microdiseño cuesta menos que las carillas de resina, que valen USD 145 por diente, porque no cubre el diente completo. El valor final depende de cuántos dientes incluye tu caso; la Dra. Catalina te lo confirma gratis por WhatsApp después de ver 3 fotos de tu sonrisa. Si vives en Colombia, pide tu precio en pesos. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
+<p>El microdiseño cuesta menos que las carillas de resina, que valen USD 145 por diente. El valor final depende de cuántos dientes incluye tu caso; la Dra. Catalina te lo confirma gratis por WhatsApp después de ver 3 fotos de tu sonrisa. Si vives en Colombia, pide tu precio en pesos. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
 <section><h2>¿Quién hace el microdiseño?</h2>
 <p>La Dra. Catalina Beltrán, odontóloga estética con 15 años de experiencia, hace personalmente cada microdiseño en su consultorio de El Poblado.</p>
 {DOCTOR_ES}</section>""",
