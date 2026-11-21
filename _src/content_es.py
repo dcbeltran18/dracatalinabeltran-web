@@ -174,7 +174,7 @@ PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="Me
 <section><h2>¿Qué es mejor, carillas o microdiseño?</h2>
 <p>Depende de cuánto quieres cambiar: el microdiseño solo trabaja los bordes de cada diente, mientras que las carillas cubren el diente completo. Ordenadas de mayor a menor inversión: carillas de porcelana E-max (disilicato de litio), carillas de resina y microdiseño. En los tres casos se suelen tratar los 6 dientes de arriba y los 6 de abajo que se ven al sonreír. <a href="{P_MICRO}">Ver qué es el microdiseño</a>.</p></section>
 <section><h2>¿Blanqueamiento o carillas?</h2>
-<p>El blanqueamiento aclara el color de los dientes naturales, pero no cambia su forma ni se puede aplicar sobre una carilla. Si solo te molesta el color y tus dientes están sanos, empieza por un <a href="{P_BLANQ}">blanqueamiento dental</a>. Si vas a hacerte carillas, conviene blanquear antes para elegir el tono final. La doctora te confirma el precio del blanqueamiento por WhatsApp.</p></section>
+<p>El blanqueamiento aclara el color de los dientes naturales, pero no cambia su forma ni se puede aplicar sobre una carilla. Si solo te molesta el color y tus dientes están sanos, empieza por un <a href="{P_BLANQ}">blanqueamiento dental</a>. Si vas a hacerte carillas, conviene blanquear antes para elegir el tono final. Mira el <a href="{P_BLANQ}">precio y cuánto dura el blanqueamiento</a>.</p></section>
 <section><h2>¿Cómo se hace un diseño de sonrisa?</h2>
 <p>La doctora revisa tus fotos y la salud de tus dientes y encías. Luego diseña digitalmente tu sonrisa según tu cara, tu tono de piel y tu mordida, y te muestra el plan con el precio cerrado. Solo cuando lo apruebas se hace la limpieza previa y el tratamiento en el <a href="{P_MED}">consultorio de El Poblado, Medellín</a>. El control posterior es por videollamada.</p></section>
 <section><h2>¿Cuánto dura un diseño de sonrisa?</h2>
@@ -291,29 +291,33 @@ PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", upda
 BLANQ_FAQS = [
     ("¿El blanqueamiento funciona sobre carillas o coronas?", "No. El blanqueamiento solo aclara dientes naturales libres de otros materiales; no cambia el color de coronas, carillas, lentes ni otras restauraciones."),
     ("¿Puedo blanquearme los dientes en casa sin supervisión?", "No es recomendable. Usado de forma inadecuada, el producto puede causar hipersensibilidad y dañar el esmalte; por eso la Dra. Catalina hace una valoración previa y acompaña el proceso antes, durante y después."),
-    ("¿Sirve para manchas por medicamentos o de origen genético?", "No. El blanqueamiento no tiene efecto en manchas de origen genético ni en las causadas por medicamentos. La doctora te dice qué alternativa conviene en tu caso."),
+    ("¿Sirve para manchas por medicamentos o de origen genético?", "No. El blanqueamiento no tiene efecto en manchas de origen genético ni en las causadas por medicamentos."),
 ]
 PAGES.append(dict(path=P_BLANQ, lang="es", crumb="Blanqueamiento dental", updated="2026-11-21", parents=[TRAT], schema_type="MedicalWebPage",
-    title="Blanqueamiento dental en Medellín: qué esperar y para quién",
-    desc="Blanqueamiento dental en consultorio con la Dra. Catalina Beltrán en El Poblado, Medellín: cuántos tonos se aclaran, sensibilidad, cuidados y quién es candidato.",
+    title="Blanqueamiento dental en Medellín: precio y cuánto dura",
+    desc="Blanqueamiento dental en Medellín con la Dra. Catalina Beltrán: COP 650.000 con limpieza, 2 sesiones el mismo día. Cuántos tonos aclara y cuánto dura.",
     h1="Blanqueamiento dental en Medellín",
     lead=("El blanqueamiento dental en consultorio, o aclaramiento dental, aclara el color de tus dientes naturales con supervisión profesional. "
           "El resultado depende del color de base: los dientes amarillos suelen responder muy bien, los marrones algo menos y los grisáceos rara vez mejoran. "
-          "Con la Dra. Catalina Beltrán en El Poblado, Medellín, empieza siempre con una valoración para saber si eres candidato."),
+          "Con la Dra. Catalina Beltrán en El Poblado, Medellín, se hace en 2 sesiones el mismo día, incluye limpieza y cuesta COP 650.000."),
     wa=wa("blanqueamiento dental"), faqs=BLANQ_FAQS,
     body=f"""<section><h2>¿Qué es el blanqueamiento dental en consultorio?</h2>
-<p>Es un tratamiento que rompe las manchas del diente en fragmentos más pequeños, de modo que el color se ve más claro. La Dra. Catalina prefiere llamarlo aclaramiento dental, porque aclara el tono natural del diente; no lo convierte en un blanco artificial. Se hace con diagnóstico previo y con acompañamiento antes, durante y después.</p>
+<p>Es un tratamiento que rompe las manchas del diente en fragmentos más pequeños, de modo que el color se ve más claro. La Dra. Catalina lo llama aclaramiento dental. Se hace con diagnóstico previo y con acompañamiento antes, durante y después.</p>
 <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/bUBDaLC4lJk?rel=0" title="Blanqueamiento dental en consultorio con la Dra. Catalina Beltrán" width="560" height="315" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div></section>
 <section><h2>¿Cuántos tonos se aclaran con un blanqueamiento?</h2>
-<p>Depende del color de base de tus dientes. Los dientes amarillos son los que mejor responden; en los marrones el cambio es algo menos notorio, de uno a uno y medio tonos; y en los grisáceos es muy poco frecuente que mejoren.</p>
+<p>Depende del color de base de tus dientes. En los dientes amarillos es muy probable un resultado excelente; en los marrones el cambio es algo menos notorio, de uno a uno y medio tonos; y en los grisáceos es muy poco frecuente que mejoren.</p>
 <table><thead><tr><th>Color de base</th><th>Qué esperar</th></tr></thead><tbody>
 <tr><td>Amarillo</td><td>Es muy probable un resultado excelente</td></tr>
 <tr><td>Marrón</td><td>Cambio algo menos notorio: de uno a uno y medio tonos</td></tr>
 <tr><td>Gris</td><td>Es muy poco frecuente que mejore</td></tr>
 <tr><td>Manchas genéticas o por medicamentos</td><td>El blanqueamiento no tiene efecto</td></tr>
 </tbody></table></section>
+<section><h2>¿Cómo es el procedimiento y cuánto tiempo toma?</h2>
+<p>El blanqueamiento se hace en 2 sesiones el mismo día en el consultorio de El Poblado, e incluye una limpieza dental. Antes, la doctora hace la valoración para confirmar que eres candidato y qué resultado puedes esperar según el color de tus dientes.</p></section>
+<section><h2>¿Cuánto dura un blanqueamiento dental?</h2>
+<p>El resultado de un blanqueamiento dura en promedio entre 1 y 3 años. No es un tratamiento permanente: cuánto se mantiene depende de tus hábitos.</p></section>
 <section><h2>¿Quién puede hacerse un blanqueamiento dental?</h2>
-<p>No todas las personas son candidatas, por eso siempre hay una valoración previa. El blanqueamiento solo funciona en dientes naturales libres de otros materiales: no aclara coronas, carillas, lentes ni restauraciones. Si tienes alguna en la zona visible, la doctora te explica cómo quedaría el conjunto antes de empezar.</p></section>
+<p>No todas las personas son candidatas, por eso siempre hay una valoración previa. El blanqueamiento solo funciona en dientes naturales libres de otros materiales: no aclara coronas, carillas, lentes ni restauraciones.</p></section>
 <section><h2>¿El blanqueamiento da sensibilidad?</h2>
 <p>Puede darla. El producto, usado de forma inadecuada, puede causar hipersensibilidad y dañar el esmalte; por eso se usan productos desensibilizantes antes, durante y después del tratamiento. En algunos casos la sensibilidad obliga a suspender el aclaramiento, aunque en ciertas situaciones se puede tratar.</p></section>
 <section><h2>¿Qué cuidados hay después del blanqueamiento?</h2>
@@ -324,7 +328,7 @@ PAGES.append(dict(path=P_BLANQ, lang="es", crumb="Blanqueamiento dental", update
 <section><h2>¿Blanqueamiento o carillas?</h2>
 <p>El blanqueamiento aclara el color pero no cambia la forma ni el tamaño de los dientes. Si además quieres cambiar la forma, conviene un diseño de sonrisa con <a href="{P_RES}">carillas de resina</a> o <a href="{P_EMAX}">carillas de porcelana E-max</a>; y si vas a hacerte carillas, conviene blanquear antes para elegir el tono final. <a href="{T}">Compara todas las opciones en la guía de diseño de sonrisa</a>.</p></section>
 <section><h2>¿Cuánto cuesta un blanqueamiento dental en Medellín?</h2>
-<p>La Dra. Catalina te confirma el precio por WhatsApp después de ver 3 fotos de tu sonrisa, porque primero revisa si eres candidato y qué resultado puedes esperar. Si vives en Colombia, pide tu precio en pesos. Puedes pagar en efectivo, por transferencia o con tarjeta.</p></section>
+<p>El blanqueamiento dental con la Dra. Catalina Beltrán cuesta COP 650.000 e incluye la limpieza y las 2 sesiones. Antes de agendar, envía 3 fotos de tu sonrisa por WhatsApp: la doctora revisa si eres candidato y qué resultado puedes esperar. Puedes pagar en efectivo, por transferencia o con tarjeta. <a href="{P_PRICE}">Ver los precios de carillas y diseño de sonrisa</a>.</p></section>
 <section><h2>¿Quién hace el blanqueamiento?</h2>
 <p>La Dra. Catalina Beltrán, odontóloga estética, en su consultorio de El Poblado, Medellín.</p>
 {DOCTOR_ES}</section>""",
