@@ -298,7 +298,7 @@ PAGES.append(dict(path=P_BLANQ, lang="es", crumb="Blanqueamiento dental", update
     desc="Blanqueamiento dental en Medellín con la Dra. Catalina Beltrán: COP 650.000 con limpieza, 2 sesiones el mismo día. Cuántos tonos aclara y cuánto dura.",
     h1="Blanqueamiento dental en Medellín",
     lead=("El blanqueamiento dental en consultorio, o aclaramiento dental, aclara el color de tus dientes naturales con supervisión profesional. "
-          "El resultado depende del color de base: los dientes amarillos suelen responder muy bien, los marrones algo menos y los grisáceos rara vez mejoran. "
+          "El resultado depende del color de base: en los dientes amarillos es muy probable un resultado excelente, en los marrones el cambio es menor y los grisáceos rara vez mejoran. "
           "Con la Dra. Catalina Beltrán en El Poblado, Medellín, se hace en 2 sesiones el mismo día, incluye limpieza y cuesta COP 650.000."),
     wa=wa("blanqueamiento dental"), faqs=BLANQ_FAQS,
     body=f"""<section><h2>¿Qué es el blanqueamiento dental en consultorio?</h2>
