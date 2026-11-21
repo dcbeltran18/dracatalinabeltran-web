@@ -243,6 +243,7 @@ PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", updated="20
 MICRO_FAQS = [
     ("¿El microdiseño desgasta los dientes?", "No. El microdiseño de sonrisa no requiere ningún tipo de desgaste dental: la resina se agrega sobre los bordes de tus dientes naturales."),
     ("¿Se puede hacer el microdiseño en porcelana?", "No. El microdiseño solo se hace en resina de alta estética, porque la doctora lo hace a mano directamente sobre tus dientes. Las carillas, en cambio, las fabrica un laboratorio."),
+    ("¿Quién no es candidato para un microdiseño?", "Las personas con dientes muy desalineados. Las manchas, en cambio, se pueden corregir. La doctora te dice si eres candidato al ver 3 fotos de tu sonrisa."),
     ("¿Cuánto tiempo toma el microdiseño?", "Dos sesiones, es decir, dos días de consulta y tratamiento."),
 ]
 PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", updated="2026-11-21", parents=[TRAT], schema_type="MedicalWebPage",
@@ -271,8 +272,10 @@ PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", upda
 <tr><td>Precio</td><td>El más económico; te lo confirma la doctora</td><td>USD 145 por diente</td><td>USD 380 por diente</td></tr>
 </tbody></table>
 <p>Ordenados de mayor a menor inversión: carillas de porcelana E-max, carillas de resina y microdiseño. Si quieres cambiar por completo la forma, el tamaño y el color de tus dientes, conviene una carilla; si solo quieres mejorar los bordes, el microdiseño puede ser suficiente.</p></section>
+<section><h2>¿Quién puede hacerse un microdiseño?</h2>
+<p>El microdiseño es para quien quiere mejorar los bordes, la forma y la textura de sus dientes sin cubrirlos por completo. No es una opción si los dientes están muy desalineados. Las manchas no son un impedimento, porque se pueden corregir. La doctora te dice si eres candidato después de ver 3 fotos de tu sonrisa por WhatsApp.</p></section>
 <section><h2>¿Cuánto cuesta un microdiseño de sonrisa?</h2>
-<p>El microdiseño cuesta menos que las carillas de resina, que valen USD 145 por diente. El valor final depende de cuántos dientes incluye tu caso; la Dra. Catalina te lo confirma gratis por WhatsApp después de ver 3 fotos de tu sonrisa. Si vives en Colombia, pide tu precio en pesos. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
+<p>El microdiseño cuesta menos que las carillas de resina, que valen USD 145 por diente. El precio depende de cada paciente; la Dra. Catalina te lo confirma gratis por WhatsApp después de ver 3 fotos de tu sonrisa. Si vives en Colombia, pide tu precio en pesos. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
 <section><h2>¿Quién hace el microdiseño?</h2>
 <p>La Dra. Catalina Beltrán, odontóloga estética con 15 años de experiencia, hace personalmente cada microdiseño en su consultorio de El Poblado.</p>
 {DOCTOR_ES}</section>""",
