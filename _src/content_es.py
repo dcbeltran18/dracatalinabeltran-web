@@ -155,7 +155,7 @@ PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="Me
 <tr><td>Blanqueamiento</td><td>Solo el color de dientes naturales</td><td>Dientes sanos con manchas</td></tr></tbody></table>
 <p>Precios: {PRICE_LINE}</p></section>
 <section><h2>¿Cómo se hacen las carillas de un diseño de sonrisa?</h2>
-<p>Las carillas son láminas ultradelgadas que cubren el diente completo. Primero se toma un escáner 3D de tu boca y, con esa imagen, un laboratorio las fabrica con equipos CNC, en porcelana E-max (disilicato de litio) o en resina. Con la Dra. Catalina Beltrán se colocan sin desgaste dental: no se desgastan tus dientes naturales.</p>
+<p>Las carillas son láminas ultradelgadas que cubren el diente completo. Primero se toma un escáner 3D de tu boca y, con esa imagen, un laboratorio las fabrica con equipos CNC, en porcelana E-max (disilicato de litio) o en resina. Con la Dra. Catalina Beltrán se colocan sin desgastar tus dientes naturales.</p>
 <p>El <a href="{P_MICRO}">microdiseño</a> se hace de otra forma: la doctora lo hace a mano, solo en los bordes de cada diente y siempre en resina. Por eso es más rápido y más económico que las carillas.</p></section>
 <section><h2>¿Las carillas se manchan?</h2>
 <p>Depende del material. Las carillas de resina pueden pigmentarse con los años, igual que el diente natural. Las <a href="{P_EMAX}">carillas de porcelana E-max</a>, hechas en disilicato de litio, no se manchan, son más resistentes y cuestan más: USD 380 por diente frente a USD 145 de las <a href="{P_RES}">carillas de resina</a>.</p></section>
