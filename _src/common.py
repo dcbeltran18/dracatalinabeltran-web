@@ -102,6 +102,7 @@ details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointe
 .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}.related a{border:1px solid var(--line);border-radius:999px;padding:8px 14px;text-decoration:none;font-size:15px}
 .note{border-left:3px solid var(--gold);padding:4px 0 4px 14px;color:var(--muted);font-size:16px}
 .map{width:100%;height:320px;border:0;border-radius:14px;filter:grayscale(.3)}
+.video iframe{width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:14px;display:block;margin:16px 0}
 .final{margin-top:56px;padding-top:8px;border-top:1px solid var(--line)}
 footer{border-top:1px solid var(--line);margin-top:56px;padding:28px 0 96px;font-size:15px;color:var(--muted)}footer a{color:var(--muted)}
 footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}footer b{color:var(--text);font-weight:500}
@@ -130,7 +131,7 @@ FOOTER_ES = f"""<div class="cols">
 <div><b>Dra. Catalina Beltrán</b><br>Odontología estética<br>{ADDRESS}<br>
 WhatsApp <a href="{{WA}}">{PHONE}</a><br><a href="{INSTAGRAM}">Instagram</a></div>
 <div><b>Tratamientos</b><ul><li><a href="/diseno-de-sonrisa/">Diseño de sonrisa</a></li><li><a href="/diseno-de-sonrisa/carillas-de-porcelana-emax/">Carillas de porcelana E-max</a></li>
-<li><a href="/diseno-de-sonrisa/carillas-de-resina/">Carillas de resina</a></li><li><a href="/diseno-de-sonrisa/microdiseno-de-sonrisa/">Microdiseño de sonrisa</a></li></ul></div>
+<li><a href="/diseno-de-sonrisa/carillas-de-resina/">Carillas de resina</a></li><li><a href="/diseno-de-sonrisa/microdiseno-de-sonrisa/">Microdiseño de sonrisa</a></li><li><a href="/blanqueamiento-dental-medellin/">Blanqueamiento dental</a></li></ul></div>
 <div><b>Pacientes</b><ul><li><a href="/diseno-de-sonrisa-medellin/">Diseño de sonrisa en Medellín</a></li><li><a href="/precio-diseno-de-sonrisa-colombia/">Precios</a></li>
 <li><a href="/antes-y-despues/">Antes y después</a></li><li><a href="/pacientes-internacionales/">Pacientes internacionales</a></li>
 <li><a href="/contacto/">Contacto</a></li><li><a href="/privacidad/">Privacidad</a></li></ul></div>

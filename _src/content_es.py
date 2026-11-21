@@ -15,6 +15,7 @@ P_INT = "/pacientes-internacionales/"
 P_CONT = "/contacto/"
 P_MEJOR = "/mejor-diseno-de-sonrisa-medellin/"
 P_MICRO = T + "microdiseno-de-sonrisa/"
+P_BLANQ = "/blanqueamiento-dental-medellin/"
 
 TRAT = ("Tratamientos", T)
 def wa(t): return f"Hola Dra. Catalina 👋 Vi su página web ({t}) y tengo una pregunta. Mi nombre es: "
@@ -101,7 +102,7 @@ PAGES.append(dict(path=P_MEJOR, lang="es", updated="2026-11-19", crumb="Cómo el
     wa=wa("cómo elegir diseño de sonrisa"), faqs=MEJOR_FAQS,
     body=f"""<section><h2>¿Qué hace que un diseño de sonrisa sea el mejor?</h2>
 <p>Un buen diseño de sonrisa se planifica según tu cara, tu tono de piel y tu mordida, para que el resultado se vea natural y no exagerado. Conserva la mayor cantidad posible de diente natural, empieza por revisar la salud de dientes y encías, y usa un material que dure lo que esperas. Si un tratamiento solo promete dientes muy blancos y parejos, sin hablar de nada de esto, no es la mejor opción aunque sea la más rápida o la más barata.</p>
-<p>Además, no todas las personas necesitan carillas. Si tus dientes tienen buena forma y solo quieres aclarar el color o mejorar los bordes, un blanqueamiento o un <a href="{P_MICRO}">microdiseño</a> puede ser suficiente; <a href="{T}">compara las opciones en la guía de diseño de sonrisa</a>. Y si hay caries o encías inflamadas, se tratan primero: una buena odontóloga te lo dice en la valoración, aunque eso signifique no hacer carillas.</p></section>
+<p>Además, no todas las personas necesitan carillas. Si tus dientes tienen buena forma y solo quieres aclarar el color o mejorar los bordes, un <a href="{P_BLANQ}">blanqueamiento</a> o un <a href="{P_MICRO}">microdiseño</a> puede ser suficiente; <a href="{T}">compara las opciones en la guía de diseño de sonrisa</a>. Y si hay caries o encías inflamadas, se tratan primero: una buena odontóloga te lo dice en la valoración, aunque eso signifique no hacer carillas.</p></section>
 <section><h2>6 criterios para elegir dónde hacerte el diseño de sonrisa en Medellín</h2>
 <p>Estos son los puntos que conviene revisar con cualquier odontóloga antes de pagar, y lo que encontrarás con la Dra. Catalina Beltrán.</p>
 <table><thead><tr><th>Criterio</th><th>Qué revisar</th><th>Con la Dra. Catalina Beltrán</th></tr></thead><tbody>
@@ -152,7 +153,7 @@ PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="Me
 <tr><td><a href="{P_EMAX}">Carillas de porcelana E-max</a></td><td>Forma, tamaño y color</td><td>Cambio completo y duradero</td></tr>
 <tr><td><a href="{P_RES}">Carillas de resina</a></td><td>Forma, tamaño y color</td><td>Cambio completo con menor inversión</td></tr>
 <tr><td><a href="{P_MICRO}">Microdiseño</a></td><td>Solo los bordes de los dientes, en resina</td><td>Mejorar bordes y textura con la menor inversión</td></tr>
-<tr><td>Blanqueamiento</td><td>Solo el color de dientes naturales</td><td>Dientes sanos con manchas</td></tr></tbody></table>
+<tr><td><a href="{P_BLANQ}">Blanqueamiento</a></td><td>Solo el color de dientes naturales</td><td>Dientes sanos con manchas</td></tr></tbody></table>
 <p>Precios: {PRICE_LINE}</p></section>
 <section><h2>¿Cómo se hacen las carillas de un diseño de sonrisa?</h2>
 <p>Las carillas son láminas ultradelgadas que cubren el diente completo. Primero se toma un escáner 3D de tu boca y, con esa imagen, un laboratorio las fabrica con equipos CNC, en porcelana E-max (disilicato de litio) o en resina. Con la Dra. Catalina Beltrán se colocan sin desgastar tus dientes naturales.</p>
@@ -173,7 +174,7 @@ PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="Me
 <section><h2>¿Qué es mejor, carillas o microdiseño?</h2>
 <p>Depende de cuánto quieres cambiar: el microdiseño solo trabaja los bordes de cada diente, mientras que las carillas cubren el diente completo. Ordenadas de mayor a menor inversión: carillas de porcelana E-max (disilicato de litio), carillas de resina y microdiseño. En los tres casos se suelen tratar los 6 dientes de arriba y los 6 de abajo que se ven al sonreír. <a href="{P_MICRO}">Ver qué es el microdiseño</a>.</p></section>
 <section><h2>¿Blanqueamiento o carillas?</h2>
-<p>El blanqueamiento aclara el color de los dientes naturales, pero no cambia su forma ni se puede aplicar sobre una carilla. Si solo te molesta el color y tus dientes están sanos, empieza por blanqueamiento. Si vas a hacerte carillas, conviene blanquear antes para elegir el tono final. La doctora te confirma el precio del blanqueamiento por WhatsApp.</p></section>
+<p>El blanqueamiento aclara el color de los dientes naturales, pero no cambia su forma ni se puede aplicar sobre una carilla. Si solo te molesta el color y tus dientes están sanos, empieza por un <a href="{P_BLANQ}">blanqueamiento dental</a>. Si vas a hacerte carillas, conviene blanquear antes para elegir el tono final. La doctora te confirma el precio del blanqueamiento por WhatsApp.</p></section>
 <section><h2>¿Cómo se hace un diseño de sonrisa?</h2>
 <p>La doctora revisa tus fotos y la salud de tus dientes y encías. Luego diseña digitalmente tu sonrisa según tu cara, tu tono de piel y tu mordida, y te muestra el plan con el precio cerrado. Solo cuando lo apruebas se hace la limpieza previa y el tratamiento en el <a href="{P_MED}">consultorio de El Poblado, Medellín</a>. El control posterior es por videollamada.</p></section>
 <section><h2>¿Cuánto dura un diseño de sonrisa?</h2>
@@ -215,7 +216,7 @@ PAGES.append(dict(path=P_EMAX, lang="es", crumb="Carillas de porcelana E-max", p
 <section><h2>¿Cuánto tiempo toma el tratamiento con carillas E-max?</h2>
 <p>Si vives fuera de Colombia, las carillas E-max se hacen en un solo viaje de mínimo 4 días a Medellín, en el <a href="{P_MED}">consultorio de El Poblado</a>. Antes de viajar ya tienes la valoración, el diseño y el precio cerrado. <a href="{P_INT}">Ver cómo funciona el viaje</a>.</p></section>
 <section><h2>¿Cómo se cuidan las carillas E-max?</h2><p>Las carillas E-max se cuidan con higiene diaria y controles, como los dientes naturales:</p><ul><li>Cepillado y seda dental todos los días.</li><li>Controles con la doctora (el primero, por videollamada).</li><li>No morder objetos duros ni abrir paquetes con los dientes.</li><li>Placa nocturna si aprietas o rechinas los dientes.</li></ul></section>
-<section><h2>¿Qué alternativas hay?</h2><p>Si buscas menor inversión, las <a href="{P_RES}">carillas de resina</a> cuestan USD 145 por diente. Si solo quieres mejorar los bordes de tus dientes, el <a href="{P_MICRO}">microdiseño</a> es la opción más económica; para aclarar el color, revisa el blanqueamiento en la <a href="{T}">guía de diseño de sonrisa</a>.</p></section>""",
+<section><h2>¿Qué alternativas hay?</h2><p>Si buscas menor inversión, las <a href="{P_RES}">carillas de resina</a> cuestan USD 145 por diente. Si solo quieres mejorar los bordes de tus dientes, el <a href="{P_MICRO}">microdiseño</a> es la opción más económica; para aclarar el color, revisa el <a href="{P_BLANQ}">blanqueamiento dental</a>.</p></section>""",
     related=[("Carillas de resina", P_RES), ("Antes y después", P_BA), ("Precios", P_PRICE)]))
 
 # ---------------- RESINA ----------------
@@ -285,6 +286,49 @@ PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", upda
 <p>La Dra. Catalina Beltrán, odontóloga estética con 15 años de experiencia, hace personalmente cada microdiseño en su consultorio de El Poblado.</p>
 {DOCTOR_ES}</section>""",
     related=[("Carillas de resina", P_RES), ("Guía de diseño de sonrisa", T), ("Precios", P_PRICE)]))
+
+# ---------------- BLANQUEAMIENTO (BORRADOR) ----------------
+BLANQ_FAQS = [
+    ("¿El blanqueamiento funciona sobre carillas o coronas?", "No. El blanqueamiento solo aclara dientes naturales libres de otros materiales; no cambia el color de coronas, carillas, lentes ni otras restauraciones."),
+    ("¿Puedo blanquearme los dientes en casa sin supervisión?", "No es recomendable. Usado de forma inadecuada, el producto puede causar hipersensibilidad y dañar el esmalte; por eso la Dra. Catalina hace una valoración previa y acompaña el proceso antes, durante y después."),
+    ("¿Sirve para manchas por medicamentos o de origen genético?", "No. El blanqueamiento no tiene efecto en manchas de origen genético ni en las causadas por medicamentos. La doctora te dice qué alternativa conviene en tu caso."),
+]
+PAGES.append(dict(path=P_BLANQ, lang="es", crumb="Blanqueamiento dental", updated="2026-11-21", parents=[TRAT], schema_type="MedicalWebPage",
+    title="Blanqueamiento dental en Medellín: qué esperar y para quién",
+    desc="Blanqueamiento dental en consultorio con la Dra. Catalina Beltrán en El Poblado, Medellín: cuántos tonos se aclaran, sensibilidad, cuidados y quién es candidato.",
+    h1="Blanqueamiento dental en Medellín",
+    lead=("El blanqueamiento dental en consultorio, o aclaramiento dental, aclara el color de tus dientes naturales con supervisión profesional. "
+          "El resultado depende del color de base: los dientes amarillos suelen responder muy bien, los marrones algo menos y los grisáceos rara vez mejoran. "
+          "Con la Dra. Catalina Beltrán en El Poblado, Medellín, empieza siempre con una valoración para saber si eres candidato."),
+    wa=wa("blanqueamiento dental"), faqs=BLANQ_FAQS,
+    body=f"""<section><h2>¿Qué es el blanqueamiento dental en consultorio?</h2>
+<p>Es un tratamiento que rompe las manchas del diente en fragmentos más pequeños, de modo que el color se ve más claro. La Dra. Catalina prefiere llamarlo aclaramiento dental, porque aclara el tono natural del diente; no lo convierte en un blanco artificial. Se hace con diagnóstico previo y con acompañamiento antes, durante y después.</p>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/bUBDaLC4lJk?rel=0" title="Blanqueamiento dental en consultorio con la Dra. Catalina Beltrán" width="560" height="315" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div></section>
+<section><h2>¿Cuántos tonos se aclaran con un blanqueamiento?</h2>
+<p>Depende del color de base de tus dientes. Los dientes amarillos son los que mejor responden; en los marrones el cambio es algo menos notorio, de uno a uno y medio tonos; y en los grisáceos es muy poco frecuente que mejoren.</p>
+<table><thead><tr><th>Color de base</th><th>Qué esperar</th></tr></thead><tbody>
+<tr><td>Amarillo</td><td>Es muy probable un resultado excelente</td></tr>
+<tr><td>Marrón</td><td>Cambio algo menos notorio: de uno a uno y medio tonos</td></tr>
+<tr><td>Gris</td><td>Es muy poco frecuente que mejore</td></tr>
+<tr><td>Manchas genéticas o por medicamentos</td><td>El blanqueamiento no tiene efecto</td></tr>
+</tbody></table></section>
+<section><h2>¿Quién puede hacerse un blanqueamiento dental?</h2>
+<p>No todas las personas son candidatas, por eso siempre hay una valoración previa. El blanqueamiento solo funciona en dientes naturales libres de otros materiales: no aclara coronas, carillas, lentes ni restauraciones. Si tienes alguna en la zona visible, la doctora te explica cómo quedaría el conjunto antes de empezar.</p></section>
+<section><h2>¿El blanqueamiento da sensibilidad?</h2>
+<p>Puede darla. El producto, usado de forma inadecuada, puede causar hipersensibilidad y dañar el esmalte; por eso se usan productos desensibilizantes antes, durante y después del tratamiento. En algunos casos la sensibilidad obliga a suspender el aclaramiento, aunque en ciertas situaciones se puede tratar.</p></section>
+<section><h2>¿Qué cuidados hay después del blanqueamiento?</h2>
+<ul><li>No tomar bebidas oscuras.</li>
+<li>Evitar alimentos que te causen sensibilidad justo después del procedimiento.</li>
+<li>Seguir usando el desensibilizante que te indique la doctora.</li>
+<li>No hacer ningún blanqueamiento por tu cuenta sin supervisión profesional.</li></ul></section>
+<section><h2>¿Blanqueamiento o carillas?</h2>
+<p>El blanqueamiento aclara el color pero no cambia la forma ni el tamaño de los dientes. Si además quieres cambiar la forma, conviene un diseño de sonrisa con <a href="{P_RES}">carillas de resina</a> o <a href="{P_EMAX}">carillas de porcelana E-max</a>; y si vas a hacerte carillas, conviene blanquear antes para elegir el tono final. <a href="{T}">Compara todas las opciones en la guía de diseño de sonrisa</a>.</p></section>
+<section><h2>¿Cuánto cuesta un blanqueamiento dental en Medellín?</h2>
+<p>La Dra. Catalina te confirma el precio por WhatsApp después de ver 3 fotos de tu sonrisa, porque primero revisa si eres candidato y qué resultado puedes esperar. Si vives en Colombia, pide tu precio en pesos. Puedes pagar en efectivo, por transferencia o con tarjeta.</p></section>
+<section><h2>¿Quién hace el blanqueamiento?</h2>
+<p>La Dra. Catalina Beltrán, odontóloga estética, en su consultorio de El Poblado, Medellín.</p>
+{DOCTOR_ES}</section>""",
+    related=[("Guía de diseño de sonrisa", T), ("Carillas de resina", P_RES), ("Precios", P_PRICE)]))
 
 # ---------------- PRECIOS ----------------
 PRICE_FAQS = [
