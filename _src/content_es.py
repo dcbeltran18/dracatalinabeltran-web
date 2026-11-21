@@ -159,7 +159,7 @@ PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="Me
 <p>Las carillas son láminas ultradelgadas que cubren el diente completo. Primero se toma un escáner 3D de tu boca y, con esa imagen, un laboratorio las fabrica con equipos CNC, en porcelana E-max (disilicato de litio) o en resina. Con la Dra. Catalina Beltrán se colocan sin desgastar tus dientes naturales.</p>
 <p>El <a href="{P_MICRO}">microdiseño</a> se hace de otra forma: la doctora lo hace a mano, solo en los bordes de cada diente y siempre en resina. Por eso es más rápido y más económico que las carillas.</p></section>
 <section><h2>¿Las carillas se manchan?</h2>
-<p>Depende del material. Las carillas de resina pueden pigmentarse con los años, igual que el diente natural. Las <a href="{P_EMAX}">carillas de porcelana E-max</a>, hechas en disilicato de litio, no se manchan, son más resistentes y cuestan más: USD 380 por diente frente a USD 145 de las <a href="{P_RES}">carillas de resina</a>.</p></section>
+<p>Depende del material. Las carillas de resina pueden pigmentarse con los años, igual que el diente natural, sobre todo con bebidas oscuras como el café o el vino. Las <a href="{P_EMAX}">carillas de porcelana E-max</a>, hechas en disilicato de litio, no se manchan, son más resistentes y cuestan más: USD 380 por diente frente a USD 145 de las <a href="{P_RES}">carillas de resina</a>.</p></section>
 <section><h2>¿Cómo se ve un diseño de sonrisa antes y después?</h2>
 <p>Un diseño de sonrisa cambia la forma, el tamaño y el color de los dientes visibles, siempre en proporción con la cara. Estos son dos casos reales de la Dra. Catalina en Medellín.</p>
 <h3>Diseño de sonrisa completo</h3>
@@ -221,7 +221,7 @@ PAGES.append(dict(path=P_EMAX, lang="es", crumb="Carillas de porcelana E-max", p
 
 # ---------------- RESINA ----------------
 RES_FAQS = [
-    ("¿Las carillas de resina se manchan?", "Pueden pigmentarse con los años, sobre todo con café, vino o cigarrillo. Un pulido en el control ayuda a mantener el brillo."),  # [REVISAR]
+    ("¿Las carillas de resina se manchan?", "Pueden pigmentarse con los años, sobre todo con bebidas oscuras como el café o el vino. Un pulido en el control ayuda a mantener el brillo."),
     ("¿Se pueden cambiar después a porcelana?", "Sí. Muchas personas empiezan con resina y luego pasan a porcelana E-max. La doctora te dice cuándo conviene."),
 ]
 PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", updated="2026-11-13", og="/img/og-diseno-de-sonrisa-en-resina-caso-3.jpg", og_alt="Sonrisa después del diseño de sonrisa en resina en 12 dientes con la Dra. Catalina Beltrán en Medellín", image_obj=("/img/diseno-de-sonrisa-en-resina-despues-caso-3-910.webp", 910, 556, "Diseño de sonrisa en resina en 12 dientes de un paciente de Estados Unidos, hecho por la Dra. Catalina Beltrán en Medellín"), parents=[TRAT], schema_type="MedicalWebPage",
@@ -274,7 +274,7 @@ PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", upda
 <tr><td>Qué cubre</td><td>Solo los bordes de cada diente</td><td>El diente completo</td><td>El diente completo</td></tr>
 <tr><td>Cómo se hace</td><td>A mano, por la doctora</td><td>En laboratorio, con escáner 3D</td><td>En laboratorio, con escáner 3D</td></tr>
 <tr><td>Material</td><td>Resina de alta estética</td><td>Resina</td><td>Disilicato de litio</td></tr>
-<tr><td>Manchas</td><td>Es resina: puede pigmentarse, como el diente natural</td><td>Puede pigmentarse, como el diente natural</td><td>No se mancha</td></tr>
+<tr><td>Manchas</td><td>Es resina: puede pigmentarse con bebidas oscuras, como el diente natural</td><td>Puede pigmentarse, como el diente natural</td><td>No se mancha</td></tr>
 <tr><td>Precio</td><td>El más económico; te lo confirma la doctora</td><td>USD 145 por diente</td><td>USD 380 por diente</td></tr>
 </tbody></table>
 <p>Ordenados de mayor a menor inversión: carillas de porcelana E-max, carillas de resina y microdiseño. Si quieres cambiar por completo la forma, el tamaño y el color de tus dientes, conviene una carilla; si solo quieres mejorar los bordes, el microdiseño puede ser suficiente.</p></section>
