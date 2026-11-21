@@ -130,7 +130,7 @@ FOOTER_ES = f"""<div class="cols">
 <div><b>Dra. Catalina Beltrán</b><br>Odontología estética<br>{ADDRESS}<br>
 WhatsApp <a href="{{WA}}">{PHONE}</a><br><a href="{INSTAGRAM}">Instagram</a></div>
 <div><b>Tratamientos</b><ul><li><a href="/diseno-de-sonrisa/">Diseño de sonrisa</a></li><li><a href="/diseno-de-sonrisa/carillas-de-porcelana-emax/">Carillas de porcelana E-max</a></li>
-<li><a href="/diseno-de-sonrisa/carillas-de-resina/">Carillas de resina</a></li></ul></div>
+<li><a href="/diseno-de-sonrisa/carillas-de-resina/">Carillas de resina</a></li><li><a href="/diseno-de-sonrisa/microdiseno-de-sonrisa/">Microdiseño de sonrisa</a></li></ul></div>
 <div><b>Pacientes</b><ul><li><a href="/diseno-de-sonrisa-medellin/">Diseño de sonrisa en Medellín</a></li><li><a href="/precio-diseno-de-sonrisa-colombia/">Precios</a></li>
 <li><a href="/antes-y-despues/">Antes y después</a></li><li><a href="/pacientes-internacionales/">Pacientes internacionales</a></li>
 <li><a href="/contacto/">Contacto</a></li><li><a href="/privacidad/">Privacidad</a></li></ul></div>
