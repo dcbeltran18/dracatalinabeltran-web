@@ -141,7 +141,7 @@ PILAR_FAQS = [
 ]
 PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="MedicalWebPage",
     title="¿Qué es el diseño de sonrisa? Tipos, duración y cómo elegir",
-    desc="Qué es el diseño de sonrisa, sus tipos (porcelana, resina, microdiseño, blanqueamiento), cuánto dura y quién puede hacérselo. Guía de una odontóloga estética.",
+    desc="Qué es el diseño de sonrisa, sus tipos (porcelana, resina, microdiseño, blanqueamiento), cuánto dura y quién puede hacérselo. Guía de una odontóloga.",
     h1="Diseño de sonrisa: qué es, tipos y cómo elegir",
     lead=("El diseño de sonrisa es un plan odontológico que define la forma, el tamaño, el color y la proporción de tus dientes según tu cara, y luego lo lleva a cabo con carillas de porcelana, carillas de resina, microdiseño o blanqueamiento. "
           "La opción correcta depende de cuánto quieres cambiar, de tu presupuesto y de la salud de tus dientes."),
@@ -154,6 +154,11 @@ PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="Me
 <tr><td><a href="{P_MICRO}">Microdiseño</a></td><td>Solo los bordes de los dientes, en resina</td><td>Mejorar bordes y textura con la menor inversión</td></tr>
 <tr><td>Blanqueamiento</td><td>Solo el color de dientes naturales</td><td>Dientes sanos con manchas</td></tr></tbody></table>
 <p>Precios: {PRICE_LINE}</p></section>
+<section><h2>¿Cómo se hacen las carillas de un diseño de sonrisa?</h2>
+<p>Las carillas son láminas ultradelgadas que cubren el diente completo. Primero se toma un escáner 3D de tu boca y, con esa imagen, un laboratorio las fabrica con equipos CNC, en porcelana E-max (disilicato de litio) o en resina. Con la Dra. Catalina Beltrán se colocan sin desgaste dental: no se desgastan tus dientes naturales.</p>
+<p>El <a href="{P_MICRO}">microdiseño</a> se hace de otra forma: la doctora lo hace a mano, solo en los bordes de cada diente y siempre en resina. Por eso es más rápido y más económico que las carillas.</p></section>
+<section><h2>¿Las carillas se manchan?</h2>
+<p>Depende del material. Las carillas de resina pueden pigmentarse con los años, igual que el diente natural. Las <a href="{P_EMAX}">carillas de porcelana E-max</a>, hechas en disilicato de litio, no se manchan, son más resistentes y cuestan más: USD 380 por diente frente a USD 145 de las <a href="{P_RES}">carillas de resina</a>.</p></section>
 <section><h2>¿Cómo se ve un diseño de sonrisa antes y después?</h2>
 <p>Un diseño de sonrisa cambia la forma, el tamaño y el color de los dientes visibles, siempre en proporción con la cara. Estos son dos casos reales de la Dra. Catalina en Medellín.</p>
 <h3>Diseño de sonrisa completo</h3>
@@ -166,7 +171,7 @@ PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="Me
  "Uno de los tipos de diseño de sonrisa: 6 carillas superiores de porcelana E-max, colocadas sin desgaste dental.")}
 <p><a href="{P_BA}">Ver todos los casos de antes y después</a></p></section>
 <section><h2>¿Qué es mejor, carillas o microdiseño?</h2>
-<p>Depende de cuánto quieres cambiar. Las carillas son láminas ultradelgadas que cubren el diente completo; el microdiseño solo trabaja los bordes de cada diente, por eso es más rápido y más económico. Ordenadas de mayor a menor inversión: carillas de porcelana E-max (disilicato de litio), carillas de resina y microdiseño. En los tres casos se suelen tratar los 6 dientes de arriba y los 6 de abajo que se ven al sonreír. <a href="{P_MICRO}">Ver qué es el microdiseño</a>.</p></section>
+<p>Depende de cuánto quieres cambiar: el microdiseño solo trabaja los bordes de cada diente, mientras que las carillas cubren el diente completo. Ordenadas de mayor a menor inversión: carillas de porcelana E-max (disilicato de litio), carillas de resina y microdiseño. En los tres casos se suelen tratar los 6 dientes de arriba y los 6 de abajo que se ven al sonreír. <a href="{P_MICRO}">Ver qué es el microdiseño</a>.</p></section>
 <section><h2>¿Blanqueamiento o carillas?</h2>
 <p>El blanqueamiento aclara el color de los dientes naturales, pero no cambia su forma ni se puede aplicar sobre una carilla. Si solo te molesta el color y tus dientes están sanos, empieza por blanqueamiento. Si vas a hacerte carillas, conviene blanquear antes para elegir el tono final. La doctora te confirma el precio del blanqueamiento por WhatsApp.</p></section>
 <section><h2>¿Cómo se hace un diseño de sonrisa?</h2>
@@ -287,7 +292,7 @@ PRICE_FAQS = [
     ("¿Puedo pagar en pesos colombianos?", "Sí. La doctora te confirma el valor en pesos por WhatsApp. Puedes pagar en efectivo, por transferencia bancaria o con tarjeta."),
 ]
 PAGES.append(dict(path=P_PRICE, lang="es", alt="/en/cost-of-veneers-colombia/", crumb="Precios", schema_type="WebPage",
-    title="¿Cuánto cuesta un diseño de sonrisa en Colombia? Precios 2026",
+    title="¿Cuánto cuesta un diseño de sonrisa en Colombia? Precio 2026",
     desc="Precios reales de diseño de sonrisa en Colombia: porcelana E-max USD 380, resina USD 145, 20 carillas USD 5.900. Qué incluye y comparación con EE. UU.",
     h1="¿Cuánto cuesta un diseño de sonrisa en Colombia?",
     lead=("Con la Dra. Catalina Beltrán, en Medellín, una sonrisa completa de 20 carillas de porcelana E-max cuesta USD 5.900, es decir, USD 295 por diente. "
@@ -397,7 +402,7 @@ OG_ES = {
     P_MED: dict(updated="2026-11-16", og="/img/og-diseno-de-sonrisa-medellin.jpg",
                 og_alt="Antes y después de carillas de porcelana E-max sin desgaste con la Dra. Catalina Beltrán en El Poblado, Medellín",
                 image_caption="Paciente de Estados Unidos se ve por primera vez después de su diseño de sonrisa en Medellín"),
-    T: dict(updated="2026-11-16", og="/img/og-que-es-diseno-de-sonrisa.jpg", image="/img/que-es-diseno-de-sonrisa-despues.webp",
+    T: dict(updated="2026-11-21", og="/img/og-que-es-diseno-de-sonrisa.jpg", image="/img/que-es-diseno-de-sonrisa-despues.webp",
             og_alt="Antes y después de un diseño de sonrisa hecho por la Dra. Catalina Beltrán en Medellín"),
     P_EMAX: dict(og="/img/og-carillas-de-porcelana-emax.jpg",
                  og_alt="Antes y después de carillas de porcelana E-max sin desgaste, caso real de la Dra. Catalina Beltrán"),

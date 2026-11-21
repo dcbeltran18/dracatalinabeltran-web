@@ -66,7 +66,7 @@ PAGES.append(dict(path=E_COST, lang="en", alt="/precio-diseno-de-sonrisa-colombi
     related=[("Veneers in Medellín", E_VEN), ("About Dr. Catalina", E_DRA), ("Español", "/precio-diseno-de-sonrisa-colombia/")]))
 
 PAGES.append(dict(path=E_DRA, lang="en", alt="/dra-catalina-beltran/", crumb="Dr. Catalina Beltrán", schema_type="ProfilePage", byline=False,
-    title="Dr. Catalina Beltrán | Cosmetic Dentist in Medellín, Colombia",
+    title="Dr. Catalina Beltrán | Cosmetic Dentist, Medellín, Colombia",
     desc="Dr. Catalina Beltrán: cosmetic dentist with 15 years of experience, licensed in Colombia since 2011. Office in El Poblado, Medellín. English spoken.",
     h1="Dr. Catalina Beltrán",
     lead="Dr. Catalina Beltrán is a dentist with 15 years of experience, licensed in Colombia's national health registry (RETHUS) since 2011 and a specialist in Cosmetic Dentistry. She treats every patient personally at her office in El Poblado, Medellín.",
