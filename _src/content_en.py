@@ -43,7 +43,7 @@ PAGES.append(dict(path=E_VEN, lang="en", alt="/diseno-de-sonrisa-medellin/", sch
 
 COST_FAQS = [
     ("How much is 20 veneers in Colombia?", "With Dr. Catalina Beltrán in Medellín, a full smile of 20 E-max porcelain veneers is USD 5,900, about USD 295 per tooth. Bought one by one, 20 veneers would be USD 7,600."),
-    ("Is it cheaper to get veneers in Colombia?", "Yes. Published US ranges are USD 925–2,500 per porcelain veneer (MedicineNet); in Medellín with Dr. Catalina it is USD 380, using the same E-max material."),
+    ("Is it cheaper to get veneers in Colombia?", "Yes. Published US ranges are USD 925–2,500 per porcelain veneer (MedicineNet); in Medellín with Dr. Catalina, E-max porcelain veneers are USD 380 each."),
     ("Can I get veneers for $5,000?", "Yes. 10 E-max porcelain veneers for the upper smile are USD 3,800. A full smile of 20 porcelain veneers is USD 5,900."),
     ("What is included in the price?", "Assessment and digital design, veneers with no tooth reduction, a cleaning beforehand and video follow-up once you are home. Flights and hotel are not included."),
     ("Why do veneer prices vary so much between clinics?", "Material (composite or porcelain), porcelain brand, number of teeth, any treatment needed beforehand, and whether design and follow-up are included. Always ask what the price includes and whether it is fixed."),

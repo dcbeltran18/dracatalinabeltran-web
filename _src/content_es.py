@@ -82,7 +82,7 @@ PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Dis
 <li>15 años de experiencia y registro en el RETHUS desde 2011.</li><li>Consultorio en El Poblado, una de las zonas de Medellín con más hoteles y restaurantes.</li></ul>
 <p>Si estás comparando opciones, revisa <a href="{P_MEJOR}">cómo elegir el mejor diseño de sonrisa en Medellín</a>.</p>
 {DOCTOR_ES}</section>
-<section><h2>¿Dónde queda el consultorio?</h2><p><b>Dra. Catalina Beltrán - Diseño de Sonrisa en Medellín</b><br>Carrera 25 # 12 Sur 59, El Poblado, Medellín · WhatsApp <a href="{{WA}}">{PHONE}</a></p><p>Si vienes de otro país, el hotel Ibis Medellín está a 300 m.</p>{MAP}</section>""",
+<section><h2>¿Dónde queda el consultorio?</h2><p><b>Dra. Catalina Beltrán - Diseño de Sonrisa en Medellín</b><br>Cra. 25 #12 Sur 59, El Poblado, Medellín · WhatsApp <a href="{{WA}}">{PHONE}</a></p><p>Si vienes de otro país, el hotel Ibis Medellín está a 300 m.</p>{MAP}</section>""",
     related=[("Precios", P_PRICE), ("Guía de diseño de sonrisa", T), ("Pacientes internacionales", P_INT)]))
 
 # ---------------- CÓMO ELEGIR (MEJOR) ----------------
@@ -186,7 +186,7 @@ PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="Me
 # ---------------- E-MAX ----------------
 EMAX_FAQS = [
     ("¿Las carillas E-max requieren desgastar los dientes?", "Con la Dra. Catalina, no. Coloca las carillas sin desgaste dental, de modo que tus dientes naturales se conservan."),
-    ("¿Las carillas E-max se manchan?", "No. La porcelana E-max no absorbe pigmentos como el café o el vino, por eso conserva su color."),  # [REVISAR]
+    ("¿Las carillas E-max se manchan?", "No. La porcelana E-max no absorbe pigmentos como el café o el vino, por eso conserva su color."),
     ("¿Las carillas pudren los dientes?", "No. Lo que daña un diente es la caries por mala higiene debajo o alrededor de la carilla. Con higiene diaria y controles, el diente se mantiene sano."),
     ("¿Cuándo no se pueden poner carillas?", "Cuando hay caries o enfermedad de encías sin tratar, o un bruxismo fuerte sin control. La doctora lo revisa en la valoración y, si hace falta, lo trata antes."),
 ]
@@ -194,7 +194,7 @@ PAGES.append(dict(path=P_EMAX, lang="es", crumb="Carillas de porcelana E-max", p
     title="Carillas de porcelana E-max en Medellín: precio y duración",
     desc="Carillas E-max sin desgaste en Medellín: USD 380 por diente, 20 carillas por USD 5.900 y una duración de 10 a 20 años. Ventajas, desventajas y cuidados.",
     h1="Carillas de porcelana E-max",
-    lead=("Las carillas E-max son láminas delgadas de porcelana de disilicato de litio que se adhieren al frente de los dientes para cambiar su forma, tamaño y color. "
+    lead=("Las carillas E-max son láminas ultradelgadas de porcelana de disilicato de litio que cubren el diente completo para cambiar su forma, tamaño y color. Las fabrica un laboratorio con equipos CNC a partir de un escáner 3D de tu boca. "
           "Con la Dra. Catalina Beltrán en Medellín se colocan sin desgaste dental y cuestan USD 380 por diente; la sonrisa completa de 20 carillas cuesta USD 5.900."),
     wa=wa("carillas E-max"), faqs=EMAX_FAQS, image="/img/carillas-emax-sin-desgaste-despues-caso-2.webp",
     body=f"""<section><h2>¿Qué son las carillas E-max?</h2>
@@ -247,10 +247,8 @@ PAGES.append(dict(path=P_RES, lang="es", crumb="Carillas de resina", updated="20
 
 # ---------------- MICRODISEÑO ----------------
 MICRO_FAQS = [
-    ("¿El microdiseño desgasta los dientes?", "No. El microdiseño de sonrisa no requiere ningún tipo de desgaste dental: la resina se agrega sobre los bordes de tus dientes naturales."),
     ("¿Se puede hacer el microdiseño en porcelana?", "No. El microdiseño solo se hace en resina de alta estética, porque la doctora lo hace a mano directamente sobre tus dientes. Las carillas, en cambio, las fabrica un laboratorio."),
     ("¿Quién no es candidato para un microdiseño?", "Las personas con dientes muy desalineados. Las manchas, en cambio, se pueden corregir. La doctora te dice si eres candidato al ver 3 fotos de tu sonrisa."),
-    ("¿Cuánto tiempo toma el microdiseño?", "Dos sesiones, es decir, dos días de consulta y tratamiento."),
 ]
 PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", updated="2026-11-21", parents=[TRAT], schema_type="MedicalWebPage",
     title="Microdiseño de sonrisa en Medellín: sin desgaste, en 2 citas",
@@ -347,7 +345,8 @@ PAGES.append(dict(path=P_PRICE, lang="es", alt="/en/cost-of-veneers-colombia/", 
           "La carilla de porcelana suelta cuesta USD 380 y la de resina USD 145. El precio es cerrado y lo sabes antes de empezar."),
     wa=wa("precios"), faqs=PRICE_FAQS,
     body=f"""<section><h2>Precios de referencia 2026</h2><p>En 2026, con la Dra. Catalina Beltrán en Medellín, la carilla de porcelana E-max cuesta USD 380 por diente, la de resina USD 145 y la sonrisa completa de 20 carillas de porcelana USD 5.900.</p>{PRICE_TABLE_ES}
-<p class="muted">Precios vigentes al {fecha_es(UPDATED)}. Tu precio exacto depende de cuántos dientes necesitas: la doctora te lo confirma gratis por WhatsApp.</p></section>
+<p class="muted">Precios vigentes al {fecha_es(UPDATED)}. Tu precio exacto depende de cuántos dientes necesitas: la doctora te lo confirma gratis por WhatsApp.</p>
+<p>Otros tratamientos: el <a href="{P_BLANQ}">blanqueamiento dental</a> cuesta COP 650.000 con limpieza incluida, y el precio del <a href="{P_MICRO}">microdiseño de sonrisa</a> depende de cada paciente.</p></section>
 <section><h2>¿Qué incluye el precio?</h2><p>El precio incluye la valoración y el diseño digital, las carillas sin desgaste dental, la limpieza previa y el control por videollamada. No incluye vuelos ni hotel.</p>{INCLUDES_ES}<p>Si vives fuera de Colombia, <a href="{P_INT}">así funciona el viaje</a>.</p></section>
 <section><h2>¿Qué resultado obtienes por ese precio?</h2>
 <p>Este es un caso real de 6 carillas superiores de porcelana E-max de la Dra. Catalina, del tipo de tratamiento que se cotiza con precio cerrado en dólares. El precio exacto de tu caso depende de cuántos dientes necesitas.</p>
@@ -360,7 +359,7 @@ PAGES.append(dict(path=P_PRICE, lang="es", alt="/en/cost-of-veneers-colombia/", 
 <tr><td>Carilla de porcelana</td><td>USD 925–2.500</td><td>USD 380</td></tr><tr><td>Carilla de resina</td><td>USD 250–1.500</td><td>USD 145</td></tr></tbody></table>
 <p class="muted">Rangos de Estados Unidos: <a href="https://www.medicinenet.com/how_much_do_teeth_veneers_cost/article.htm" rel="noopener">MedicineNet, “How Much Do Teeth Veneers Cost?”</a>, consultado el {fecha_es(UPDATED)}.</p></section>
 <section><h2>¿Por qué varía tanto el precio de una clínica a otra?</h2>
-<p>Cambia según el material (resina o porcelana), la marca de la porcelana, cuántos dientes se tratan, si hay que tratar caries o encías antes y si incluye diseño digital y controles. Al comparar, pregunta siempre qué incluye el precio y si es cerrado. Para elegir material, mira <a href="{P_RES}">resina o porcelana: cuál conviene</a>.</p></section>""",
+<p>Cambia según el material (resina o porcelana), la marca de la porcelana, cuántos dientes se tratan, si hay que tratar caries o encías antes y si incluye diseño digital y controles. Al comparar, pregunta siempre qué incluye el precio y si es cerrado. Si estás comparando clínicas, revisa <a href="{P_MEJOR}">cómo elegir el mejor diseño de sonrisa en Medellín</a>. Para elegir material, mira <a href="{P_RES}">resina o porcelana: cuál conviene</a>.</p></section>""",
     related=[("Diseño de sonrisa en Medellín", P_MED), ("Carillas de porcelana E-max", P_EMAX), ("Carillas de resina", P_RES)]))
 
 # ---------------- DRA ----------------

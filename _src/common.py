@@ -10,7 +10,7 @@ HOME_ES = "/"
 HOME_EN = "/en/veneers-medellin/"
 INSTAGRAM = "https://www.instagram.com/dracatalinabeltran/"
 FACEBOOK = "https://www.facebook.com/dracatalinabeltran"
-GBP_MAP = "https://www.google.com/maps/search/?api=1&query=Dra.+Catalina+Belt%C3%A1n+Dise%C3%B1o+de+Sonrisa+Medellin&query_place_id=ChIJ5UxszfqDRo4R-RxohnoXKdA"
+GBP_MAP = "https://www.google.com/maps/search/?api=1&query=Dra.+Catalina+Beltr%C3%A1n+Dise%C3%B1o+de+Sonrisa+Medellin&query_place_id=ChIJ5UxszfqDRo4R-RxohnoXKdA"
 ID_DENTIST = DOMAIN + "/#consultorio-medellin"
 ID_PERSON = DOMAIN + "/dra-catalina-beltran/#dra"
 
