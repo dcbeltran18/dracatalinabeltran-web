@@ -194,7 +194,7 @@ CASES = {
               "Patient smiling before his 20 E-max porcelain veneers, case 5",
               "The same patient after 20 E-max Press porcelain veneers with Dr. Catalina Beltrán in Medellín"),
 }
-CAPTIONS = {"caso5": ("Caso real de la Dra. Catalina Beltrán: sonrisa completa con 20 carillas de porcelana E-max Press. Publicado con autorización del paciente.",
+CAPTIONS = {"caso5": ("Caso real de la Dra. Catalina Beltrán: sonrisa completa con 20 carillas de disilicato E-max Press. Publicado con autorización del paciente.",
                        "Real case by Dr. Catalina Beltrán: full smile with 20 E-max Press porcelain veneers. Published with the patient's permission."),
             "caso2b": ("Mismo paciente, vista de perfil, antes y después de sus carillas E-max.",
                        "Same patient, side view, before and after his E-max veneers."),
