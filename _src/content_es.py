@@ -387,8 +387,8 @@ PAGES.append(dict(path=P_DRA, lang="es", alt="/en/dr-catalina-beltran/", crumb="
 PAGES.append(dict(path=P_BA, lang="es", crumb="Antes y después", schema_type="WebPage",
     title="Diseño de sonrisa antes y después | Casos reales en Medellín",
     desc="Fotos reales de antes y después de diseño de sonrisa en Medellín con la Dra. Catalina Beltrán, y el video de un paciente al ver su nueva sonrisa.",
-    h1="Diseño de sonrisa: antes y después",
-    lead="Estos son casos reales de pacientes de la Dra. Catalina Beltrán en Medellín, publicados con su autorización. Cada sonrisa se diseñó según la cara, el tono de piel y la mordida de cada persona.",
+    h1="Antes y después: rejuvenece tu rostro con el diseño de sonrisa",
+    lead="Pacientes reales, resultados naturales. El diseño de sonrisa rejuvenece la expresión de tu boca y de tu rostro, porque cada sonrisa se diseña según la cara, el tono de piel y la mordida de cada paciente. Casos de la Dra. Catalina Beltrán en Medellín, publicados con autorización.",
     wa=wa("antes y después"), video=True,
     body=f"""<section><h2>Caso 1: diseño de sonrisa</h2><p>Caso real de diseño de sonrisa de la Dra. Catalina Beltrán en Medellín: la forma, el tamaño y el color de los dientes cambian en proporción con la cara del paciente.</p>{ba("caso1")}</section>
 <section><h2>Caso 2: carillas de porcelana E-max sin desgaste</h2><p>Caso real de 6 carillas superiores de porcelana E-max sin desgaste dental de la Dra. Catalina Beltrán, visto de perfil. El paciente viajó desde Francia.</p>{ba("caso2b")}<p><a href="{P_EMAX}">Qué son las carillas E-max y cuánto cuestan</a></p></section>
