@@ -392,6 +392,7 @@ PAGES.append(dict(path=P_BA, lang="es", crumb="Antes y después", schema_type="W
     wa=wa("antes y después"), video=True,
     body=f"""<section><h2>Caso 1: diseño de sonrisa</h2><p>Caso real de diseño de sonrisa de la Dra. Catalina Beltrán en Medellín: la forma, el tamaño y el color de los dientes cambian en proporción con la cara del paciente.</p>{ba("caso1")}</section>
 <section><h2>Caso 2: carillas de porcelana E-max sin desgaste</h2><p>Caso real de 6 carillas superiores de porcelana E-max sin desgaste dental de la Dra. Catalina Beltrán, visto de frente y de perfil. El paciente viajó desde Francia.</p>{ba("caso2")}{ba("caso2b")}<p><a href="{P_EMAX}">Qué son las carillas E-max y cuánto cuestan</a></p></section>
+<section id="caso-20-carillas-emax"><h2>Caso 3: sonrisa completa con 20 carillas de porcelana E-max</h2><p>Caso real de sonrisa completa de la Dra. Catalina Beltrán en Medellín: 20 carillas de porcelana E-max Press, que cubren los dientes que se ven al sonreír arriba y abajo. Así cambia la sonrisa en proporción con todo el rostro.</p>{ba("caso5")}<p><a href="{P_PRICE}">Cuánto cuesta una sonrisa completa con 20 carillas E-max</a></p></section>
 <section><h2>El momento en que se ve por primera vez</h2><p>Este paciente viajó desde Estados Unidos a Medellín para su diseño de sonrisa con la Dra. Catalina. El video lo muestra en el consultorio de El Poblado, al terminar el tratamiento, cuando se mira por primera vez.</p>{VIDEO_ES}</section>
 <section><h2>Pacientes que viajaron a Medellín por su sonrisa</h2><p>Pacientes de Estados Unidos, Italia y otras ciudades de Colombia se han hecho su diseño de sonrisa con la Dra. Catalina Beltrán en Medellín.</p>{PATIENTS_ES}</section>
 <p class="note">Los resultados varían según cada caso. La doctora te dice qué es posible en el tuyo después de ver tus fotos.</p>""",
@@ -456,7 +457,7 @@ OG_ES = {
     P_PRICE: dict(updated="2026-11-16", og="/img/og-precio-diseno-de-sonrisa-colombia.jpg", image="/img/precio-carillas-emax-colombia-despues.webp",
                   og_alt="Antes y después de carillas de porcelana E-max y el precio de 20 carillas por USD 5.900"),
     P_DRA: dict(og="/img/og-dra-catalina-beltran.jpg", og_alt="Dra. Catalina Beltrán, odontóloga estética en Medellín"),
-    P_BA: dict(updated="2026-11-16", og="/img/og-antes-y-despues-diseno-de-sonrisa.jpg", image="/img/diseno-de-sonrisa-medellin-despues-caso-1.webp",
+    P_BA: dict(updated="2026-11-23", og="/img/og-antes-y-despues-diseno-de-sonrisa.jpg", image="/img/diseno-de-sonrisa-medellin-despues-caso-1.webp",
                og_alt="Antes y después de un diseño de sonrisa, caso real de la Dra. Catalina Beltrán en Medellín"),
     P_INT: dict(updated="2026-11-16", og="/img/og-pacientes-internacionales.jpg",
                 og_alt="Paciente de Estados Unidos junto a la Dra. Catalina Beltrán en su consultorio de Medellín"),
