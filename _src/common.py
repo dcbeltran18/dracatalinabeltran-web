@@ -251,6 +251,9 @@ VIDEO_SCHEMA = {
 VIDEO_ES = ('<figure><video controls title="Paciente de Estados Unidos se ve por primera vez después de su diseño de sonrisa en Medellín" playsinline preload="none" poster="/video/paciente-estados-unidos-se-ve-por-primera-vez-diseno-de-sonrisa-medellin.webp" width="720" height="720">'
             '<source src="/video/paciente-estados-unidos-se-ve-por-primera-vez-diseno-de-sonrisa-medellin.mp4" type="video/mp4"></video>'
             '<figcaption>Paciente de Estados Unidos al verse por primera vez, al terminar su tratamiento en Medellín.</figcaption></figure>')
+VIDEO2_ES = ('<figure style="max-width:400px;margin-left:auto;margin-right:auto"><video controls title="Testimonio de un paciente después de su diseño de sonrisa con la Dra. Catalina Beltrán en Medellín" playsinline preload="none" poster="/video/testimonio-paciente-diseno-de-sonrisa-medellin.webp" width="720" height="1280">'
+             '<source src="/video/testimonio-paciente-diseno-de-sonrisa-medellin.mp4" type="video/mp4"></video>'
+             '<figcaption>Un paciente cuenta su experiencia al terminar su diseño de sonrisa en el consultorio de El Poblado.</figcaption></figure>')
 VIDEO_EN = VIDEO_ES.replace("Paciente de Estados Unidos al verse por primera vez, al terminar su tratamiento en Medellín.",
                             "A patient from the United States seeing his new smile for the first time, right after treatment in Medellín.")
 
