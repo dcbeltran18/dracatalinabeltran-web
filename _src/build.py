@@ -139,7 +139,7 @@ def layout(p):
 <section class="final">{cta}</section>
 </article></main>
 <footer><div class="wrap">{foot}</div></footer>
-<a class="float" href="{wa}" aria-label="WhatsApp">{WA_ICON}<span>WhatsApp</span></a>
+<a class="float" href="{wa}" aria-label="{p.get("float_label") or "WhatsApp"}">{WA_ICON}<span>{p.get("float_label") or "WhatsApp"}</span></a>
 <script src="/site.js?v={ASSET_V}" defer></script>
 </body></html>"""
 
