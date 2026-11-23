@@ -102,6 +102,13 @@ details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointe
 .related{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}.related a{border:1px solid var(--line);border-radius:999px;padding:8px 14px;text-decoration:none;font-size:15px}
 .note{border-left:3px solid var(--gold);padding:4px 0 4px 14px;color:var(--muted);font-size:16px}
 .map{width:100%;height:320px;border:0;border-radius:14px;filter:grayscale(.3)}
+.tv{margin:16px 0}.tv-box{position:relative;background:#000;border:1px solid rgba(201,169,110,.45);border-radius:14px;overflow:hidden}
+.tv-box video{display:block;width:100%;height:100%;object-fit:cover}
+.tv-box .pv{position:absolute;inset:0;pointer-events:none;background:transparent}
+.tv-play{position:absolute;inset:0;margin:auto;z-index:2;width:72px;height:72px;border-radius:50%;border:0;background:var(--gold);color:var(--ink);display:grid;place-items:center;cursor:pointer;box-shadow:0 6px 24px rgba(0,0,0,.45)}
+.tv-play svg{width:32px;height:32px;margin-left:4px}
+.pv-tag{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);z-index:2;white-space:nowrap;font:500 .85rem var(--body);color:#fff;background:rgba(8,8,7,.72);border:1px solid rgba(201,169,110,.6);padding:7px 13px;border-radius:999px;pointer-events:none}
+.tv.playing .tv-play,.tv.playing .pv,.tv.playing .pv-tag{display:none}
 .video iframe{width:100%;height:auto;aspect-ratio:16/9;border:0;border-radius:14px;display:block;margin:16px 0}
 .final{margin-top:56px;padding-top:8px;border-top:1px solid var(--line)}
 footer{border-top:1px solid var(--line);margin-top:56px;padding:28px 0 96px;font-size:15px;color:var(--muted)}footer a{color:var(--muted)}
@@ -248,14 +255,26 @@ VIDEO_SCHEMA = {
     "uploadDate": "2026-11-07", "duration": "PT19S", "inLanguage": "en",
     "creator": {"@id": ID_PERSON}, "publisher": {"@id": ID_DENTIST},
 }
-VIDEO_ES = ('<figure><video controls title="Paciente de Estados Unidos se ve por primera vez después de su diseño de sonrisa en Medellín" playsinline preload="none" poster="/video/paciente-estados-unidos-se-ve-por-primera-vez-diseno-de-sonrisa-medellin.webp" width="720" height="720">'
-            '<source src="/video/paciente-estados-unidos-se-ve-por-primera-vez-diseno-de-sonrisa-medellin.mp4" type="video/mp4"></video>'
-            '<figcaption>Paciente de Estados Unidos al verse por primera vez, al terminar su tratamiento en Medellín.</figcaption></figure>')
-VIDEO2_ES = ('<figure style="max-width:400px;margin-left:auto;margin-right:auto"><video controls title="Testimonio de un paciente después de su diseño de sonrisa con la Dra. Catalina Beltrán en Medellín" playsinline preload="none" poster="/video/testimonio-paciente-diseno-de-sonrisa-medellin.webp" width="720" height="1280">'
-             '<source src="/video/testimonio-paciente-diseno-de-sonrisa-medellin.mp4" type="video/mp4"></video>'
-             '<figcaption>Un paciente cuenta su experiencia al terminar su diseño de sonrisa en el consultorio de El Poblado.</figcaption></figure>')
-VIDEO_EN = VIDEO_ES.replace("Paciente de Estados Unidos al verse por primera vez, al terminar su tratamiento en Medellín.",
+def _testi_video(base, title, w, h, caption, style=""):
+    """Video con vista previa en movimiento y sin sonido; al tocar se reproduce el original con sonido."""
+    st = f' style="{style}"' if style else ""
+    return (f'<figure class="tv"{st}><div class="tv-box" style="aspect-ratio:{w}/{h}">'
+            f'<video controls title="{title}" playsinline preload="none" poster="{base}.webp" width="{w}" height="{h}"><source src="{base}.mp4" type="video/mp4"></video>'
+            f'<video class="pv" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" poster="{base}.webp" data-src="{base}-pv.mp4"></video>'
+            f'<span class="pv-tag" aria-hidden="true">🔊 Toca para ver con sonido</span>'
+            f'<button type="button" class="tv-play" aria-label="Reproducir video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button></div>'
+            f'<figcaption>{caption}</figcaption></figure>')
+
+VIDEO_ES = _testi_video("/video/paciente-estados-unidos-se-ve-por-primera-vez-diseno-de-sonrisa-medellin",
+    "Paciente de Estados Unidos se ve por primera vez después de su diseño de sonrisa en Medellín", 720, 720,
+    "Paciente de Estados Unidos al verse por primera vez, al terminar su tratamiento en Medellín.")
+VIDEO2_ES = _testi_video("/video/testimonio-paciente-diseno-de-sonrisa-medellin",
+    "Testimonio de un paciente después de su diseño de sonrisa con la Dra. Catalina Beltrán en Medellín", 720, 1280,
+    "Un paciente cuenta su experiencia al terminar su diseño de sonrisa en el consultorio de El Poblado.",
+    "max-width:400px;margin-left:auto;margin-right:auto")
+VIDEO_EN = (VIDEO_ES.replace("Paciente de Estados Unidos al verse por primera vez, al terminar su tratamiento en Medellín.",
                             "A patient from the United States seeing his new smile for the first time, right after treatment in Medellín.")
+            .replace("🔊 Toca para ver con sonido", "🔊 Tap to watch with sound").replace("Reproducir video", "Play video"))
 
 PATIENTS_ES = """<div class="gallery">
 <figure><img src="/img/paciente-estados-unidos-con-la-dra-catalina-beltran-medellin.webp" width="600" height="800" alt="Paciente de Estados Unidos junto a la Dra. Catalina en el consultorio" loading="lazy"><figcaption>Paciente de Estados Unidos</figcaption></figure>

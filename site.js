@@ -33,3 +33,13 @@ let sent=false;
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&!sent){sent=true;send({ev:'out',hasta:Math.min(max,100)+'%',seg:Math.round((Date.now()-t0)/1000),carga:carga(),videos:''});}});
 })();
 document.querySelectorAll('.cmp input').forEach(r=>r.addEventListener('input',()=>r.parentNode.style.setProperty('--pos',r.value+'%')));
+
+/* Videos testimonio: vista previa en movimiento sin sonido al entrar en pantalla; al tocar, el video con sonido */
+(()=>{const rm=matchMedia('(prefers-reduced-motion: reduce)').matches,sd=navigator.connection&&navigator.connection.saveData;
+if(!rm&&!sd&&'IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(x=>{const p=x.target,f=p.closest('.tv');
+if(x.isIntersecting&&!f.classList.contains('playing')){if(!p.getAttribute('src'))p.src=p.dataset.src;p.play().catch(()=>{});}else if(p.getAttribute('src'))p.pause();}),{rootMargin:'150px 0px',threshold:.25});
+document.querySelectorAll('.tv .pv').forEach(p=>{p.muted=true;io.observe(p);});}
+document.querySelectorAll('.tv').forEach(f=>{const v=f.querySelector('video:not(.pv)'),b=f.querySelector('.tv-play');
+if(b)b.addEventListener('click',()=>{v.play();});
+v.addEventListener('play',()=>{f.classList.add('playing');const p=f.querySelector('.pv');if(p)p.pause();});
+v.addEventListener('ended',()=>f.classList.remove('playing'));});})();
