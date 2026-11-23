@@ -132,7 +132,7 @@ def layout(p):
 <header><div class="wrap"><a class="brand" href="{HOME_ES if es else HOME_EN}">Dra. Catalina Beltrán<small>{"Odontología estética · Medellín" if es else "Cosmetic dentistry · Medellín"}</small></a>
 <nav aria-label="{"Principal" if es else "Main"}">{nav}</nav></div></header>
 <main id="main" class="wrap"><article>{crumbs_html(p)}
-<h1>{p["h1"]}</h1>{lead}{byline_html(p)}{first_cta}
+{p.get("pre_h1","")}<h1>{p["h1"]}</h1>{lead}{byline_html(p)}{first_cta}
 {body}
 {faq_html(p.get("faqs"), es)}
 {related_html(p.get("related"), es)}
