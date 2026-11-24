@@ -56,7 +56,7 @@ MED_FAQS = [
 ]
 PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Diseño de sonrisa en Medellín", schema_type="MedicalWebPage",
     title="Diseño de sonrisa en Medellín | Carillas sin desgaste",
-    desc="Diseño de sonrisa en Medellín sin desgaste dental: porcelana E-max USD 380 y resina USD 145 por diente, en El Poblado. Precio cerrado y valoración gratis.",
+    desc="Diseño de sonrisa en Medellín sin desgaste dental: porcelana E-max USD 380 y resina USD 145 por diente, en El Poblado. Casos reales y valoración gratis.",
     h1="Diseño de sonrisa en Medellín",
     lead=("En Medellín, la Dra. Catalina Beltrán hace diseños de sonrisa con carillas de porcelana E-max (USD 380 por diente) y de resina (USD 145 por diente), sin desgaste dental, en su consultorio de El Poblado. "
           "Recibes el plan y el precio cerrado antes de empezar, y la valoración es gratis por WhatsApp."),
@@ -75,7 +75,12 @@ PAGES.append(dict(path=P_MED, lang="es", alt="/en/veneers-medellin/", crumb="Dis
 {ba_page("caso2", "diseno-de-sonrisa-medellin-el-poblado-antes.webp", "diseno-de-sonrisa-medellin-el-poblado-despues-carillas-emax.webp",
  "Sonrisa antes del diseño de sonrisa en Medellín", "La misma sonrisa después del diseño de sonrisa con carillas E-max sin desgaste en El Poblado, Medellín",
  "Caso real en el consultorio de El Poblado, Medellín: 6 carillas superiores de porcelana E-max sin desgaste, paciente que viajó desde Francia.")}
-<p>Mira el <a href="{P_EMAX}">mismo caso de frente y de perfil</a>, o <a href="{P_BA}">todos los casos de antes y después</a>.</p></section>
+<h3>Sonrisa completa con 20 carillas de disilicato E-max</h3>
+<p>Para quien busca una sonrisa completa: en este caso de la Dra. Catalina se colocaron 20 carillas de disilicato E-max Press. Como referencia, 20 carillas E-max cuestan USD 5.900; el detalle está en la <a href="{P_PRICE}">página de precios</a>.</p>
+{ba("caso5")}
+<h3>Lo que cuenta un paciente al terminar</h3>
+{VIDEO2_ES}
+<p>Mira el <a href="{P_EMAX}">caso de las 6 carillas E-max de frente y de perfil</a>, o <a href="{P_BA}">todos los casos de antes y después</a>.</p></section>
 <section><h2>¿Por qué elegir a la Dra. Catalina?</h2>
 <p>La Dra. Catalina Beltrán coloca las carillas sin desgaste dental, da un precio cerrado antes de empezar y atiende personalmente a cada paciente.</p>
 <ul><li>Carillas sin desgaste dental: tus dientes naturales se conservan.</li><li>Precio cerrado antes de empezar, publicado en dólares.</li><li>Atención personal de la doctora, en español e inglés.</li>
@@ -449,7 +454,7 @@ PAGES.append(dict(path="/privacidad/", lang="es", crumb="Privacidad", byline=Fal
 # Imagen para compartir (og:image) y foto principal de cada página (la convierte en ImageObject build.py)
 OG_ES = {
     "/": dict(image="/img/diseno-de-sonrisa-medellin-despues-caso-1.webp"),
-    P_MED: dict(updated="2026-11-16", og="/img/og-diseno-de-sonrisa-medellin.jpg",
+    P_MED: dict(updated="2026-11-24", og="/img/og-diseno-de-sonrisa-medellin.jpg",
                 og_alt="Antes y después de carillas de porcelana E-max sin desgaste con la Dra. Catalina Beltrán en El Poblado, Medellín",
                 image_caption="Paciente de Estados Unidos se ve por primera vez después de su diseño de sonrisa en Medellín"),
     T: dict(updated="2026-11-21", og="/img/og-que-es-diseno-de-sonrisa.jpg", image="/img/que-es-diseno-de-sonrisa-despues.webp",
