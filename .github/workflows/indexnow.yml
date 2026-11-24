@@ -16,8 +16,8 @@ jobs:
         env:
           KEY: c02bbcce038efbd0b7c48bc880b98122
           HOST: dracatalinabeltran.com
-          # Paginas que no se avisan todavia (indexacion aplazada por JP)
-          EXCLUDE: "/diseno-de-sonrisa/microdiseno-de-sonrisa/ /privacidad/"
+          # Paginas que no se avisan a IndexNow
+          EXCLUDE: "/privacidad/"
         run: |
           set -e
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then

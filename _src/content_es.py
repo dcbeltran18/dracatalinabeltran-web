@@ -255,12 +255,12 @@ MICRO_FAQS = [
     ("¿Se puede hacer el microdiseño en porcelana?", "No. El microdiseño solo se hace en resina de alta estética, porque la doctora lo hace a mano directamente sobre tus dientes. Las carillas, en cambio, las fabrica un laboratorio."),
     ("¿Quién no es candidato para un microdiseño?", "Las personas con dientes muy desalineados. Las manchas, en cambio, se pueden corregir. La doctora te dice si eres candidato al ver 3 fotos de tu sonrisa."),
 ]
-PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", updated="2026-11-21", parents=[TRAT], schema_type="MedicalWebPage",
-    title="Microdiseño de sonrisa en Medellín: sin desgaste, en 2 citas",
-    desc="Microdiseño de sonrisa en Medellín con la Dra. Catalina Beltrán: resina en los bordes, sin desgaste, 6 dientes arriba y 6 abajo, en 2 citas.",
+PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", updated="2026-11-24", parents=[TRAT], schema_type="MedicalWebPage",
+    title="Microdiseño de sonrisa en Medellín: sin desgaste, en 1 o 2 citas",
+    desc="Microdiseño de sonrisa en Medellín con la Dra. Catalina Beltrán: resina en los bordes, sin desgaste, en 1 o 2 citas. En promedio USD 40 por diente.",
     h1="Microdiseño de sonrisa en Medellín",
     lead=("El microdiseño de sonrisa (también llamado micro diseño) mejora solo los bordes de tus dientes con resina de alta estética, sin cubrir el diente completo y sin ningún tipo de desgaste. "
-          "Lo habitual es tratar los 6 dientes de arriba y los 6 de abajo que se ven al sonreír, y se hace en 2 sesiones. "
+          "Lo habitual es tratar los 6 dientes de arriba y los 6 de abajo que se ven al sonreír, y se hace en 1 o 2 sesiones, según cada caso. "
           "Con la Dra. Catalina Beltrán en Medellín es más rápido y más económico que las carillas."),
     wa=wa("microdiseño de sonrisa"), faqs=MICRO_FAQS,
     body=f"""<section><h2>¿Qué es el microdiseño de sonrisa?</h2>
@@ -270,7 +270,7 @@ PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", upda
 <section><h2>¿El microdiseño desgasta los dientes?</h2>
 <p>No. El microdiseño no requiere ningún tipo de desgaste: la resina se agrega sobre tus dientes naturales, que se conservan. Es el mismo principio que sigue la Dra. Catalina en sus carillas sin desgaste dental.</p></section>
 <section><h2>¿Cuánto tiempo toma el microdiseño?</h2>
-<p>El microdiseño se hace en 2 sesiones, es decir, dos días de consulta y tratamiento en el <a href="{P_MED}">consultorio de El Poblado, Medellín</a>. Si vienes de otro país, escríbele por WhatsApp para organizar las 2 citas dentro de tu viaje. <a href="{P_INT}">Ver cómo funciona para pacientes internacionales</a>.</p></section>
+<p>El microdiseño se hace en 1 o 2 sesiones como máximo, según cada caso, en el <a href="{P_MED}">consultorio de El Poblado, Medellín</a>. La doctora te dice cuántas necesitas después de ver tus fotos. Si vienes de otro país, escríbele por WhatsApp para organizar las citas dentro de tu viaje. <a href="{P_INT}">Ver cómo funciona para pacientes internacionales</a>.</p></section>
 <section><h2>¿Cuál es la diferencia entre microdiseño y carillas?</h2>
 <p>Las carillas son láminas ultradelgadas que cubren el diente completo y las fabrica un laboratorio con equipos CNC a partir de un escáner 3D de tu boca. El microdiseño solo trabaja los bordes y lo hace la doctora a mano, por eso es más rápido y más económico.</p>
 <table><thead><tr><th></th><th>Microdiseño</th><th><a href="{P_RES}">Carillas de resina</a></th><th><a href="{P_EMAX}">Carillas de porcelana E-max</a></th></tr></thead><tbody>
@@ -278,13 +278,15 @@ PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", upda
 <tr><td>Cómo se hace</td><td>A mano, por la doctora</td><td>En laboratorio, con escáner 3D</td><td>En laboratorio, con escáner 3D</td></tr>
 <tr><td>Material</td><td>Resina de alta estética</td><td>Resina</td><td>Disilicato de litio</td></tr>
 <tr><td>Manchas</td><td>Es resina: puede pigmentarse con bebidas oscuras, como el diente natural</td><td>Puede pigmentarse, como el diente natural</td><td>No se mancha</td></tr>
-<tr><td>Precio</td><td>El más económico; te lo confirma la doctora</td><td>USD 145 por diente</td><td>USD 380 por diente</td></tr>
+<tr><td>Precio</td><td>En promedio USD 40 por diente; te lo confirma la doctora</td><td>USD 145 por diente</td><td>USD 380 por diente</td></tr>
 </tbody></table>
 <p>Ordenados de mayor a menor inversión: carillas de porcelana E-max, carillas de resina y microdiseño. Si quieres cambiar por completo la forma, el tamaño y el color de tus dientes, conviene una carilla; si solo quieres mejorar los bordes, el microdiseño puede ser suficiente.</p></section>
 <section><h2>¿Quién puede hacerse un microdiseño?</h2>
 <p>El microdiseño es para quien quiere mejorar los bordes, la forma y la textura de sus dientes sin cubrirlos por completo. No es una opción si los dientes están muy desalineados. Las manchas no son un impedimento, porque se pueden corregir. La doctora te dice si eres candidato después de ver 3 fotos de tu sonrisa por WhatsApp.</p></section>
 <section><h2>¿Cuánto cuesta un microdiseño de sonrisa?</h2>
-<p>El microdiseño cuesta menos que las carillas de resina, que valen USD 145 por diente. El precio depende de cada paciente; la Dra. Catalina te lo confirma gratis por WhatsApp después de ver 3 fotos de tu sonrisa. Si vives en Colombia, pide tu precio en pesos. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
+<p>Como referencia, el microdiseño cuesta en promedio USD 40 por diente, menos que las carillas de resina, que valen USD 145 por diente. El precio exacto depende de cada paciente; la Dra. Catalina te lo confirma gratis por WhatsApp después de ver 3 fotos de tu sonrisa. Si vives en Colombia, pide tu precio en pesos. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
+<section><h2>¿Cuánto dura un microdiseño?</h2>
+<p>Un microdiseño dura aproximadamente hasta 3 años. Cuánto dura en tu caso depende de los cuidados y de tus hábitos de alimentación: al ser resina, las bebidas oscuras pueden pigmentarlo, como al diente natural. Si buscas un resultado más duradero, pregúntale a la doctora por las <a href="{P_EMAX}">carillas de porcelana E-max</a>.</p></section>
 <section><h2>¿Quién hace el microdiseño?</h2>
 <p>La Dra. Catalina Beltrán, odontóloga estética con 15 años de experiencia, hace personalmente cada microdiseño en su consultorio de El Poblado.</p>
 {DOCTOR_ES}</section>""",
@@ -351,7 +353,7 @@ PAGES.append(dict(path=P_PRICE, lang="es", alt="/en/cost-of-veneers-colombia/", 
     wa=wa("precios"), faqs=PRICE_FAQS,
     body=f"""<section><h2>Precios de referencia 2026</h2><p>En 2026, con la Dra. Catalina Beltrán en Medellín, la carilla de porcelana E-max cuesta USD 380 por diente, la de resina USD 145 y la sonrisa completa de 20 carillas de porcelana USD 5.900.</p>{PRICE_TABLE_ES}
 <p class="muted">Precios vigentes al {fecha_es(UPDATED)}. Tu precio exacto depende de cuántos dientes necesitas: la doctora te lo confirma gratis por WhatsApp.</p>
-<p>Otros tratamientos: el <a href="{P_BLANQ}">blanqueamiento dental</a> cuesta COP 650.000 con limpieza incluida, y el precio del <a href="{P_MICRO}">microdiseño de sonrisa</a> depende de cada paciente.</p></section>
+<p>Otros tratamientos: el <a href="{P_BLANQ}">blanqueamiento dental</a> cuesta COP 650.000 con limpieza incluida, y el <a href="{P_MICRO}">microdiseño de sonrisa</a> cuesta en promedio USD 40 por diente; el precio exacto lo confirma la doctora en cada caso.</p></section>
 <section><h2>¿Qué incluye el precio?</h2><p>El precio incluye la valoración y el diseño digital, las carillas sin desgaste dental, la limpieza previa y el control por videollamada. No incluye vuelos ni hotel.</p>{INCLUDES_ES}<p>Si vives fuera de Colombia, <a href="{P_INT}">así funciona el viaje</a>.</p></section>
 <section><h2>¿Qué resultado obtienes por ese precio?</h2>
 <p>Este es un caso real de 6 carillas superiores de porcelana E-max de la Dra. Catalina, del tipo de tratamiento que se cotiza con precio cerrado en dólares. El precio exacto de tu caso depende de cuántos dientes necesitas.</p>
@@ -461,7 +463,7 @@ OG_ES = {
             og_alt="Antes y después de un diseño de sonrisa hecho por la Dra. Catalina Beltrán en Medellín"),
     P_EMAX: dict(og="/img/og-carillas-de-porcelana-emax.jpg",
                  og_alt="Antes y después de carillas de porcelana E-max sin desgaste, caso real de la Dra. Catalina Beltrán"),
-    P_PRICE: dict(updated="2026-11-16", og="/img/og-precio-diseno-de-sonrisa-colombia.jpg", image="/img/precio-carillas-emax-colombia-despues.webp",
+    P_PRICE: dict(updated="2026-11-24", og="/img/og-precio-diseno-de-sonrisa-colombia.jpg", image="/img/precio-carillas-emax-colombia-despues.webp",
                   og_alt="Antes y después de carillas de porcelana E-max y el precio de 20 carillas por USD 5.900"),
     P_DRA: dict(og="/img/og-dra-catalina-beltran.jpg", og_alt="Dra. Catalina Beltrán, odontóloga estética en Medellín"),
     P_BA: dict(updated="2026-11-23", og="/img/og-antes-y-despues-diseno-de-sonrisa.jpg", image="/img/diseno-de-sonrisa-medellin-despues-caso-1.webp",
