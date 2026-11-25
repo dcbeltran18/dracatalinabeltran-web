@@ -255,7 +255,7 @@ MICRO_FAQS = [
     ("¿Se puede hacer el microdiseño en porcelana?", "No. El microdiseño solo se hace en resina de alta estética, porque la doctora lo hace a mano directamente sobre tus dientes. Las carillas, en cambio, las fabrica un laboratorio."),
     ("¿Quién no es candidato para un microdiseño?", "Las personas con dientes muy desalineados. Las manchas, en cambio, se pueden corregir. La doctora te dice si eres candidato al ver 3 fotos de tu sonrisa."),
 ]
-PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", updated="2026-11-24", parents=[TRAT], schema_type="MedicalWebPage",
+PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", updated="2026-11-25", parents=[TRAT], schema_type="MedicalWebPage",
     title="Microdiseño de sonrisa Medellín: sin desgaste, 1 o 2 citas",
     desc="Microdiseño de sonrisa en Medellín con la Dra. Catalina Beltrán: resina en los bordes, sin desgaste, en 1 o 2 citas. En promedio USD 40 por diente.",
     h1="Microdiseño de sonrisa en Medellín",
@@ -287,6 +287,9 @@ PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", upda
 <p>Como referencia, el microdiseño cuesta en promedio USD 40 por diente, menos que las carillas de resina, que valen USD 145 por diente. El precio exacto depende de cada paciente; la Dra. Catalina te lo confirma gratis por WhatsApp después de ver 3 fotos de tu sonrisa. Si vives en Colombia, pide tu precio en pesos. <a href="{P_PRICE}">Ver todos los precios</a>.</p></section>
 <section><h2>¿Cuánto dura un microdiseño?</h2>
 <p>Un microdiseño dura aproximadamente hasta 3 años. Cuánto dura en tu caso depende de los cuidados y de tus hábitos de alimentación: al ser resina, las bebidas oscuras pueden pigmentarlo, como al diente natural. Si buscas un resultado más duradero, pregúntale a la doctora por las <a href="{P_EMAX}">carillas de porcelana E-max</a>.</p></section>
+<section><h2>¿Cuáles son las desventajas del microdiseño de sonrisa?</h2>
+<p>El microdiseño tiene tres desventajas: dura aproximadamente hasta 3 años, puede pigmentarse con bebidas oscuras porque es de resina, y solo mejora los bordes de los dientes, así que no cambia por completo su forma, tamaño o color. A cambio, no requiere ningún desgaste y es más rápido y económico que las carillas.</p>
+<p>Si buscas un resultado que dure más y no se manche, las carillas E-max duran de 10 a 20 años o más.</p></section>
 <section><h2>¿Quién hace el microdiseño?</h2>
 <p>La Dra. Catalina Beltrán, odontóloga estética con 15 años de experiencia, hace personalmente cada microdiseño en su consultorio de El Poblado.</p>
 {DOCTOR_ES}</section>""",
