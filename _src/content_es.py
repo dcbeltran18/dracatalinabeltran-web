@@ -256,7 +256,7 @@ MICRO_FAQS = [
     ("¿Quién no es candidato para un microdiseño?", "Las personas con dientes muy desalineados. Las manchas, en cambio, se pueden corregir. La doctora te dice si eres candidato al ver 3 fotos de tu sonrisa."),
 ]
 PAGES.append(dict(path=P_MICRO, lang="es", crumb="Microdiseño de sonrisa", updated="2026-11-24", parents=[TRAT], schema_type="MedicalWebPage",
-    title="Microdiseño de sonrisa en Medellín: sin desgaste, en 1 o 2 citas",
+    title="Microdiseño de sonrisa Medellín: sin desgaste, 1 o 2 citas",
     desc="Microdiseño de sonrisa en Medellín con la Dra. Catalina Beltrán: resina en los bordes, sin desgaste, en 1 o 2 citas. En promedio USD 40 por diente.",
     h1="Microdiseño de sonrisa en Medellín",
     lead=("El microdiseño de sonrisa (también llamado micro diseño) mejora solo los bordes de tus dientes con resina de alta estética, sin cubrir el diente completo y sin ningún tipo de desgaste. "
