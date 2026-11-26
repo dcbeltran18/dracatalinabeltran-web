@@ -190,17 +190,17 @@ PAGES.append(dict(path=T, lang="es", crumb="Diseño de sonrisa", schema_type="Me
 
 # ---------------- E-MAX ----------------
 EMAX_FAQS = [
-    ("¿Las carillas E-max requieren desgastar los dientes?", "Con la Dra. Catalina, no. Coloca las carillas sin desgaste dental, de modo que tus dientes naturales se conservan."),
+    ("¿Las carillas E-max requieren desgastar los dientes?", "En cerca del 90 % de los casos, no. La excepción es un diente que ya tiene desgaste por un diseño anterior."),
     ("¿Las carillas E-max se manchan?", "No. La porcelana E-max no absorbe pigmentos como el café o el vino, por eso conserva su color."),
     ("¿Las carillas pudren los dientes?", "No. Lo que daña un diente es la caries por mala higiene debajo o alrededor de la carilla. Con higiene diaria y controles, el diente se mantiene sano."),
-    ("¿Cuándo no se pueden poner carillas?", "Cuando hay caries o enfermedad de encías sin tratar, o un bruxismo fuerte sin control. La doctora lo revisa en la valoración y, si hace falta, lo trata antes."),
+    ("¿Cuándo no se pueden poner carillas?", "Cuando hay caries o enfermedad de encías sin tratar, o un bruxismo fuerte sin control (cuando hay bruxismo fuerte, la doctora suele usar zirconio). La doctora lo revisa en la valoración y, si hace falta, lo trata antes."),
 ]
 PAGES.append(dict(path=P_EMAX, lang="es", crumb="Carillas de porcelana E-max", parents=[TRAT], schema_type="MedicalWebPage",
     title="Carillas de porcelana E-max en Medellín: precio y duración",
-    desc="Carillas E-max sin desgaste en Medellín: USD 380 por diente, 20 carillas por USD 5.900 y una duración de 10 a 20 años. Ventajas, desventajas y cuidados.",
+    desc="Carillas E-max, casi siempre sin desgaste, en Medellín: USD 380 por diente, 20 carillas por USD 5.900 y una duración de 10 a 20 años. Ventajas, desventajas y cuidados.",
     h1="Carillas de porcelana E-max",
     lead=("Las carillas E-max son láminas ultradelgadas de porcelana de disilicato de litio que cubren el diente completo para cambiar su forma, tamaño y color. Las fabrica un laboratorio con equipos CNC a partir de un escáner 3D de tu boca. "
-          "Con la Dra. Catalina Beltrán en Medellín se colocan sin desgaste dental y cuestan USD 380 por diente; la sonrisa completa de 20 carillas cuesta USD 5.900."),
+          "Con la Dra. Catalina Beltrán en Medellín en la mayoría de los casos se colocan sin desgaste dental y cuestan USD 380 por diente; la sonrisa completa de 20 carillas cuesta USD 5.900."),
     wa=wa("carillas E-max"), faqs=EMAX_FAQS, image="/img/carillas-emax-sin-desgaste-despues-caso-2.webp",
     body=f"""<section><h2>¿Qué son las carillas E-max?</h2>
 <p>E-max es una marca de porcelana de disilicato de litio. Es resistente y deja pasar la luz de forma parecida al esmalte natural, por eso se ve real de cerca. Cada carilla se fabrica a la medida según el diseño digital de tu sonrisa.</p></section>
@@ -211,13 +211,21 @@ PAGES.append(dict(path=P_EMAX, lang="es", crumb="Carillas de porcelana E-max", p
 <p>Las carillas E-max cuestan USD 380 por diente con la Dra. Catalina Beltrán en Medellín. Diez carillas para la sonrisa superior cuestan USD 3.800 y la sonrisa completa de 20 carillas, USD 5.900, es decir, USD 295 por diente. <a href="{P_PRICE}">Ver qué incluye y la comparación con Estados Unidos</a>.</p></section>
 <section><h2>¿Para quién son las carillas E-max?</h2>
 <p>Las carillas E-max son para quien quiere un cambio completo y duradero: dientes manchados que no mejoran con blanqueamiento, desgastados, con espacios, de formas irregulares o pequeños. También para quien tiene carillas viejas de resina y quiere pasar a porcelana.</p></section>
+<section><h2>¿Carillas E-max o de zirconio?</h2>
+<p>Con la Dra. Catalina Beltrán, las carillas E-max son la opción para la mayoría: sirven en cerca del 90 % de los pacientes que tienen una mordida normal, incluidos quienes ya tuvieron un diseño de sonrisa previo en resina. El zirconio lo usa sobre todo cuando el paciente tiene bruxismo fuerte, es decir, aprieta o rechina mucho los dientes.</p>
+<table><thead><tr><th>Material</th><th>Cuándo lo usa la Dra. Catalina</th></tr></thead><tbody>
+<tr><td>Porcelana E-max</td><td>La mayoría de los casos: mordida normal, también si ya tuviste carillas de resina</td></tr>
+<tr><td>Zirconio</td><td>Sobre todo con bruxismo fuerte</td></tr></tbody></table>
+<p>La doctora define el material en la valoración, según tu mordida y tus hábitos.</p></section>
 <section><h2>¿Cuánto duran las carillas E-max?</h2>
 <p>Las carillas de porcelana E-max duran entre 10 y 20 años, e incluso más con un mantenimiento adecuado: higiene diaria, controles, no morder objetos duros y usar placa nocturna si aprietas los dientes. Son la opción más duradera del diseño de sonrisa.</p></section>
+<section><h2>¿Se pueden quitar las carillas E-max?</h2>
+<p>Sí. Las carillas de cerámica, como las E-max, se retiran con láser, y las de resina, con láser o de forma convencional con la pieza de mano. Además, en cerca del 90 % de los casos la Dra. Catalina las coloca sin desgaste, es decir, sin tallar el diente.</p></section>
 <section><h2>Ventajas y desventajas de las carillas E-max</h2>
 <p>La principal ventaja de las carillas E-max es que conservan su color y duran más que la resina; la principal desventaja es que cuestan más.</p>
 <table><thead><tr><th>Ventajas</th><th>Desventajas</th></tr></thead><tbody>
 <tr><td>Conservan su color</td><td>Cuestan más que la resina</td></tr><tr><td>Aspecto natural de cerca</td><td>Se fabrican en laboratorio: no se hacen en una sola cita</td></tr>
-<tr><td>Más duraderas que la resina</td><td>Si una se fractura, se reemplaza la pieza</td></tr><tr><td>Sin desgaste dental con la doctora</td><td>Necesitan higiene y controles como cualquier diente</td></tr></tbody></table></section>
+<tr><td>Más duraderas que la resina</td><td>Si una se fractura, se reemplaza la pieza</td></tr><tr><td>Sin desgaste dental en cerca del 90 % de los casos</td><td>Necesitan higiene y controles como cualquier diente</td></tr></tbody></table></section>
 <section><h2>¿Cuánto tiempo toma el tratamiento con carillas E-max?</h2>
 <p>Si vives fuera de Colombia, las carillas E-max se hacen en un solo viaje de mínimo 4 días a Medellín, en el <a href="{P_MED}">consultorio de El Poblado</a>. Antes de viajar ya tienes la valoración, el diseño y el precio cerrado. <a href="{P_INT}">Ver cómo funciona el viaje</a>.</p></section>
 <section><h2>¿Cómo se cuidan las carillas E-max?</h2><p>Las carillas E-max se cuidan con higiene diaria y controles, como los dientes naturales:</p><ul><li>Cepillado y seda dental todos los días.</li><li>Controles con la doctora (el primero, por videollamada).</li><li>No morder objetos duros ni abrir paquetes con los dientes.</li><li>Placa nocturna si aprietas o rechinas los dientes.</li></ul></section>
@@ -464,7 +472,7 @@ OG_ES = {
                 image_caption="Paciente de Estados Unidos se ve por primera vez después de su diseño de sonrisa en Medellín"),
     T: dict(updated="2026-11-21", og="/img/og-que-es-diseno-de-sonrisa.jpg", image="/img/que-es-diseno-de-sonrisa-despues.webp",
             og_alt="Antes y después de un diseño de sonrisa hecho por la Dra. Catalina Beltrán en Medellín"),
-    P_EMAX: dict(og="/img/og-carillas-de-porcelana-emax.jpg",
+    P_EMAX: dict(updated="2026-11-26", og="/img/og-carillas-de-porcelana-emax.jpg",
                  og_alt="Antes y después de carillas de porcelana E-max sin desgaste, caso real de la Dra. Catalina Beltrán"),
     P_PRICE: dict(updated="2026-11-24", og="/img/og-precio-diseno-de-sonrisa-colombia.jpg", image="/img/precio-carillas-emax-colombia-despues.webp",
                   og_alt="Antes y después de carillas de porcelana E-max y el precio de 20 carillas por USD 5.900"),
@@ -481,7 +489,7 @@ for _p in PAGES:
     _p.update(OG_ES.get(_p["path"], {}))
 
 for _p in PAGES:
-    if _p["path"] in (P_EMAX, P_RES):
+    if _p["path"] in (P_RES,):
         _p["updated"] = "2026-11-16"
 
 for _p in PAGES:
