@@ -197,7 +197,7 @@ EMAX_FAQS = [
 ]
 PAGES.append(dict(path=P_EMAX, lang="es", crumb="Carillas de porcelana E-max", parents=[TRAT], schema_type="MedicalWebPage",
     title="Carillas de porcelana E-max en Medellín: precio y duración",
-    desc="Carillas E-max, casi siempre sin desgaste, en Medellín: USD 380 por diente, 20 carillas por USD 5.900 y una duración de 10 a 20 años. Ventajas, desventajas y cuidados.",
+    desc="Carillas E-max, casi siempre sin desgaste, en Medellín: USD 380 por diente, 20 carillas por USD 5.900 y duran de 10 a 20 años. Ventajas y desventajas.",
     h1="Carillas de porcelana E-max",
     lead=("Las carillas E-max son láminas ultradelgadas de porcelana de disilicato de litio que cubren el diente completo para cambiar su forma, tamaño y color. Las fabrica un laboratorio con equipos CNC a partir de un escáner 3D de tu boca. "
           "Con la Dra. Catalina Beltrán en Medellín en la mayoría de los casos se colocan sin desgaste dental y cuestan USD 380 por diente; la sonrisa completa de 20 carillas cuesta USD 5.900."),
